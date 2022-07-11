@@ -12,7 +12,7 @@ const ComparePage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Compare :: ' + settings?.title}</title>
+        <title>{'Compare - ' + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

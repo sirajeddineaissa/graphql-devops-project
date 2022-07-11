@@ -12,7 +12,7 @@ const WishlistPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Wishlist :: ' + settings?.title}</title>
+        <title>{'Wishlist - ' + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

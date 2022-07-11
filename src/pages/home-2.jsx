@@ -13,7 +13,7 @@ const HomeTwo = ({ blogs, products, collections }) => {
   return (
     <Layout bg="gray250">
       <Head>
-        <title>{'Home 2 :: ' + settings?.title}</title>
+        <title>{'Home 2 - ' + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 

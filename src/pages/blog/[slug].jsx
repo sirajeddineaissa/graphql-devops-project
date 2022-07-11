@@ -11,7 +11,7 @@ const BlogDetailsPage = ({ post }) => {
   return (
     <Layout>
       <Head>
-        <title>{post?.title + ' :: ' + settings?.title}</title>
+        <title>{post?.title + ' - ' + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

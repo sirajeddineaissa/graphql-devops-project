@@ -8,7 +8,7 @@ const SigninPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Login :: ' + settings?.title}</title>
+        <title>{'Login - ' + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

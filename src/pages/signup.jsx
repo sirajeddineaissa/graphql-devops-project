@@ -8,7 +8,7 @@ const RegisterPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Signup :: ' + settings?.title}</title>
+        <title>{'Signup - ' + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

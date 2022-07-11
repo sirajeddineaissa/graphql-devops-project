@@ -11,8 +11,8 @@ import { FormWrap, AlertMessage } from '@components/auth/auth.style';
 import { InputField } from '@components/checkout/checkout-form.style';
 
 const defaultValue = {
-  email: 'customer@demo.com',
-  password: 'demo123',
+  email: 'sirajeddineaissa516@gmail.com',
+  password: 'tryingoutthis',
 };
 
 const SigninForm = () => {
