@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+module.exports = {
+  images: {
+    domains: [
+      "shopify.com",
+      "cdn.shopify.com"
+    ]
+  }
 }
-
-module.exports = nextConfig
