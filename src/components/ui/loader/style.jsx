@@ -1,5 +1,5 @@
-import styled, {themeGet} from "@styled";
-import {spin} from "@assets/css/keyframes";
+import styled, { themeGet } from '@styled';
+import { spin } from '@assets/css/keyframes';
 
 export const LoaderStyle = styled.div`
   font-size: 13px;
@@ -11,10 +11,10 @@ export const LoaderStyle = styled.div`
 
   svg {
     font-size: 45px;
-    color: ${themeGet("colors.primary")};
+    color: ${themeGet('colors.primary')};
   }
 
   & > * {
     animation: ${spin} 1s infinite;
   }
-`
+`;

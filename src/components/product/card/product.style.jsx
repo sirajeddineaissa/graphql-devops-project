@@ -1,10 +1,10 @@
-import styled, {themeGet, css, devices} from "@styled";
+import styled, { themeGet, css, devices } from '@styled';
 
 const hvrVisible = css`
   visibility: visible;
   transform: translateY(0);
   opacity: 1;
-`
+`;
 
 export const ProductPrice = styled.div`
   font-size: ${themeGet('fontSizes.body')};
@@ -28,7 +28,7 @@ export const ProductPrice = styled.div`
       color: ${themeGet('colors.darkgray')};
     }
   }
-`
+`;
 
 export const ProductTitle = styled.h2`
   font-size: ${themeGet('fontSizes.standard')};
@@ -52,7 +52,7 @@ export const ProductTitle = styled.h2`
       color: ${themeGet('colors.primary')};
     }
   }
-`
+`;
 
 export const ProductMeta = styled.div`
   position: relative;
@@ -67,7 +67,7 @@ export const ProductMeta = styled.div`
   ${devices.sm} {
     padding-top: 5px;
   }
-`
+`;
 
 const buttonStyle = css`
   border: 0;
@@ -100,43 +100,47 @@ const buttonStyle = css`
     color: ${themeGet('colors.white')};
   }
 
-  ${({mobile}) => !mobile && css`
-    left: 0;
-    right: 0;
-    opacity: 0;
-    bottom: 20px;
-    height: 45px;
-    display: block;
-    line-height: 45px;
-    position: absolute;
-    visibility: hidden;
-    transform: translateY(20px);
-    color: ${themeGet('colors.secondary')};
-    font-size: ${themeGet('fontSizes.standard')};
-    background-color: ${themeGet('colors.white')};
+  ${({ mobile }) =>
+    !mobile &&
+    css`
+      left: 0;
+      right: 0;
+      opacity: 0;
+      bottom: 20px;
+      height: 45px;
+      display: block;
+      line-height: 45px;
+      position: absolute;
+      visibility: hidden;
+      transform: translateY(20px);
+      color: ${themeGet('colors.secondary')};
+      font-size: ${themeGet('fontSizes.standard')};
+      background-color: ${themeGet('colors.white')};
 
-    ${devices.md} {
-      display: none;
-    }
+      ${devices.md} {
+        display: none;
+      }
 
-    &:hover {
-      color: ${themeGet('colors.primary')};
-    }
-  `}
-`
+      &:hover {
+        color: ${themeGet('colors.primary')};
+      }
+    `}
+`;
 
 export const AddToCartButton = styled.button`
   ${buttonStyle}
 
-  ${({disabled}) => disabled && css`
-    pointer-events: none;
-    opacity: 0.65 !important;
-  `}
-`
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      pointer-events: none;
+      opacity: 0.65 !important;
+    `}
+`;
 
 export const SelectOptionButton = styled.a`
   ${buttonStyle}
-`
+`;
 
 export const ActionButton = styled.button`
   display: flex;
@@ -161,14 +165,16 @@ export const ActionButton = styled.button`
     opacity: 0;
   }
 
-  ${({isActive}) => isActive && css`
-    color: ${themeGet('colors.primary')};
-  `}
+  ${({ isActive }) =>
+    isActive &&
+    css`
+      color: ${themeGet('colors.primary')};
+    `}
   &:hover {
     color: ${themeGet('colors.white')};
     background-color: ${themeGet('colors.primary')};
   }
-`
+`;
 
 export const ProductActions = styled.div`
   position: absolute;
@@ -188,7 +194,7 @@ export const ProductActions = styled.div`
   ${devices.sm} {
     display: none;
   }
-`
+`;
 
 export const ProductActionsMobile = styled.div`
   display: none;
@@ -216,10 +222,10 @@ export const ProductActionsMobile = styled.div`
 
     &:hover {
       background: transparent;
-      color: ${themeGet('colors.primary')}
+      color: ${themeGet('colors.primary')};
     }
   }
-`
+`;
 
 export const Badge = styled.span`
   background-color: ${themeGet('colors.secondary')};
@@ -248,18 +254,24 @@ export const Badge = styled.span`
     }
   }
 
-  ${props => props.type === 'new' && css`
-    background-color: ${themeGet('colors.green')};
-  `}
+  ${(props) =>
+    props.type === 'new' &&
+    css`
+      background-color: ${themeGet('colors.green')};
+    `}
 
-  ${props => props.type === 'sale' && css`
-    background-color: ${themeGet('colors.danger')};
-  `}
+  ${(props) =>
+    props.type === 'sale' &&
+    css`
+      background-color: ${themeGet('colors.danger')};
+    `}
 
-  ${props => props.type === 'featured' && css`
-    background-color: ${themeGet('colors.primary')};
-  `}
-`
+  ${(props) =>
+    props.type === 'featured' &&
+    css`
+      background-color: ${themeGet('colors.primary')};
+    `}
+`;
 
 export const ProductBadges = styled.div`
   position: absolute;
@@ -274,7 +286,7 @@ export const ProductBadges = styled.div`
     top: 10px;
     left: 10px;
   }
-`
+`;
 
 export const ProductImage = styled.div`
   position: relative;
@@ -296,12 +308,12 @@ export const ProductImage = styled.div`
       opacity: 0;
     }
   }
-`
+`;
 
 export const ProductThumb = styled.figure`
   position: relative;
   overflow: hidden;
-`
+`;
 
 export const Product = styled.div`
   overflow: hidden;
@@ -336,4 +348,4 @@ export const Product = styled.div`
       ${hvrVisible}
     }
   }
-`
+`;

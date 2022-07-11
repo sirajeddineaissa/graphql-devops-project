@@ -1,21 +1,27 @@
-import {addToCart, removeCart, increment, decrement, clear} from "@slices/cartSlice";
+import {
+  addToCart,
+  removeCart,
+  increment,
+  decrement,
+  clear,
+} from '@slices/cartSlice';
 
 export const addToCartAction = (payload) => (dispatch) => {
-    dispatch(addToCart(payload));
-}
+  dispatch(addToCart(payload));
+};
 
 export const removeCartAction = (payload) => (dispatch) => {
-    dispatch(removeCart(payload));
-}
+  dispatch(removeCart(payload));
+};
 
 export const incrementCartQuantityAction = (payload) => (dispatch) => {
-    dispatch(increment(payload));
-}
+  dispatch(increment(payload));
+};
 
 export const decrementCartQuantityAction = (payload) => (dispatch) => {
-    dispatch(decrement(payload));
-}
+  dispatch(decrement(payload));
+};
 
 export const clearCartAction = () => (dispatch) => {
-    dispatch(clear());
-}
+  dispatch(clear());
+};

@@ -1,4 +1,4 @@
-import styled, {themeGet} from "@styled";
+import styled, { themeGet } from '@styled';
 
 export const SettingsFooter = styled.div`
   margin-top: auto;
@@ -34,7 +34,7 @@ export const SettingsFooter = styled.div`
       color: ${themeGet('colors.danger')};
     }
   }
-`
+`;
 
 export const SettingsItem = styled.div`
   font-family: ${themeGet('fonts.heading')};
@@ -47,8 +47,8 @@ export const SettingsItem = styled.div`
     font-size: 15px;
     font-weight: ${themeGet('fontWeights.subHeading')};
   }
-`
+`;
 
 export const SettingsWrap = styled.div`
   padding: 20px;
-`
+`;

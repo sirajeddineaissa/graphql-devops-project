@@ -1,10 +1,9 @@
-import {addToCompare, removeCompare} from "@slices/compareSlice";
+import { addToCompare, removeCompare } from '@slices/compareSlice';
 
 export const addToCompareAction = (payload) => (dispatch) => {
-    dispatch(addToCompare(payload));
-}
-
+  dispatch(addToCompare(payload));
+};
 
 export const removeCompareAction = (payload) => (dispatch) => {
-    dispatch(removeCompare(payload));
-}
+  dispatch(removeCompare(payload));
+};

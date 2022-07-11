@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle, devices, themeGet} from "@styled";
+import styled, { createGlobalStyle, devices, themeGet } from '@styled';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -16,11 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     position: relative;
     visibility: visible;
-    color: ${themeGet("colors.text")};
-    font-family: ${themeGet("fonts.body")};
-    font-size: ${themeGet("fontSizes.body")};
-    font-weight: ${themeGet("fontWeights.body")};
-    line-height: ${themeGet("lineHeights.body")};
+    color: ${themeGet('colors.text')};
+    font-family: ${themeGet('fonts.body')};
+    font-size: ${themeGet('fontSizes.body')};
+    font-weight: ${themeGet('fontWeights.body')};
+    line-height: ${themeGet('lineHeights.body')};
 
     &[dir="rtl"] {
       text-align: right;
@@ -42,8 +42,8 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    color: ${themeGet("colors.heading")};
-    font-family: ${themeGet("fonts.heading")};
+    color: ${themeGet('colors.heading')};
+    font-family: ${themeGet('fonts.heading')};
   }
 
   a,
@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     text-decoration: none;
     background-color: transparent;
-    transition: ${themeGet("transition")};
+    transition: ${themeGet('transition')};
   }
 
   a {
@@ -77,11 +77,11 @@ export const GlobalStyle = createGlobalStyle`
     &.furns-form-control {
       min-height: 50px;
       padding: 6px 80px 6px 20px;
-      font-family: ${themeGet("fonts.body")};
-      font-weight: ${themeGet("fontWeights.body")};
-      line-height: ${themeGet("lineHeights.body")};
-      color: ${themeGet("colors.text")};
-      border-radius: ${themeGet("radii.sm")};
+      font-family: ${themeGet('fonts.body')};
+      font-weight: ${themeGet('fontWeights.body')};
+      line-height: ${themeGet('lineHeights.body')};
+      color: ${themeGet('colors.text')};
+      border-radius: ${themeGet('radii.sm')};
 
       &:focus {
         border-color: ${themeGet('colors.primary')};
@@ -94,8 +94,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    color: ${themeGet("colors.text")};
-    font-family: ${themeGet("fonts.body")};
+    color: ${themeGet('colors.text')};
+    font-family: ${themeGet('fonts.body')};
 
     &:last-child {
       margin-bottom: 0;
@@ -208,21 +208,21 @@ export const GlobalStyle = createGlobalStyle`
   .about-page-wrapper {
     h2 {
       font-size: 32px;
-      font-weight: ${themeGet("fontWeights.heading")};
+      font-weight: ${themeGet('fontWeights.heading')};
     }
 
     h4 {
       font-size: 20px;
       margin-bottom: 15px;
-      font-weight: ${themeGet("fontWeights.subHeading")};
+      font-weight: ${themeGet('fontWeights.subHeading')};
     }
 
     .about-store {
       line-height: 2;
-      font-size: ${themeGet("fontSizes.standard")};
+      font-size: ${themeGet('fontSizes.standard')};
     }
   }
-`
+`;
 
 export const ErrorPage = styled.div`
   height: 100vh;
@@ -235,7 +235,7 @@ export const ErrorPage = styled.div`
   h3 {
     font-size: 32px;
     margin: 20px 0 10px;
-    font-family: ${themeGet("fonts.body")};
-    font-weight: ${themeGet("fontWeights.heading")};
+    font-family: ${themeGet('fonts.body')};
+    font-weight: ${themeGet('fontWeights.heading')};
   }
-`
+`;

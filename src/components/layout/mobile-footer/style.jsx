@@ -1,4 +1,4 @@
-import styled, {devices, themeGet} from "@styled";
+import styled, { devices, themeGet } from '@styled';
 
 export const FooterButtons = styled.div`
   height: 50px;
@@ -23,10 +23,10 @@ export const FooterButtons = styled.div`
     }
 
     &:hover {
-      color: ${themeGet('colors.primary')};;
+      color: ${themeGet('colors.primary')};
     }
   }
-`
+`;
 
 export const MobileFooterWrap = styled.div`
   left: 0;
@@ -41,4 +41,4 @@ export const MobileFooterWrap = styled.div`
   ${devices.md} {
     display: block;
   }
-`
+`;

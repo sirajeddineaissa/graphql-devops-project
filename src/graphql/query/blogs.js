@@ -1,9 +1,9 @@
-import {gql} from "graphql-request";
+import { gql } from 'graphql-request';
 
 const blogsQuery = (limit = 3) => {
-    const queryArguments = `first: ${limit}`;
+  const queryArguments = `first: ${limit}`;
 
-    return gql`
+  return gql`
         {
             blogs(first: 10) {
                 edges {
@@ -31,7 +31,7 @@ const blogsQuery = (limit = 3) => {
                 }
             }
         }
-    `
-}
+    `;
+};
 
 export default blogsQuery;

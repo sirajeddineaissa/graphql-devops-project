@@ -1,4 +1,4 @@
-import styled, {devices, themeGet, css, typography} from "@styled";
+import styled, { devices, themeGet, css, typography } from '@styled';
 
 export const SliderThumb = styled.div`
   &:not(.style-2) {
@@ -27,14 +27,14 @@ export const SliderThumb = styled.div`
       animation: none !important;
     }
   }
-`
+`;
 
 export const SlideSubTitle = styled.h4`
   font-size: 24px;
   line-height: 1;
   color: ${themeGet('colors.text')};
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;
 
 export const SlideTitle = styled.h2`
   font-size: 72px;
@@ -48,7 +48,7 @@ export const SlideTitle = styled.h2`
   ${devices.sm} {
     font-size: 32px;
   }
-`
+`;
 
 export const SlideContent = styled.div`
   z-index: 1;
@@ -58,17 +58,21 @@ export const SlideContent = styled.div`
   & > p {
     max-width: 470px;
 
-    ${props => props.textAlign === "center" && css`
-      margin: auto;
-    `}
+    ${(props) =>
+      props.textAlign === 'center' &&
+      css`
+        margin: auto;
+      `}
   }
 
-  ${props => props.mode === "light" && css`
-    & > * {
-      color: ${themeGet("colors.white")};
-    }
-  `}
-`
+  ${(props) =>
+    props.mode === 'light' &&
+    css`
+      & > * {
+        color: ${themeGet('colors.white')};
+      }
+    `}
+`;
 
 export const SlideItem = styled.div`
   height: 750px;
@@ -91,4 +95,4 @@ export const SlideItem = styled.div`
   & > div {
     align-self: center;
   }
-`
+`;

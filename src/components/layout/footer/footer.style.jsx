@@ -1,42 +1,42 @@
-import styled, {space, color, themeGet, devices} from "@styled";
+import styled, { space, color, themeGet, devices } from '@styled';
 
 export const CopyrightText = styled.p`
   color: ${themeGet('colors.white')};
   font-size: 13px;
   font-family: ${themeGet('fonts.heading')};
   line-height: 26px;
-  
+
   .company-name {
-      color: ${themeGet('colors.white')};
-      font-weight: ${themeGet('fontWeights.heading')};
-      
-      &:hover {
-          color: ${themeGet('colors.primary')};
-      }
+    color: ${themeGet('colors.white')};
+    font-weight: ${themeGet('fontWeights.heading')};
+
+    &:hover {
+      color: ${themeGet('colors.primary')};
+    }
   }
-  
-  svg{
-      margin: 0 1px;
-      vertical-align: middle;
-      color: ${themeGet('colors.danger')};
-      font-size: ${themeGet('fontSizes.standard')};
+
+  svg {
+    margin: 0 1px;
+    vertical-align: middle;
+    color: ${themeGet('colors.danger')};
+    font-size: ${themeGet('fontSizes.standard')};
   }
-`
+`;
 
 export const FooterBottomWrapper = styled.div`
   ${color}
   ${space}
-`
+`;
 
 export const WidgetWrapper = styled.div`
   ${space};
   ${color};
-`
+`;
 
 export const FooterWrap = styled.footer`
   ${space};
   ${color};
-`
+`;
 export const SocialIcons = styled.ul`
   ${space};
 
@@ -56,4 +56,4 @@ export const SocialIcons = styled.ul`
       }
     }
   }
-`
+`;

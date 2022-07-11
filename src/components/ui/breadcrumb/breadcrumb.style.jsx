@@ -1,4 +1,4 @@
-import styled, {themeGet, space, devices} from "@styled";
+import styled, { themeGet, space, devices } from '@styled';
 
 export const BreadcrumbNavLink = styled.a`
   position: relative;
@@ -28,7 +28,7 @@ export const BreadcrumbNavLink = styled.a`
       z-index: 0;
     }
   }
-`
+`;
 
 export const BreadcrumbNavItem = styled.li`
   line-height: 1;
@@ -45,7 +45,7 @@ export const BreadcrumbNavItem = styled.li`
   ${devices.sm} {
     font-size: 12px;
   }
-`
+`;
 
 export const BreadcrumbNav = styled.ul`
   margin-top: 10px;
@@ -56,13 +56,13 @@ export const BreadcrumbNav = styled.ul`
 
       &:before {
         float: left;
-        content: "/";
+        content: '/';
         padding-right: 5px;
         color: ${themeGet('colors.text')};
       }
     }
   }
-`
+`;
 
 export const BreadcrumbTitle = styled.h2`
   margin: 0;
@@ -81,7 +81,7 @@ export const BreadcrumbTitle = styled.h2`
   ${devices.sm} {
     font-size: 20px;
   }
-`
+`;
 
 export const BreadcrumbWrap = styled.section`
   text-align: center;
@@ -91,4 +91,4 @@ export const BreadcrumbWrap = styled.section`
   background-color: ${themeGet('colors.gray100')};
 
   ${space}
-`
+`;

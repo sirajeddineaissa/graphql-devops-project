@@ -1,4 +1,4 @@
-import styled, {devices, space} from "@styled";
+import styled, { devices, space } from '@styled';
 
 export const Main = styled.main`
   ${space};
@@ -6,4 +6,4 @@ export const Main = styled.main`
   ${devices.md} {
     margin: 62px 0 50px 0;
   }
-`
+`;

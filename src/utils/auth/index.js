@@ -1,3 +1,3 @@
-import logout from "@utils/auth/logout";
+import logout from '@utils/auth/logout';
 
 export { logout };

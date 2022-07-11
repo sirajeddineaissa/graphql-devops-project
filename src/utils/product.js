@@ -6,14 +6,16 @@
  * @returns {number|*}
  */
 export const getCartProductQuantity = (shoppingCart, product, variations) => {
-    const productOnCart = shoppingCart.find(item => item?.id === product?.id && (item?.variations === variations));
+  const productOnCart = shoppingCart.find(
+    (item) => item?.id === product?.id && item?.variations === variations,
+  );
 
-    if (productOnCart) {
-        return productOnCart?.quantity;
-    } else {
-        return 0
-    }
-}
+  if (productOnCart) {
+    return productOnCart?.quantity;
+  } else {
+    return 0;
+  }
+};
 
 /***
  * Get Total Quantity of Products from Cart
@@ -21,8 +23,8 @@ export const getCartProductQuantity = (shoppingCart, product, variations) => {
  * @returns {number}
  */
 export const getCartTotalQuantity = (shoppingCart) => {
-    return shoppingCart.reduce((total, product) => total + product.quantity, 0);
-}
+  return shoppingCart.reduce((total, product) => total + product.quantity, 0);
+};
 
 /***
  * Get Total Added Products from Cart
@@ -30,8 +32,8 @@ export const getCartTotalQuantity = (shoppingCart) => {
  * @returns {*}
  */
 export const getCartProductsQuantity = (shoppingCart) => {
-    return shoppingCart.length > 0 ? shoppingCart.length : 0;
-}
+  return shoppingCart.length > 0 ? shoppingCart.length : 0;
+};
 
 /***
  * Get Total Price of Product from Cart
@@ -40,13 +42,16 @@ export const getCartProductsQuantity = (shoppingCart) => {
  * @returns {number}
  */
 export const getCartProductTotalPrice = (shoppingCart, product) => {
-    const cartProduct = shoppingCart.filter(item => item.id === product.id && (item.variations?.id === product.variations?.id));
-    if (cartProduct.length > 0 && shoppingCart.length > 0) {
-        return cartProduct[0].quantity * cartProduct[0].price;
-    } else {
-        return 0
-    }
-}
+  const cartProduct = shoppingCart.filter(
+    (item) =>
+      item.id === product.id && item.variations?.id === product.variations?.id,
+  );
+  if (cartProduct.length > 0 && shoppingCart.length > 0) {
+    return cartProduct[0].quantity * cartProduct[0].price;
+  } else {
+    return 0;
+  }
+};
 
 /***
  * Get Total Price of Products From Cart
@@ -54,8 +59,11 @@ export const getCartProductTotalPrice = (shoppingCart, product) => {
  * @returns {number}
  */
 export const getCartTotalPrice = (shoppingCart) => {
-    return shoppingCart.reduce((total, product) => total + product.price * product.quantity, 0);
-}
+  return shoppingCart.reduce(
+    (total, product) => total + product.price * product.quantity,
+    0,
+  );
+};
 
 /***
  * Get Product From Cart
@@ -65,8 +73,10 @@ export const getCartTotalPrice = (shoppingCart) => {
  * @returns {*}
  */
 export const getCartProduct = (shoppingCart, product, variations) => {
-    return shoppingCart.find(item => (item.id === product.id) && (item.variations === variations));
-}
+  return shoppingCart.find(
+    (item) => item.id === product.id && item.variations === variations,
+  );
+};
 
 /***
  * Get Product from Compare & Wishlist
@@ -75,8 +85,8 @@ export const getCartProduct = (shoppingCart, product, variations) => {
  * @returns {*}
  */
 export const getWishCompareProduct = (products, product) => {
-    return products.find(item => item.id === product.id);
-}
+  return products.find((item) => item.id === product.id);
+};
 
 /****
  * Get Discounted Products
@@ -85,19 +95,28 @@ export const getWishCompareProduct = (products, product) => {
  * @returns {*}
  */
 export const getSaleProducts = (products, limit) => {
-    const nonFilteredProducts = [...products];
-    const filteredProducts = nonFilteredProducts?.map(({node: product}) => {
-        return {
-            node: {
-                ...product,
-                onSale: product?.variants?.edges?.some(({node: variant}) => {
-                    return !!variant?.compareAtPriceV2;
-                })
-            }
-        }
-    }).filter(({node: product}) => product.onSale);
-    return filteredProducts.slice(0, limit < 0 ? filteredProducts.length : limit ? limit : filteredProducts.length);
-}
+  const nonFilteredProducts = [...products];
+  const filteredProducts = nonFilteredProducts
+    ?.map(({ node: product }) => {
+      return {
+        node: {
+          ...product,
+          onSale: product?.variants?.edges?.some(({ node: variant }) => {
+            return !!variant?.compareAtPriceV2;
+          }),
+        },
+      };
+    })
+    .filter(({ node: product }) => product.onSale);
+  return filteredProducts.slice(
+    0,
+    limit < 0
+      ? filteredProducts.length
+      : limit
+      ? limit
+      : filteredProducts.length,
+  );
+};
 
 /***
  * Get Featured Products
@@ -107,18 +126,27 @@ export const getSaleProducts = (products, limit) => {
  */
 
 export const getFeaturedProducts = (products, limit = -1) => {
-    const nonFilteredProducts = [...products];
-    const filteredProducts = nonFilteredProducts?.map(({node: product}) => {
-        return {
-            node: {
-                ...product,
-                featured: product?.tags.some(tag => tag === "featured")
-            }
-        }
-    })?.filter(({node: product}) => product.featured);
+  const nonFilteredProducts = [...products];
+  const filteredProducts = nonFilteredProducts
+    ?.map(({ node: product }) => {
+      return {
+        node: {
+          ...product,
+          featured: product?.tags.some((tag) => tag === 'featured'),
+        },
+      };
+    })
+    ?.filter(({ node: product }) => product.featured);
 
-    return filteredProducts.slice(0, limit < 0 ? filteredProducts.length : limit ? limit : filteredProducts.length);
-}
+  return filteredProducts.slice(
+    0,
+    limit < 0
+      ? filteredProducts.length
+      : limit
+      ? limit
+      : filteredProducts.length,
+  );
+};
 
 /***
  * Get Tending Products
@@ -128,18 +156,27 @@ export const getFeaturedProducts = (products, limit = -1) => {
  */
 
 export const getTendingProducts = (products, limit = -1) => {
-    const nonFilteredProducts = [...products];
-    const filteredProducts = nonFilteredProducts?.map(({node: product}) => {
-        return {
-            node: {
-                ...product,
-                tending: product?.tags.some(tag => tag === "tending")
-            }
-        }
-    })?.filter(({node: product}) => product.tending);
+  const nonFilteredProducts = [...products];
+  const filteredProducts = nonFilteredProducts
+    ?.map(({ node: product }) => {
+      return {
+        node: {
+          ...product,
+          tending: product?.tags.some((tag) => tag === 'tending'),
+        },
+      };
+    })
+    ?.filter(({ node: product }) => product.tending);
 
-    return filteredProducts.slice(0, limit < 0 ? filteredProducts.length : limit ? limit : filteredProducts.length);
-}
+  return filteredProducts.slice(
+    0,
+    limit < 0
+      ? filteredProducts.length
+      : limit
+      ? limit
+      : filteredProducts.length,
+  );
+};
 
 /***
  * Get Related Products
@@ -150,68 +187,67 @@ export const getTendingProducts = (products, limit = -1) => {
  * @returns {*[]}
  */
 export const getRelatedProducts = (categories, tags, products, limit) => {
-    const identityMap = {};
+  const identityMap = {};
 
-    if (tags.length === 0 && categories.length === 0) {
-        return [];
+  if (tags.length === 0 && categories.length === 0) {
+    return [];
+  }
+
+  const getID = (product) => {
+    return product.id;
+  };
+
+  const addToMap = (product) => {
+    const id = getID(product);
+    if (!(id in identityMap)) {
+      identityMap[id] = {
+        product: product,
+        points: 0,
+      };
     }
+  };
 
-    const getID = (product) => {
-        return product.id;
-    }
+  const addCategoriesPoints = (product, categories) => {
+    const point = 2;
+    const id = getID(product);
+    const prodCat = product.collections?.edges?.map(({ node }) => node?.handle);
 
-    const addToMap = (product) => {
-        const id = getID(product);
-        if (!(id in identityMap)) {
-            identityMap[id] = {
-                product: product,
-                points: 0,
-            };
-        }
-    }
+    const compareToCat = categories.map(({ node }) => node?.handle);
+    prodCat.forEach((cat) => {
+      if (compareToCat.includes(cat)) {
+        identityMap[id].points += point;
+      }
+    });
+  };
 
-    const addCategoriesPoints = (product, categories) => {
-        const point = 2;
-        const id = getID(product);
-        const prodCat = product.collections?.edges?.map(({node}) => node?.handle);
+  const addTagsPoints = (product, tags) => {
+    const point = 1;
+    const id = getID(product);
+    const prodTag = product.tags.map((tag) => tag);
+    const compareToTag = tags.map((tag) => tag);
+    prodTag.forEach((tag) => {
+      if (compareToTag.includes(tag)) {
+        identityMap[id].points += point;
+      }
+    });
+  };
 
-        const compareToCat = categories.map(({node}) => node?.handle);
-        prodCat.forEach((cat) => {
-            if (compareToCat.includes(cat)) {
-                identityMap[id].points += point;
-            }
-        });
-    }
+  const getIdentityMapAsArray = () => {
+    return Object.keys(identityMap).map((id) => identityMap[id]);
+  };
 
-    const addTagsPoints = (product, tags) => {
-        const point = 1;
-        const id = getID(product);
-        const prodTag = product.tags.map((tag) => tag);
-        const compareToTag = tags.map((tag) => tag);
-        prodTag.forEach((tag) => {
-            if (compareToTag.includes(tag)) {
-                identityMap[id].points += point;
-            }
-        });
-    }
+  for (const product of products) {
+    addToMap(product?.node);
+    if (categories.length) addCategoriesPoints(product?.node, categories);
+    if (tags.length) addTagsPoints(product?.node, tags);
+  }
 
-    const getIdentityMapAsArray = () => {
-        return Object.keys(identityMap).map((id) => identityMap[id]);
-    }
+  const arrayIdentityMap = getIdentityMapAsArray();
+  const similarProducts = arrayIdentityMap.filter((arr) => arr.points);
+  similarProducts.sort((a, b) => b.points - a.points).shift();
 
-    for (const product of products) {
-        addToMap(product?.node);
-        if (categories.length) addCategoriesPoints(product?.node, categories);
-        if (tags.length) addTagsPoints(product?.node, tags);
-    }
-
-    const arrayIdentityMap = getIdentityMapAsArray();
-    const similarProducts = arrayIdentityMap.filter((arr) => arr.points);
-    similarProducts.sort((a, b) => b.points - a.points).shift();
-
-    return similarProducts.slice(0, limit).map(item => item.product);
-}
-
+  return similarProducts.slice(0, limit).map((item) => item.product);
+};
 
 /**
  * Get Product Stock Quantity
@@ -221,11 +257,14 @@ export const getRelatedProducts = (categories, tags, products, limit) => {
  */
 
 export const getProductStock = (product, variations) => {
-    let {variants} = product;
-    variants = variants?.edges;
+  let { variants } = product;
+  variants = variants?.edges;
 
-    return variants?.length > 1 ? variants?.find(({node}) => node?.id === variations?.id)?.node?.quantityAvailable : variants[0]?.node?.quantityAvailable;
-}
+  return variants?.length > 1
+    ? variants?.find(({ node }) => node?.id === variations?.id)?.node
+        ?.quantityAvailable
+    : variants[0]?.node?.quantityAvailable;
+};
 
 /***
  * Get Discounted Price Percentage
@@ -235,7 +274,7 @@ export const getProductStock = (product, variations) => {
  */
 
 export const getDiscountPercentage = (price, compareArPrice) => {
-    const difference = compareArPrice - price;
+  const difference = compareArPrice - price;
 
-    return (100 * difference) / compareArPrice;
-}
+  return (100 * difference) / compareArPrice;
+};

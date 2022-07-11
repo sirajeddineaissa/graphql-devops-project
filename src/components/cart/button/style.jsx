@@ -1,5 +1,5 @@
-import {bounce} from "@assets/css/keyframes";
-import styled, {devices, themeGet} from "@styled";
+import { bounce } from '@assets/css/keyframes';
+import styled, { devices, themeGet } from '@styled';
 
 export const Price = styled.span`
   width: 65px;
@@ -12,7 +12,7 @@ export const Price = styled.span`
   font-size: ${themeGet('fontSizes.standard')};
   background-color: ${themeGet('colors.white')};
   font-weight: ${themeGet('fontWeights.heading')};
-`
+`;
 
 export const CartButtonWrap = styled.button`
   right: 0;
@@ -47,4 +47,4 @@ export const CartButtonWrap = styled.button`
     margin-bottom: 3px;
     color: ${themeGet('colors.primary')};
   }
-`
+`;

@@ -1,8 +1,8 @@
-import styled, {devices, space, themeGet} from "@styled";
+import styled, { devices, space, themeGet } from '@styled';
 
 export const OrderDetailsWrap = styled.div`
   ${space}
-`
+`;
 
 export const PageSubTitle = styled.h2`
   font-size: 24px;
@@ -13,12 +13,12 @@ export const PageSubTitle = styled.h2`
   ${devices.sm} {
     margin-bottom: 30px;
   }
-`
+`;
 
 export const ShippingForm = styled.div`
   ${space}
-`
+`;
 
 export const CheckPageWrapper = styled.section`
   ${space}
-`
+`;

@@ -1,4 +1,4 @@
-import styled, {themeGet} from "@styled";
+import styled, { themeGet } from '@styled';
 
 export const MobileNav = styled.nav`
   padding: 20px;
@@ -61,4 +61,4 @@ export const MobileNav = styled.nav`
       }
     }
   }
-`
+`;

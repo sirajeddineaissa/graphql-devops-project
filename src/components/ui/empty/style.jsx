@@ -1,4 +1,4 @@
-import styled, {devices, themeGet, space} from "@styled";
+import styled, { devices, themeGet, space } from '@styled';
 
 export const EmptyContent = styled.div`
   text-align: center;
@@ -23,7 +23,7 @@ export const EmptyContent = styled.div`
       font-size: 18px;
     }
   }
-`
+`;
 
 export const EmptyHeading = styled.h2`
   color: ${themeGet('colors.heading')};
@@ -34,4 +34,4 @@ export const EmptyHeading = styled.h2`
   text-transform: none;
   margin: 0 0 30px;
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;

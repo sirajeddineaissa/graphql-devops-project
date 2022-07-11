@@ -1,5 +1,5 @@
-import styled, { themeGet, css, layout } from "@styled";
-import { devices } from "@styled";
+import styled, { themeGet, css, layout } from '@styled';
+import { devices } from '@styled';
 
 export const OffCanvasCloseBtn = styled.button`
   position: relative;
@@ -11,15 +11,15 @@ export const OffCanvasCloseBtn = styled.button`
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
     width: 20px;
     height: 2px;
-    transition: ${themeGet("transition")};
+    transition: ${themeGet('transition')};
     transform: rotate(-45deg);
-    background-color: ${themeGet("colors.primary")};
+    background-color: ${themeGet('colors.primary')};
   }
 
   &::before {
@@ -39,9 +39,9 @@ export const OffCanvasCloseBtn = styled.button`
 
 export const OffCanvasTitle = styled.h3`
   font-size: 20px;
-  color: ${themeGet("colors.heading")};
-  font-family: ${themeGet("fonts.body")};
-  font-weight: ${themeGet("fontWeights.heading")};
+  color: ${themeGet('colors.heading')};
+  font-family: ${themeGet('fonts.body')};
+  font-weight: ${themeGet('fontWeights.heading')};
 `;
 
 export const OffCanvasHead = styled.div`
@@ -51,7 +51,7 @@ export const OffCanvasHead = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid ${themeGet("colors.borderLight")};
+  border-bottom: 1px solid ${themeGet('colors.borderLight')};
 `;
 
 export const OffCanvasContent = styled.div`
@@ -67,8 +67,8 @@ export const OffCanvasInner = styled.div`
   margin-left: auto;
   position: relative;
   transform: translateX(100%);
-  transition: ${themeGet("transition")};
-  background-color: ${themeGet("colors.white")};
+  transition: ${themeGet('transition')};
+  background-color: ${themeGet('colors.white')};
   ${layout};
 `;
 
@@ -97,9 +97,9 @@ export const OffCanvasWrap = styled.aside`
   height: 100vh;
   width: 100vw;
   z-index: 9999;
-  transition: ${themeGet("transition")};
-  font-size: ${themeGet("fontSizes.standard")};
-  font-weight: ${themeGet("fontWeights.body")};
+  transition: ${themeGet('transition')};
+  font-size: ${themeGet('fontSizes.standard')};
+  font-weight: ${themeGet('fontWeights.body')};
 
   ${({ open }) =>
     open &&
@@ -120,7 +120,7 @@ export const OffCanvasWrap = styled.aside`
     `}
 
   ${({ position }) =>
-    position === "center" &&
+    position === 'center' &&
     css`
       ${devices.sm} {
         padding: 0 15px;

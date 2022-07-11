@@ -1,6 +1,6 @@
-import cn from "classnames";
-import styled, {themeGet} from "@styled";
-import {Label} from "@components/ui/input/input.style";
+import cn from 'classnames';
+import styled, { themeGet } from '@styled';
+import { Label } from '@components/ui/input/input.style';
 
 const FormCheck = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const FormCheck = styled.div`
     margin-bottom: 0;
     margin-left: 5px;
   }
-`
+`;
 
 const RadioButton = styled.input`
   margin: 0;
@@ -30,17 +30,17 @@ const RadioButton = styled.input`
 
   &:checked {
     background-color: ${themeGet('colors.primary')};
-    background-image: url("/images/icons/circle-dot.svg");
+    background-image: url('/images/icons/circle-dot.svg');
   }
-`
+`;
 
-const Radio = ({className, label, ...props}) => {
-    return (
-        <FormCheck className={cn(className)}>
-            <RadioButton type="radio" {...props}/>
-            {label && <Label htmlFor={props?.id}>{label}</Label>}
-        </FormCheck>
-    );
+const Radio = ({ className, label, ...props }) => {
+  return (
+    <FormCheck className={cn(className)}>
+      <RadioButton type="radio" {...props} />
+      {label && <Label htmlFor={props?.id}>{label}</Label>}
+    </FormCheck>
+  );
 };
 
 export default Radio;

@@ -1,9 +1,9 @@
-import {gql} from "graphql-request";
+import { gql } from 'graphql-request';
 
-const blogQuery = ({slug}) => {
-    const queryArguments = `handle: "${slug}"`;
+const blogQuery = ({ slug }) => {
+  const queryArguments = `handle: "${slug}"`;
 
-    return gql`
+  return gql`
         {
             blogs(first: 10) {
                 edges {
@@ -27,7 +27,7 @@ const blogQuery = ({slug}) => {
                 }
             }
         }
-    `
-}
+    `;
+};
 
 export default blogQuery;

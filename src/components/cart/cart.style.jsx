@@ -1,10 +1,10 @@
-import styled, {devices, themeGet, space} from "@styled";
+import styled, { devices, themeGet, space } from '@styled';
 
 export const Title = styled.h3`
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: ${themeGet('fontWeights.heading')};
-`
+`;
 
 export const CouponForm = styled.div`
   display: flex;
@@ -31,7 +31,8 @@ export const CouponForm = styled.div`
       }
     }
 
-    input, button {
+    input,
+    button {
       height: 48px;
     }
 
@@ -39,7 +40,7 @@ export const CouponForm = styled.div`
       flex-grow: 1;
     }
   }
-`
+`;
 
 export const EstimateCartItem = styled.div`
   ${space};
@@ -51,7 +52,7 @@ export const EstimateCartItem = styled.div`
       font-size: ${themeGet('fontSizes.standard')};
     }
   }
-`
+`;
 
 export const CartUpdateAction = styled.div`
   ${space};
@@ -69,12 +70,13 @@ export const CartUpdateAction = styled.div`
     }
   }
 
-  button, a {
+  button,
+  a {
     ${devices.xs} {
       padding: 15px 10px;
     }
   }
-`
+`;
 
 /**
  * Cart Quantity Increment, Decrement Style
@@ -110,4 +112,4 @@ export const Quantity = styled.div`
     padding: 0;
     border: none;
   }
-`
+`;

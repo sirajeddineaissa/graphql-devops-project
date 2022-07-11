@@ -1,9 +1,9 @@
-import {gql} from "graphql-request";
+import { gql } from 'graphql-request';
 
 const productQuery = (slug) => {
-    const queryArguments = `handle: "${slug}"`;
+  const queryArguments = `handle: "${slug}"`;
 
-    return gql`
+  return gql`
         {
             productByHandle(${queryArguments}) {
                 id
@@ -55,7 +55,7 @@ const productQuery = (slug) => {
                 }
             }
         }
-    `
-}
+    `;
+};
 
 export default productQuery;

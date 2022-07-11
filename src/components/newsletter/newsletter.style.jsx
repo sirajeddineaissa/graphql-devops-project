@@ -1,4 +1,4 @@
-import styled, {space, themeGet} from "@styled";
+import styled, { space, themeGet } from '@styled';
 
 export const Input = styled.input`
   display: inline-block;
@@ -18,19 +18,19 @@ export const Input = styled.input`
   padding-left: 20px;
   padding-right: 10px;
   transition: ${themeGet('transition')};
-  
+
   &::placeholder {
-      color: ${themeGet('colors.white')};
+    color: ${themeGet('colors.white')};
   }
   &:focus {
     border-color: ${themeGet('colors.primary')};
   }
-`
+`;
 
 export const FormNewsletter = styled.div`
   position: relative;
   ${space};
-  
+
   .sr-only {
     position: absolute;
     width: 1px;
@@ -38,10 +38,10 @@ export const FormNewsletter = styled.div`
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
   }
-  
+
   button {
     font-size: 13px;
     font-weight: 600;
@@ -53,4 +53,4 @@ export const FormNewsletter = styled.div`
       vertical-align: text-top;
     }
   }
-`
+`;

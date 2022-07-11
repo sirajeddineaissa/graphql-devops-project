@@ -1,4 +1,4 @@
-import { gql } from "graphql-request";
+import { gql } from 'graphql-request';
 
 const addressDelete = () => {
   return gql`
@@ -13,7 +13,8 @@ const addressDelete = () => {
           field
           message
         }
-      }h
+      }
+      h
     }
   `;
 };

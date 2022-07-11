@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React"
+    }
+  },
+  "plugins": ["jest"],
+  "rules": {
+    "complexity": ["error", 10],
+    "no-await-in-loop": "warn",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "prefer-promise-reject-errors": "warn"
+  }
 }

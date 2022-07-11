@@ -1,4 +1,4 @@
-import {keyframes} from "@styled";
+import { keyframes } from '@styled';
 
 export const fadeOutUp = keyframes`
   from {
@@ -30,7 +30,7 @@ export const spinAround = keyframes`
   to {
     -webkit-transform: rotate(360deg);
   }
-`
+`;
 
 export const bounce = keyframes`
   from,
@@ -60,7 +60,7 @@ export const bounce = keyframes`
   90% {
     transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
-`
+`;
 
 export const spin = keyframes`
   0% {
@@ -71,4 +71,4 @@ export const spin = keyframes`
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
-`
+`;

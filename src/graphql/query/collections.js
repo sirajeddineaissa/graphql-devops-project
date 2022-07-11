@@ -1,9 +1,9 @@
-import {gql} from "graphql-request";
+import { gql } from 'graphql-request';
 
 const collectionsQuery = (limit = 10) => {
-    const queryArguments = `first: ${limit}`;
+  const queryArguments = `first: ${limit}`;
 
-    return gql`
+  return gql`
         {
             collections(${queryArguments}) {
                 edges {
@@ -19,7 +19,7 @@ const collectionsQuery = (limit = 10) => {
                 }
             }
         }
-    `
-}
+    `;
+};
 
 export default collectionsQuery;

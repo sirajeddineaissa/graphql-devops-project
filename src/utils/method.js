@@ -23,26 +23,26 @@ export const getSiblings = (elem) => {
  */
 export const slideUp = (element, duration = 500) => {
   return new Promise(function (resolve, reject) {
-    element.style.height = element.offsetHeight + "px";
+    element.style.height = element.offsetHeight + 'px';
     element.style.transitionProperty = `height, margin, padding`;
-    element.style.transitionDuration = duration + "ms";
+    element.style.transitionDuration = duration + 'ms';
     element.offsetHeight;
-    element.style.overflow = "hidden";
+    element.style.overflow = 'hidden';
     element.style.height = 0;
     element.style.paddingTop = 0;
     element.style.paddingBottom = 0;
     element.style.marginTop = 0;
     element.style.marginBottom = 0;
     window.setTimeout(function () {
-      element.style.display = "none";
-      element.style.removeProperty("height");
-      element.style.removeProperty("padding-top");
-      element.style.removeProperty("padding-bottom");
-      element.style.removeProperty("margin-top");
-      element.style.removeProperty("margin-bottom");
-      element.style.removeProperty("overflow");
-      element.style.removeProperty("transition-duration");
-      element.style.removeProperty("transition-property");
+      element.style.display = 'none';
+      element.style.removeProperty('height');
+      element.style.removeProperty('padding-top');
+      element.style.removeProperty('padding-bottom');
+      element.style.removeProperty('margin-top');
+      element.style.removeProperty('margin-bottom');
+      element.style.removeProperty('overflow');
+      element.style.removeProperty('transition-duration');
+      element.style.removeProperty('transition-property');
       resolve(false);
     }, duration);
   });
@@ -56,14 +56,14 @@ export const slideUp = (element, duration = 500) => {
  */
 export const slideDown = (element, duration = 500) => {
   return new Promise(function (resolve, reject) {
-    element.style.removeProperty("display");
+    element.style.removeProperty('display');
     let display = window.getComputedStyle(element).display;
 
-    if (display === "none") display = "block";
+    if (display === 'none') display = 'block';
 
     element.style.display = display;
     let height = element.offsetHeight;
-    element.style.overflow = "hidden";
+    element.style.overflow = 'hidden';
     element.style.height = 0;
     element.style.paddingTop = 0;
     element.style.paddingBottom = 0;
@@ -71,17 +71,17 @@ export const slideDown = (element, duration = 500) => {
     element.style.marginBottom = 0;
     element.offsetHeight;
     element.style.transitionProperty = `height, margin, padding`;
-    element.style.transitionDuration = duration + "ms";
-    element.style.height = height + "px";
-    element.style.removeProperty("padding-top");
-    element.style.removeProperty("padding-bottom");
-    element.style.removeProperty("margin-top");
-    element.style.removeProperty("margin-bottom");
+    element.style.transitionDuration = duration + 'ms';
+    element.style.height = height + 'px';
+    element.style.removeProperty('padding-top');
+    element.style.removeProperty('padding-bottom');
+    element.style.removeProperty('margin-top');
+    element.style.removeProperty('margin-bottom');
     window.setTimeout(function () {
-      element.style.removeProperty("height");
-      element.style.removeProperty("overflow");
-      element.style.removeProperty("transition-duration");
-      element.style.removeProperty("transition-property");
+      element.style.removeProperty('height');
+      element.style.removeProperty('overflow');
+      element.style.removeProperty('transition-duration');
+      element.style.removeProperty('transition-property');
     }, duration);
   });
 };
@@ -93,7 +93,7 @@ export const slideDown = (element, duration = 500) => {
  * @returns {Promise<unknown>}
  */
 export const slideToggle = (element, duration = 500) => {
-  if (window.getComputedStyle(element).display === "none") {
+  if (window.getComputedStyle(element).display === 'none') {
     return slideDown(element, duration);
   } else {
     return slideUp(element, duration);
@@ -140,7 +140,7 @@ export const flatDeep = (arr, d = 1) => {
     ? arr.reduce(
         (acc, val) =>
           acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val),
-        []
+        [],
       )
     : arr.slice();
 };
@@ -212,7 +212,7 @@ export const toCapitalize = (word) => {
  */
 
 export const excerpt = (content, limit = 30) => {
-  return content.split(" ").slice(0, limit).join(" ");
+  return content.split(' ').slice(0, limit).join(' ');
 };
 
 /***
@@ -223,24 +223,24 @@ export const excerpt = (content, limit = 30) => {
 
 export const formatDate = (date) => {
   let d = new Date(date),
-    month = "" + d.getMonth(),
-    day = "" + d.getDate(),
+    month = '' + d.getMonth(),
+    day = '' + d.getDate(),
     year = d.getFullYear();
 
-  if (day.length < 2) day = "0" + day;
+  if (day.length < 2) day = '0' + day;
   const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
   ];
 
   return `${day} ${months[month]}, ${year}`;
@@ -285,7 +285,7 @@ export const getCookieFromContext = (text, options) => {
 
   for (var i = 0; i < pairs.length; i++) {
     var pair = pairs[i];
-    var idx = pair.indexOf("=");
+    var idx = pair.indexOf('=');
 
     if (idx < 0) {
       continue;

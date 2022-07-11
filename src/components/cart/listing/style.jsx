@@ -1,5 +1,5 @@
-import {Table, Th} from "@bootstrap";
-import styled, {css, devices, space, themeGet} from "@styled";
+import { Table, Th } from '@bootstrap';
+import styled, { css, devices, space, themeGet } from '@styled';
 
 export const CartCouponActions = styled.div`
   ${space};
@@ -11,7 +11,7 @@ export const CartCouponActions = styled.div`
     padding-top: 30px;
     padding-bottom: 30px;
   }
-`
+`;
 
 export const GrandPrice = styled.div`
   font-size: 16px;
@@ -20,14 +20,14 @@ export const GrandPrice = styled.div`
   display: flex;
   margin-right: 35px;
   justify-content: flex-end;
-  color: ${themeGet("colors.primary")};
+  color: ${themeGet('colors.primary')};
   font-family: ${themeGet('fonts.heading')};
 
   span {
     margin-left: 40px;
-    color: ${themeGet("colors.heading")};
+    color: ${themeGet('colors.heading')};
   }
-`
+`;
 
 export const TableHeading = styled(Th)`
   white-space: nowrap;
@@ -39,21 +39,23 @@ export const TableHeading = styled(Th)`
   font-size: ${themeGet('fontSizes.standard')};
   font-weight: ${themeGet('fontWeights.heading')};
   background-color: ${themeGet('colors.borderLight')};
-`
+`;
 
 export const CartListTable = styled(Table)`
   font-family: ${themeGet('fonts.body')};
   border: 1px solid ${themeGet('colors.borderLight')};
-`
+`;
 
 export const TableResponsive = styled.div`
-  ${({responsive}) => responsive && css`
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-  `}
-`
+  ${({ responsive }) =>
+    responsive &&
+    css`
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+    `}
+`;
 
 export const CartProductsList = styled.div`
   ${space}
-`
+`;

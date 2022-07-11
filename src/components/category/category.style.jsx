@@ -1,5 +1,5 @@
-import styled, {devices, themeGet} from "@styled";
-import {spinAround} from "@assets/css/keyframes";
+import styled, { devices, themeGet } from '@styled';
+import { spinAround } from '@assets/css/keyframes';
 
 export const CatName = styled.h4`
   margin: 12px 0 0;
@@ -10,7 +10,7 @@ export const CatName = styled.h4`
   ${devices.xs} {
     font-size: 13px;
   }
-`
+`;
 
 export const CatItemInner = styled.div`
   align-self: center;
@@ -19,7 +19,7 @@ export const CatItemInner = styled.div`
   img {
     margin: auto;
   }
-`
+`;
 
 export const CategoryItem = styled.a`
   margin: auto;
@@ -43,7 +43,7 @@ export const CategoryItem = styled.a`
   }
 
   &:after {
-    content: "";
+    content: '';
     top: -1px;
     left: -1px;
     opacity: 0;
@@ -64,4 +64,4 @@ export const CategoryItem = styled.a`
       animation: ${spinAround} 9s linear infinite;
     }
   }
-`
+`;

@@ -1,5 +1,5 @@
-import {Table, Td} from "@bootstrap";
-import styled, {themeGet, space} from "@styled";
+import { Table, Td } from '@bootstrap';
+import styled, { themeGet, space } from '@styled';
 
 export const CompareProDelete = styled.button`
   display: block;
@@ -11,13 +11,13 @@ export const CompareProDelete = styled.button`
   &:hover {
     color: ${themeGet('colors.danger')};
   }
-`
+`;
 
 export const CompareProData = styled(Td)`
   color: ${themeGet('colors.text')};
   font-size: ${themeGet('fontSizes.standard')};
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;
 
 export const CompareProDesc = styled(Td)`
   line-height: 1.7;
@@ -26,29 +26,29 @@ export const CompareProDesc = styled(Td)`
   white-space: normal !important;
   color: ${themeGet('colors.text')};
   font-size: ${themeGet('fontSizes.standard')};
-`
+`;
 
 export const CompareProTitle = styled.span`
   display: block;
   margin-top: 10px;
   color: ${themeGet('colors.heading')};
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;
 
 export const CompareTitle = styled(Td)`
   font-size: 16px;
   color: ${themeGet('colors.heading')};
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;
 
 export const CompareProduct = styled(Td)`
   vertical-align: top !important;
-`
+`;
 
 export const CompareTable = styled(Table)`
   font-family: ${themeGet('fonts.body')};
   border: 1px solid ${themeGet('colors.borderLight')};
-`
+`;
 
 export const CompareListWrap = styled.div`
   ${space}
@@ -63,4 +63,4 @@ export const CompareListWrap = styled.div`
       }
     }
   }
-`
+`;

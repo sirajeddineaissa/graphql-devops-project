@@ -1,16 +1,16 @@
-import { Container } from "@bootstrap";
-import { formatDate } from "@utils/method";
-import { CURRENCY } from "@utils/constant";
-import { Td, Tr, Th, Thead, Tbody, Table } from "@bootstrap";
-import { TableResponsive } from "@components/cart/listing/style";
-import { OrdersTable } from "@components/account/orders/order.style";
+import { Container } from '@bootstrap';
+import { formatDate } from '@utils/method';
+import { CURRENCY } from '@utils/constant';
+import { Td, Tr, Th, Thead, Tbody, Table } from '@bootstrap';
+import { TableResponsive } from '@components/cart/listing/style';
+import { OrdersTable } from '@components/account/orders/order.style';
 import {
   OrderDetailsHeader,
   OrderDetailsContent,
   OrderSummaryDelivered,
   OrderDetailsContentItem,
   OrderSummaryDeliveredItem,
-} from "./order.style";
+} from './order.style';
 
 const OrderDetails = ({ order, customer }) => {
   const {
@@ -41,7 +41,7 @@ const OrderDetails = ({ order, customer }) => {
                   <span
                     style={{
                       background:
-                        financialStatus === "PAID" ? "#059669" : "#B91C1C",
+                        financialStatus === 'PAID' ? '#059669' : '#B91C1C',
                     }}
                   >
                     {financialStatus}
@@ -84,7 +84,7 @@ const OrderDetails = ({ order, customer }) => {
             <TableResponsive responsive={true}>
               <Table bordered>
                 <Thead>
-                  <Tr style={{ background: "#f5f5f5" }}>
+                  <Tr style={{ background: '#f5f5f5' }}>
                     <Th>#</Th>
                     <Th>Product</Th>
                     <Th>Quantity</Th>

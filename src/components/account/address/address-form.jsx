@@ -1,24 +1,24 @@
-import Cookies from "js-cookie";
-import { useState } from "react";
-import { decode } from "js-base64";
-import cogoToast from "cogo-toast";
-import Input from "@components/ui/input";
-import Button from "@components/ui/button";
-import { Col, Row, Form } from "@bootstrap";
-import { addressCreate, client } from "@graphql";
-import { useSelector, useDispatch } from "react-redux";
-import { saveCustomerData } from "@global/actions/customerAction";
-import { InputField } from "@components/checkout/checkout-form.style";
-import { AddressFormWrap, FormTitle, AddressFormAction } from "./address.style";
+import Cookies from 'js-cookie';
+import { useState } from 'react';
+import { decode } from 'js-base64';
+import cogoToast from 'cogo-toast';
+import Input from '@components/ui/input';
+import Button from '@components/ui/button';
+import { Col, Row, Form } from '@bootstrap';
+import { addressCreate, client } from '@graphql';
+import { useSelector, useDispatch } from 'react-redux';
+import { saveCustomerData } from '@global/actions/customerAction';
+import { InputField } from '@components/checkout/checkout-form.style';
+import { AddressFormWrap, FormTitle, AddressFormAction } from './address.style';
 
 const defaultValue = {
-  zip: "",
-  city: "",
-  country: "",
-  address2: "",
-  address1: "",
-  lastName: "",
-  firstName: "",
+  zip: '',
+  city: '',
+  country: '',
+  address2: '',
+  address1: '',
+  lastName: '',
+  firstName: '',
 };
 
 const AddressForm = ({ onCloseHandler }) => {
@@ -38,7 +38,7 @@ const AddressForm = ({ onCloseHandler }) => {
   const onFormSubmitHandler = (event) => {
     event.preventDefault();
     const input = {
-      customerAccessToken: decode(Cookies.get("access_token")),
+      customerAccessToken: decode(Cookies.get('access_token')),
       address: formValue,
     };
     setIsLoading(true);
@@ -57,8 +57,8 @@ const AddressForm = ({ onCloseHandler }) => {
           },
         };
         dispatch(saveCustomerData(updatedCustomer));
-        cogoToast.success("Address added Successfully!", {
-          position: "top-right",
+        cogoToast.success('Address added Successfully!', {
+          position: 'top-right',
         });
       }
       setIsLoading(false);

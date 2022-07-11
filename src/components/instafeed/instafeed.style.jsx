@@ -1,4 +1,4 @@
-import styled, {devices, space, themeGet} from "@styled";
+import styled, { devices, space, themeGet } from '@styled';
 
 export const InstafeedContent = styled.div`
   display: flex;
@@ -35,15 +35,19 @@ export const InstafeedContent = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        content: "";
+        content: '';
         z-index: 2;
-        opacity: .450;
-        background: linear-gradient(0deg, rgba(0, 0, 0, .85) 0, rgba(255, 255, 255, 0) 100%);
+        opacity: 0.45;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.85) 0,
+          rgba(255, 255, 255, 0) 100%
+        );
         transition: ${themeGet('transition')};
       }
 
       &:before {
-        background-image: url("/images/icons/instagram.png");
+        background-image: url('/images/icons/instagram.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -51,7 +55,7 @@ export const InstafeedContent = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1.6);
-        content: "";
+        content: '';
         height: 30px;
         width: 30px;
         opacity: 0;
@@ -68,7 +72,8 @@ export const InstafeedContent = styled.div`
 
     &:hover {
       figure {
-        &:after, &:before {
+        &:after,
+        &:before {
           opacity: 1;
         }
 
@@ -83,9 +88,9 @@ export const InstafeedContent = styled.div`
       }
     }
   }
-`
+`;
 
 export const InstafeedWrap = styled.section`
   ${space};
   position: relative;
-`
+`;

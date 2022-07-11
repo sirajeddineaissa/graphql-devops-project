@@ -1,10 +1,9 @@
-import {PostTitle} from "@components/blog/post/post.style";
-import styled, {devices, space, css, themeGet} from "@styled";
-
+import { PostTitle } from '@components/blog/post/post.style';
+import styled, { devices, space, css, themeGet } from '@styled';
 
 export const BlogPostThumb = styled.figure`
   margin-bottom: 20px;
-`
+`;
 
 export const BlogList = styled.ul`
   li {
@@ -16,32 +15,34 @@ export const BlogList = styled.ul`
     }
 
     a {
-      color: ${themeGet("colors.text")};
+      color: ${themeGet('colors.text')};
 
       &:hover {
-        color: ${themeGet("colors.primary")};
+        color: ${themeGet('colors.primary')};
       }
     }
   }
 
-  ${props => props.tags && css`
-    li {
-      &:not(:last-child) {
-        &:after {
-          content: ",";
+  ${(props) =>
+    props.tags &&
+    css`
+      li {
+        &:not(:last-child) {
+          &:after {
+            content: ',';
+          }
         }
       }
-    }
-  `}
-`
+    `}
+`;
 
 export const BlogPostFooterItem = styled.div`
   display: flex;
-  font-family: ${themeGet("fonts.body")};
+  font-family: ${themeGet('fonts.body')};
 
   span {
     margin-right: 5px;
-    font-weight: ${themeGet("fontWeights.subHeading")};
+    font-weight: ${themeGet('fontWeights.subHeading')};
   }
 
   ${devices.xs} {
@@ -49,7 +50,7 @@ export const BlogPostFooterItem = styled.div`
       margin-bottom: 10px;
     }
   }
-`
+`;
 
 export const BlogPostFooter = styled.div`
   display: flex;
@@ -57,12 +58,12 @@ export const BlogPostFooter = styled.div`
   padding-top: 35px;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid ${themeGet("colors.borderLight")};
+  border-top: 1px solid ${themeGet('colors.borderLight')};
 
   ${devices.xs} {
     display: block;
   }
-`
+`;
 
 export const BlogPostText = styled.div`
   line-height: 1.7;
@@ -78,7 +79,7 @@ export const BlogPostText = styled.div`
     padding: 0 15px;
     line-height: 1.8;
     font-style: italic;
-    border-left: 3px solid ${themeGet("colors.primary")};
+    border-left: 3px solid ${themeGet('colors.primary')};
 
     ${devices.sm} {
       margin: 20px 50px;
@@ -98,7 +99,7 @@ export const BlogPostText = styled.div`
       margin-bottom: 20px;
     }
   }
-`
+`;
 
 export const BlogPostContent = styled.section`
   ${PostTitle} {
@@ -112,10 +113,9 @@ export const BlogPostContent = styled.section`
     ${devices.sm} {
       margin-bottom: 15px;
     }
-
   }
-`
+`;
 
 export const PostDetailsContentWrapper = styled.article`
   ${space}
-`
+`;

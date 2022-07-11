@@ -1,37 +1,37 @@
-import Head from "next/head";
-import { Fragment } from "react";
-import { Provider } from "react-redux";
-import BootstrapProvider from "@bootstrap";
-import { ThemeProvider, theme } from "@styled";
-import { persistor, store } from "@global/store";
-import { GlobalStyle } from "@assets/css/global.style";
-import { PersistGate } from "redux-persist/integration/react";
+import Head from 'next/head';
+import { Fragment } from 'react';
+import { Provider } from 'react-redux';
+import BootstrapProvider from '@bootstrap';
+import { ThemeProvider, theme } from '@styled';
+import { persistor, store } from '@global/store';
+import { GlobalStyle } from '@assets/css/global.style';
+import { PersistGate } from 'redux-persist/integration/react';
 
 // CSS import
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/effect-fade/effect-fade.scss";
-import "react-perfect-scrollbar/dist/css/styles.css";
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/effect-fade/effect-fade.scss';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 // Fonts Import
-import "@fontsource/raleway";
-import "@fontsource/raleway/500.css";
-import "@fontsource/raleway/600.css";
-import "@fontsource/raleway/700.css";
-import "@fontsource/raleway/300-italic.css";
-import "@fontsource/open-sans";
-import "@fontsource/open-sans/600.css";
-import "@fontsource/open-sans/700.css";
-import "@fontsource/montserrat";
-import "@fontsource/montserrat/500.css";
+import '@fontsource/raleway';
+import '@fontsource/raleway/500.css';
+import '@fontsource/raleway/600.css';
+import '@fontsource/raleway/700.css';
+import '@fontsource/raleway/300-italic.css';
+import '@fontsource/open-sans';
+import '@fontsource/open-sans/600.css';
+import '@fontsource/open-sans/700.css';
+import '@fontsource/montserrat';
+import '@fontsource/montserrat/500.css';
 
 const themeBootstrap = {
-  "$container-max-widths": {
-    sm: "540px",
-    md: "720px",
-    lg: "960px",
-    xl: "1200px",
+  '$container-max-widths': {
+    sm: '540px',
+    md: '720px',
+    lg: '960px',
+    xl: '1200px',
   },
 };
 
@@ -40,10 +40,7 @@ const FurnsAPP = ({ Component, pageProps }) => {
     <Fragment>
       <Head>
         <title>Hype Renting</title>
-        <meta
-          name="description"
-          content="Hype Renting"
-        />
+        <meta name="description" content="Hype Renting" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -1,4 +1,4 @@
-import styled, {themeGet} from "@styled";
+import styled, { themeGet } from '@styled';
 
 export const PostTitle = styled.h2`
   font-size: 24px;
@@ -12,7 +12,7 @@ export const PostTitle = styled.h2`
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-`
+`;
 
 export const PostMeta = styled.div`
   display: flex;
@@ -20,7 +20,8 @@ export const PostMeta = styled.div`
   font-size: 13px;
   font-weight: ${themeGet('fontWeights.subHeading')};
 
-  a, span {
+  a,
+  span {
     text-decoration: none;
     color: ${themeGet('colors.text')};
 
@@ -37,19 +38,18 @@ export const PostMeta = styled.div`
       margin-left: 20px;
     }
   }
-`
+`;
 
 export const PostContent = styled.div`
   padding: 22px 20px 32px;
-
 
   .btn-read {
     margin-top: 20px;
     font-size: ${themeGet('fontSizes.standard')};
   }
-`
+`;
 
 export const PostItem = styled.article`
   position: relative;
   background-color: ${themeGet('colors.gray100')};
-`
+`;

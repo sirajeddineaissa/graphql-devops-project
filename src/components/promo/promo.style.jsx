@@ -1,4 +1,4 @@
-import styled, {css, devices, themeGet} from "@styled";
+import styled, { css, devices, themeGet } from '@styled';
 
 export const PromoTitle = styled.h3`
   font-size: 30px;
@@ -11,10 +11,10 @@ export const PromoTitle = styled.h3`
     font-size: 26px;
     line-height: 26px;
   }
-`
+`;
 export const PromoContent = styled.div`
   align-self: center;
-`
+`;
 
 export const PromoInfo = styled.div`
   position: absolute;
@@ -31,15 +31,19 @@ export const PromoInfo = styled.div`
     padding: 20px;
   }
 
-  ${props => props.align === 'right' && css`
-    justify-content: flex-end;
-  `}
+  ${(props) =>
+    props.align === 'right' &&
+    css`
+      justify-content: flex-end;
+    `}
 
-  ${props => props.align === 'center' && css`
-    justify-content: center;
-    text-align: center;
-  `}
-`
+  ${(props) =>
+    props.align === 'center' &&
+    css`
+      justify-content: center;
+      text-align: center;
+    `}
+`;
 
 export const PromoItem = styled.a`
   display: block;
@@ -51,4 +55,4 @@ export const PromoItem = styled.a`
     width: 100%;
     transition: ${themeGet('transition')};
   }
-`
+`;

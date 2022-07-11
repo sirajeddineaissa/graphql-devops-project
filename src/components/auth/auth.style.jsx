@@ -1,5 +1,5 @@
-import {Alert} from "@bootstrap";
-import styled, {devices, themeGet, space} from "@styled";
+import { Alert } from '@bootstrap';
+import styled, { devices, themeGet, space } from '@styled';
 
 export const AlertMessage = styled(Alert)`
   ${space};
@@ -17,17 +17,15 @@ export const AlertMessage = styled(Alert)`
       }
     }
   }
-`
+`;
 
-export const LoginFormWrap = styled.div`
-
-`
+export const LoginFormWrap = styled.div``;
 
 export const FormWrap = styled.div`
   padding: 50px 30px;
-  box-shadow: ${themeGet("shadows.default")};
+  box-shadow: ${themeGet('shadows.default')};
 
   ${devices.xs} {
     padding: 30px 20px;
   }
-`
+`;

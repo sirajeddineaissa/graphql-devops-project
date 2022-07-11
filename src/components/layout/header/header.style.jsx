@@ -1,4 +1,4 @@
-import styled, {color, themeGet, devices, css} from "@styled";
+import styled, { color, themeGet, devices, css } from '@styled';
 
 export const CartItemCount = styled.span`
   font-size: 10px;
@@ -14,7 +14,7 @@ export const CartItemCount = styled.span`
   color: ${themeGet('colors.white')};
   border-radius: ${themeGet('radii.circle')};
   background-color: ${themeGet('colors.primary')};
-`
+`;
 
 const HeaderBtnStyle = css`
   padding: 0;
@@ -32,15 +32,15 @@ const HeaderBtnStyle = css`
     font-size: 24px;
     line-height: 1;
   }
-`
+`;
 
 export const HeaderActionBtn = styled.button`
   ${HeaderBtnStyle}
-`
+`;
 
 export const HeaderActionAnchor = styled.a`
   ${HeaderBtnStyle}
-`
+`;
 
 export const ActionItem = styled.div`
   position: relative;
@@ -50,7 +50,7 @@ export const ActionItem = styled.div`
     padding-left: 0;
     padding-right: 0;
   }
-`
+`;
 
 export const HeaderAction = styled.div`
   display: flex;
@@ -62,7 +62,7 @@ export const HeaderAction = styled.div`
       margin-left: 18px;
 
       &:before {
-        content: "";
+        content: '';
         left: 0;
         top: 50%;
         width: 2px;
@@ -78,7 +78,7 @@ export const HeaderAction = styled.div`
       }
     }
   }
-`
+`;
 
 export const HeaderBottomWrap = styled.div`
   padding: 30px 0;
@@ -91,7 +91,7 @@ export const HeaderBottomWrap = styled.div`
   [class*='col'] {
     line-height: 1;
   }
-`
+`;
 
 export const HeaderTopSetLanCurr = styled.div`
   display: flex;
@@ -102,23 +102,23 @@ export const HeaderTopSetLanCurr = styled.div`
   ${devices.sm} {
     justify-content: center;
   }
-`
+`;
 
 export const HeaderTopMessage = styled.p`
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 0;
   font-style: italic;
-  color: ${themeGet("colors.primary")};
-  font-family: ${themeGet("fonts.heading")};
-`
+  color: ${themeGet('colors.primary')};
+  font-family: ${themeGet('fonts.heading')};
+`;
 
 export const HeaderTopWrap = styled.div`
   ${color};
 
   padding: 11px 0;
-  background-color: ${themeGet("colors.secondary")};
-`
+  background-color: ${themeGet('colors.secondary')};
+`;
 
 export const HeaderArea = styled.header`
   ${devices.md} {
@@ -130,4 +130,4 @@ export const HeaderArea = styled.header`
     background-color: ${themeGet('colors.white')};
     border-bottom: 1px solid ${themeGet('colors.borderLight')};
   }
-`
+`;

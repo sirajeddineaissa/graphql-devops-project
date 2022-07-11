@@ -1,17 +1,17 @@
-import {gql} from "graphql-request";
+import { gql } from 'graphql-request';
 
 const productsQuery = (limit = 200, sortKey, reverse, search) => {
-    let queryArguments = `first: ${limit}`;
+  let queryArguments = `first: ${limit}`;
 
-    if (sortKey) {
-        queryArguments = `${queryArguments}, sortKey: ${sortKey}, reverse: ${reverse}`;
-    }
+  if (sortKey) {
+    queryArguments = `${queryArguments}, sortKey: ${sortKey}, reverse: ${reverse}`;
+  }
 
-    if (search) {
-        queryArguments = `${queryArguments}, query: "title:${search.trim()}*"`;
-    }
+  if (search) {
+    queryArguments = `${queryArguments}, query: "title:${search.trim()}*"`;
+  }
 
-    return gql`
+  return gql`
         {
             products(${queryArguments}) {
             pageInfo {

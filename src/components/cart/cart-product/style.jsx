@@ -1,6 +1,6 @@
-import styled, {themeGet} from "@styled";
-import Button from "@components/ui/button";
-import {Quantity} from "@components/cart/cart.style";
+import styled, { themeGet } from '@styled';
+import Button from '@components/ui/button';
+import { Quantity } from '@components/cart/cart.style';
 
 export const CartActionBtn = styled(Button)`
   padding: 0;
@@ -11,15 +11,15 @@ export const CartActionBtn = styled(Button)`
   &:hover {
     color: ${themeGet('colors.primary')};
   }
-`
+`;
 
 export const CartProAction = styled.td`
   width: 100px;
-`
+`;
 
 export const CartProPrice = styled.td`
   width: 435px;
-`
+`;
 
 export const CartProMeta = styled.div`
   margin-top: 3px;
@@ -27,7 +27,7 @@ export const CartProMeta = styled.div`
   text-transform: capitalize;
   color: ${themeGet('colors.darkgray')};
   font-weight: ${themeGet('fontWeights.subHeading')};
-`
+`;
 
 export const CartProName = styled.a`
   color: ${themeGet('colors.heading')};
@@ -36,13 +36,13 @@ export const CartProName = styled.a`
   &:hover {
     color: ${themeGet('colors.primary')};
   }
-`
+`;
 
 export const CartProInfo = styled.td`
   width: 435px;
   font-size: 15px;
   font-family: ${themeGet('fonts.heading')};
-`
+`;
 
 export const CartProThumb = styled.td`
   a {
@@ -50,7 +50,7 @@ export const CartProThumb = styled.td`
       display: flex !important;
     }
   }
-`
+`;
 
 export const SingleCartItem = styled.tr`
   border-bottom: 1px solid ${themeGet('colors.borderLight')};
@@ -64,4 +64,4 @@ export const SingleCartItem = styled.tr`
   ${Quantity} {
     margin: 0 auto;
   }
-`
+`;

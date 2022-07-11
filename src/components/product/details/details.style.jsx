@@ -1,4 +1,4 @@
-import styled, {devices, themeGet, space} from "@styled";
+import styled, { devices, themeGet, space } from '@styled';
 
 export const ReviewItem = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export const ReviewItem = styled.div`
     margin: 0 15px 0 0;
     align-items: center;
     justify-content: center;
-    color: ${themeGet("colors.text")};
+    color: ${themeGet('colors.text')};
     border-radius: ${themeGet('radii.circle')};
     border: 1px solid ${themeGet('colors.borderLight')};
 
@@ -51,7 +51,7 @@ export const ReviewItem = styled.div`
       color: ${themeGet('colors.primary')};
     }
   }
-`
+`;
 
 export const ReviewFormWrap = styled.div`
   ${devices.md} {
@@ -63,7 +63,7 @@ export const ReviewFormWrap = styled.div`
     margin-bottom: 25px;
     font-weight: ${themeGet('fontWeights.subHeading')};
   }
-`
+`;
 
 export const ProInfoList = styled.ul`
   margin-bottom: 15px;
@@ -73,7 +73,7 @@ export const ProInfoList = styled.ul`
     font-size: ${themeGet('fontSizes.standard')};
 
     &:not(:last-child) {
-      margin-bottom: 13px
+      margin-bottom: 13px;
     }
 
     span {
@@ -84,7 +84,7 @@ export const ProInfoList = styled.ul`
       font-weight: ${themeGet('fontWeights.medium')};
     }
   }
-`
+`;
 
 export const ProDescription = styled.div`
   line-height: 1.7;
@@ -95,7 +95,7 @@ export const ProDescription = styled.div`
       margin-bottom: 15px;
     }
   }
-`
+`;
 
 export const ProductDescReviewContent = styled.div`
   overflow: hidden;
@@ -108,7 +108,7 @@ export const ProductDescReviewContent = styled.div`
     padding-left: 20px;
     padding-right: 20px;
   }
-`
+`;
 
 export const ProductDescReviewWrapper = styled.section`
   ${space}
@@ -137,20 +137,21 @@ export const ProductDescReviewWrapper = styled.section`
         left: 0;
         right: 0;
         height: 2px;
-        content: "";
+        content: '';
         bottom: -1px;
         position: absolute;
         transition: ${themeGet('transition')};
       }
 
-      &.react-tabs__tab--selected, &:hover {
+      &.react-tabs__tab--selected,
+      &:hover {
         &:after {
           background-color: ${themeGet('colors.primary')};
         }
       }
     }
   }
-`
+`;
 
 export const ProductThumbNav = styled.div`
   margin-top: 10px;
@@ -174,8 +175,7 @@ export const ProductThumbNav = styled.div`
     }
   }
 
-
-  [class*="swiper-button"] {
+  [class*='swiper-button'] {
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -184,7 +184,7 @@ export const ProductThumbNav = styled.div`
       font-size: 12px !important;
     }
   }
-`
+`;
 
 export const ProductThumbGallery = styled.div`
   figure {
@@ -204,7 +204,7 @@ export const ProductThumbGallery = styled.div`
       height: 300px;
     }
   }
-`
+`;
 
 export const ProductSocialShare = styled.div`
   display: flex;
@@ -236,7 +236,7 @@ export const ProductSocialShare = styled.div`
       }
     }
   }
-`
+`;
 
 export const QuantityIncDecButton = styled.div`
   width: 120px;
@@ -266,7 +266,7 @@ export const QuantityIncDecButton = styled.div`
     text-align: center;
     font-weight: ${themeGet('fontWeights.subHeading')};
   }
-`
+`;
 
 export const ProductActionButton = styled.div`
   margin-top: 30px;
@@ -309,7 +309,7 @@ export const ProductActionButton = styled.div`
       }
     }
   }
-`
+`;
 
 export const ProductSwatchItem = styled.div`
   label {
@@ -317,7 +317,7 @@ export const ProductSwatchItem = styled.div`
     color: ${themeGet('colors.heading')};
     font-weight: ${themeGet('fontWeights.subHeading')};
   }
-`
+`;
 
 export const ProductSwatches = styled.div`
   margin-top: 20px;
@@ -327,7 +327,7 @@ export const ProductSwatches = styled.div`
       margin-bottom: 10px;
     }
   }
-`
+`;
 
 export const ProductPrices = styled.div`
   font-size: 22px;
@@ -346,7 +346,7 @@ export const ProductPrices = styled.div`
       color: ${themeGet('colors.darkgray')};
     }
   }
-`
+`;
 
 export const ProductRatings = styled.div`
   margin-top: 5px;
@@ -357,7 +357,7 @@ export const ProductRatings = styled.div`
     color: ${themeGet('colors.primary')};
     font-size: ${themeGet('fontSizes.body')};
   }
-`
+`;
 
 export const ProductSKU = styled.p`
   line-height: 1;
@@ -367,7 +367,7 @@ export const ProductSKU = styled.p`
     color: ${themeGet('colors.heading')};
     font-weight: ${themeGet('fontWeights.subHeading')};
   }
-`
+`;
 
 export const ProductName = styled.h2`
   line-height: 1;
@@ -380,7 +380,7 @@ export const ProductName = styled.h2`
     font-size: 20px;
     margin-bottom: 10px;
   }
-`
+`;
 
 export const ContentWrap = styled.div`
   line-height: 26px;
@@ -404,8 +404,8 @@ export const ContentWrap = styled.div`
       }
     }
   }
-`
+`;
 
 export const ProductDetailsWrapper = styled.section`
   ${space}
-`
+`;

@@ -1,6 +1,6 @@
-import cn from "classnames";
-import styled, {themeGet} from "@styled";
-import {Label} from "@components/ui/input/input.style";
+import cn from 'classnames';
+import styled, { themeGet } from '@styled';
+import { Label } from '@components/ui/input/input.style';
 
 const FormCheck = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const FormCheck = styled.div`
     margin-bottom: 0;
     margin-left: 5px;
   }
-`
+`;
 
 const CheckboxButton = styled.input`
   margin: 0;
@@ -30,17 +30,17 @@ const CheckboxButton = styled.input`
 
   &:checked {
     background-color: ${themeGet('colors.primary')};
-    background-image: url("/images/icons/check.svg");
+    background-image: url('/images/icons/check.svg');
   }
-`
+`;
 
-const Checkbox = ({className, label, ...props}) => {
-    return (
-        <FormCheck className={cn(className)}>
-            <CheckboxButton type="checkbox" {...props}/>
-            {label && <Label htmlFor={props?.id}>{label}</Label>}
-        </FormCheck>
-    );
+const Checkbox = ({ className, label, ...props }) => {
+  return (
+    <FormCheck className={cn(className)}>
+      <CheckboxButton type="checkbox" {...props} />
+      {label && <Label htmlFor={props?.id}>{label}</Label>}
+    </FormCheck>
+  );
 };
 
 export default Checkbox;

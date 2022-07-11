@@ -1,9 +1,9 @@
-import {addToWishlist, removeWishlist} from "@slices/wishlistSlice";
+import { addToWishlist, removeWishlist } from '@slices/wishlistSlice';
 
 export const addToWishlistAction = (payload) => (dispatch) => {
-    dispatch(addToWishlist(payload));
-}
+  dispatch(addToWishlist(payload));
+};
 
 export const removeWishlistAction = (payload) => (dispatch) => {
-    dispatch(removeWishlist(payload));
-}
+  dispatch(removeWishlist(payload));
+};

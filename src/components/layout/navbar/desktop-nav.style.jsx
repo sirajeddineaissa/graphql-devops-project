@@ -1,9 +1,9 @@
-import styled, {color, themeGet, css} from "@styled";
+import styled, { color, themeGet, css } from '@styled';
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: ${props => props.align ? props.align : 'center'};
-`
+  justify-content: ${(props) => (props.align ? props.align : 'center')};
+`;
 
 export const NavList = styled.ul`
   display: flex;
@@ -22,7 +22,7 @@ export const NavList = styled.ul`
     a {
       display: block;
       line-height: 60px;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       text-decoration: none;
       text-transform: capitalize;
       color: ${themeGet('colors.white')};
@@ -47,13 +47,14 @@ export const NavList = styled.ul`
       }
     }
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       & > a {
         color: ${themeGet('colors.primary')};
       }
     }
   }
-`
+`;
 
 export const SubMenu = styled.ul`
   background-color: ${themeGet('colors.white')};
@@ -72,7 +73,6 @@ export const SubMenu = styled.ul`
   visibility: hidden;
 
   li {
-
     a {
       display: block;
       line-height: 19px;
@@ -86,7 +86,7 @@ export const SubMenu = styled.ul`
       }
     }
   }
-`
+`;
 
 export const NavbarWrap = styled.div`
   ${color};
@@ -95,12 +95,15 @@ export const NavbarWrap = styled.div`
   ${NavList} {
     & > li {
       a {
-        ${({bg}) => bg !== "secondary" && css`
-          color: ${themeGet("colors.secondary")};
-        `}
+        ${({ bg }) =>
+          bg !== 'secondary' &&
+          css`
+            color: ${themeGet('colors.secondary')};
+          `}
       }
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         & > a {
           color: ${themeGet('colors.primary')};
         }
@@ -117,4 +120,4 @@ export const NavbarWrap = styled.div`
       }
     }
   }
-`
+`;

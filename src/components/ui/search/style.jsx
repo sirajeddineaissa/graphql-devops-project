@@ -1,16 +1,16 @@
-import styled, {css, devices, themeGet} from "@styled";
-import {OffCanvasCloseBtn} from "@components/ui/offCanvas/style";
+import styled, { css, devices, themeGet } from '@styled';
+import { OffCanvasCloseBtn } from '@components/ui/offCanvas/style';
 
 export const hiddenElem = css`
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-`
+`;
 export const visibleElem = css`
   visibility: visible;
   pointer-events: visible;
   opacity: 1;
-`
+`;
 
 export const SearchButton = styled.button`
   top: 0;
@@ -54,12 +54,12 @@ export const SearchBox = styled.div`
         background-color: transparent;
 
         &:focus {
-          border-color: ${themeGet("colors.primary")};
+          border-color: ${themeGet('colors.primary')};
         }
       }
     }
   }
-`
+`;
 
 export const SearchBoxWrap = styled.aside`
   top: 0;
@@ -121,14 +121,16 @@ export const SearchBoxWrap = styled.aside`
     ${hiddenElem}
   }
 
-  ${({show}) => show && css`
-    ${visibleElem}
-    ${SearchBox} {
-      transform: none;
-    }
-
-    .overlay {
+  ${({ show }) =>
+    show &&
+    css`
       ${visibleElem}
-    }
-  `}
-`
+      ${SearchBox} {
+        transform: none;
+      }
+
+      .overlay {
+        ${visibleElem}
+      }
+    `}
+`;

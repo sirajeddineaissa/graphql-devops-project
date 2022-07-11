@@ -1,4 +1,4 @@
-import styled, {devices, themeGet} from "@styled";
+import styled, { devices, themeGet } from '@styled';
 
 export const ErrorMessageWrap = styled.div`
   margin: auto;
@@ -19,4 +19,4 @@ export const ErrorMessageWrap = styled.div`
   h2 {
     font-weight: ${themeGet('fontWeights.medium')};
   }
-`
+`;

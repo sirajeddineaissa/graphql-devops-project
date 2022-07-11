@@ -1,4 +1,4 @@
-import styled, {space, themeGet, devices} from "@styled";
+import styled, { space, themeGet, devices } from '@styled';
 
 export const WidgetBody = styled.div`
   ${space}
@@ -18,7 +18,7 @@ export const WidgetBody = styled.div`
 
   .widget-list {
     margin-bottom: 0;
-    
+
     li {
       &:not(:last-child) {
         margin-bottom: 8px;
@@ -38,7 +38,7 @@ export const WidgetBody = styled.div`
       }
     }
   }
-`
+`;
 
 export const WidgetTitle = styled.h4`
   font-size: 15px;
@@ -47,8 +47,8 @@ export const WidgetTitle = styled.h4`
   margin-bottom: 15px;
   letter-spacing: 1.2px;
   color: ${themeGet('colors.white')};
-`
+`;
 
 export const WidgetItem = styled.div`
-    ${space}
-`
+  ${space}
+`;
