@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Wedding Suit",
+    "content": "Hot Sales!",
+    "thumb": "/images/banner/1.jpg",
+    "slug": "/shop",
+    "align": "right"
+  },
+  {
+    "id": 2,
+    "title": "Black Turtleneck Shirt",
+    "content": "Hot Sales!",
+    "thumb": "/images/banner/2.jpg",
+    "slug": "/shop",
+    "align": "left"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "title": "Hype Renting",
+  "description": "Hype Renting",
+  "languages": [{ "value": "english", "label": "English" }],
+  "currencies": [{ "value": "usd", "label": "USD" }],
+  "countries": [{ "value": "us", "label": "United States" }],
+  "state": [{ "value": "ny", "label": "New York" }]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Home",
+    "link": "/",
+    "mega_menu": false
+  },
+  {
+    "text": "About",
+    "link": "/about",
+    "mega_menu": false
+  },
+  {
+    "text": "Contact",
+    "link": "/contact",
+    "mega_menu": false
+  }
+]
