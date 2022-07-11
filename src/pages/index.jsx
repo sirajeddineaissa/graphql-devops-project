@@ -23,9 +23,9 @@ const Home = ({ blogs, products, collections }) => {
 
       <ProductsTab products={products} limit={8} />
 
-      <Promotions />
+      {/* <Promotions /> */}
 
-      <LatestBlog posts={blogs} pt={[60, 60, 100]} />
+      {/* <LatestBlog posts={blogs} pt={[60, 60, 100]} /> */}
     </Layout>
   );
 };
