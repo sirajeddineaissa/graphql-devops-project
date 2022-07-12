@@ -6,15 +6,11 @@ import { ThemeProvider, theme } from '@styled';
 import { persistor, store } from '@global/store';
 import { GlobalStyle } from '@assets/css/global.style';
 import { PersistGate } from 'redux-persist/integration/react';
-
-// CSS import
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/effect-fade/effect-fade.scss';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+// import 'swiper/components/effect-fade/effect-fade.scss';
 import 'react-perfect-scrollbar/dist/css/styles.css';
-
-// Fonts Import
 import '@fontsource/raleway';
 import '@fontsource/raleway/500.css';
 import '@fontsource/raleway/600.css';
@@ -35,7 +31,7 @@ const themeBootstrap = {
   },
 };
 
-const FurnsAPP = ({ Component, pageProps }) => {
+const HypeRenting = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Head>
@@ -58,4 +54,4 @@ const FurnsAPP = ({ Component, pageProps }) => {
   );
 };
 
-export default FurnsAPP;
+export default HypeRenting;
