@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import Slider, { Slide } from '@components/ui/swiper';
-import { SlideTwo as SlideItem } from '@components/slider/slide/slide-two';
+import PropTypes from "prop-types";
+import Slider, { Slide } from "@components/ui/swiper";
+import { SlideTwo as SlideItem } from "@components/slider/slide/slide-two";
 
 const SliderTwo = ({ data, animate, settings, className }) => {
   return (

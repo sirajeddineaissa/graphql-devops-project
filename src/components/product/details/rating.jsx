@@ -1,8 +1,8 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import { isFloat } from '@utils/method';
-import styled, { space, color } from '@styled';
-import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from 'react-icons/io';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { isFloat } from "@utils/method";
+import styled, { space, color } from "@styled";
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 
 const RatingStyle = styled.div`
   ${space};
@@ -11,7 +11,7 @@ const RatingStyle = styled.div`
 
 const Ratings = ({ ratings, className, ...props }) => {
   return (
-    <RatingStyle className={cn('ratings', className)} {...props}>
+    <RatingStyle className={cn("ratings", className)} {...props}>
       {/* Full Star */}
       {Array.from({ length: ratings }, (_, i) => (
         <IoIosStar key={i} />

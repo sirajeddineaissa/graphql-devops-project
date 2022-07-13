@@ -1,10 +1,10 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import { formatDate } from '@utils/method';
-import Image from '@components/ui/image';
-import Button from '@components/ui/button';
-import { PostItem, PostContent, PostMeta, PostTitle } from './post.style';
+import cn from "classnames";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import { formatDate } from "@utils/method";
+import Image from "@components/ui/image";
+import Button from "@components/ui/button";
+import { PostItem, PostContent, PostMeta, PostTitle } from "./post.style";
 
 const Post = ({ post, className, ...props }) => {
   const { title, handle, excerpt, image, publishedAt, authorV2 } = post;
@@ -29,7 +29,7 @@ const Post = ({ post, className, ...props }) => {
         </PostTitle>
 
         <PostMeta>
-          By{' '}
+          By{" "}
           <Link href={`/blog/${handle}`}>
             <a>{authorV2?.name},</a>
           </Link>
@@ -46,7 +46,7 @@ const Post = ({ post, className, ...props }) => {
           hvrBg="primary"
           hvrColor="white"
           className="btn-read"
-          p={[null, null, '15px 25px']}
+          p={[null, null, "15px 25px"]}
         >
           Read More
         </Button>

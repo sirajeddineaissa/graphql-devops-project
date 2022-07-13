@@ -1,6 +1,6 @@
-import cn from 'classnames';
-import styled, { themeGet } from '@styled';
-import { Label } from '@components/ui/input/input.style';
+import cn from "classnames";
+import styled, { themeGet } from "@styled";
+import { Label } from "@components/ui/input/input.style";
 
 const FormCheck = styled.div`
   display: flex;
@@ -23,14 +23,14 @@ const RadioButton = styled.input`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: ${themeGet('transition')};
-  border-radius: ${themeGet('radii.circle')};
-  background-color: ${themeGet('colors.white')};
-  border: 1px solid ${themeGet('colors.primary')};
+  transition: ${themeGet("transition")};
+  border-radius: ${themeGet("radii.circle")};
+  background-color: ${themeGet("colors.white")};
+  border: 1px solid ${themeGet("colors.primary")};
 
   &:checked {
-    background-color: ${themeGet('colors.primary')};
-    background-image: url('/images/icons/circle-dot.svg');
+    background-color: ${themeGet("colors.primary")};
+    background-image: url("/images/icons/circle-dot.svg");
   }
 `;
 

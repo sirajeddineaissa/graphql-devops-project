@@ -1,9 +1,9 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import Image from '@components/ui/image';
-import { placeholder } from '@utils/constant';
-import { ProductImage } from './product.style';
+import cn from "classnames";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import Image from "@components/ui/image";
+import { placeholder } from "@utils/constant";
+import { ProductImage } from "./product.style";
 
 const ProductThumbnail = ({ product }) => {
   const { title, images, handle } = product;
@@ -16,7 +16,7 @@ const ProductThumbnail = ({ product }) => {
             images?.edges?.slice(0, 2).map(({ node: thumb }, idx) => (
               <div
                 key={idx}
-                className={cn('thumb', { 'hover-image': idx === 1 })}
+                className={cn("thumb", { "hover-image": idx === 1 })}
               >
                 <Image
                   alt={title}

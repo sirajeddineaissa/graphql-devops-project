@@ -1,24 +1,24 @@
-import Link from 'next/link';
-import { useSelector } from 'react-redux';
-import OrdersList from '@components/account/orders';
-import { Li, Row, Col, Container } from '@bootstrap';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import CustomerAddress from '@components/account/address';
+import Link from "next/link";
+import { useSelector } from "react-redux";
+import OrdersList from "@components/account/orders";
+import { Li, Row, Col, Container } from "@bootstrap";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import CustomerAddress from "@components/account/address";
 import {
   AccountNav,
   TabContentTitle,
   TabContentHeader,
   AccountTabContent,
   AccountContentWrap,
-} from './account.style';
+} from "./account.style";
 import {
   AiOutlineIdcard,
   AiOutlineLogout,
   AiOutlineSetting,
   AiOutlineShopping,
   AiOutlineDashboard,
-} from 'react-icons/ai';
-import SettingsContent from './settings';
+} from "react-icons/ai";
+import SettingsContent from "./settings";
 
 const AccountPageContent = (props) => {
   const customer = useSelector((state) => state.customer);

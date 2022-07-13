@@ -1,11 +1,11 @@
-import styled, { devices, themeGet } from '@styled';
-import { spinAround } from '@assets/css/keyframes';
+import styled, { devices, themeGet } from "@styled";
+import { spinAround } from "@assets/css/keyframes";
 
 export const CatName = styled.h4`
   margin: 12px 0 0;
-  color: ${themeGet('colors.text')};
-  transition: ${themeGet('transition')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.text")};
+  transition: ${themeGet("transition")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   ${devices.xs} {
     font-size: 13px;
@@ -28,9 +28,9 @@ export const CategoryItem = styled.a`
   display: flex;
   position: relative;
   justify-content: center;
-  transition: ${themeGet('transition')};
-  border-radius: ${themeGet('radii.circle')};
-  border: 2px solid ${themeGet('colors.borderDark')};
+  transition: ${themeGet("transition")};
+  border-radius: ${themeGet("radii.circle")};
+  border: 2px solid ${themeGet("colors.borderDark")};
 
   ${devices.sm} {
     width: 140px;
@@ -43,7 +43,7 @@ export const CategoryItem = styled.a`
   }
 
   &:after {
-    content: '';
+    content: "";
     top: -1px;
     left: -1px;
     opacity: 0;
@@ -51,9 +51,9 @@ export const CategoryItem = styled.a`
     right: -1px;
     bottom: -1px;
     position: absolute;
-    transition: ${themeGet('transition')};
-    border-radius: ${themeGet('radii.circle')};
-    border: 2px dashed ${themeGet('colors.primary')};
+    transition: ${themeGet("transition")};
+    border-radius: ${themeGet("radii.circle")};
+    border: 2px dashed ${themeGet("colors.primary")};
   }
 
   &:hover {

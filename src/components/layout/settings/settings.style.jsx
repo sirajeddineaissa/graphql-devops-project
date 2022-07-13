@@ -1,10 +1,10 @@
-import styled, { themeGet } from '@styled';
+import styled, { themeGet } from "@styled";
 
 export const SettingsFooter = styled.div`
   margin-top: auto;
   text-align: center;
   padding: 20px 20px 30px;
-  font-family: ${themeGet('fonts.body')};
+  font-family: ${themeGet("fonts.body")};
 
   .support {
     font-size: 20px;
@@ -16,28 +16,28 @@ export const SettingsFooter = styled.div`
     svg {
       margin-right: 5px;
       font-size: 30px;
-      color: ${themeGet('colors.dark2')};
+      color: ${themeGet("colors.dark2")};
     }
 
     a {
-      color: ${themeGet('colors.text')};
+      color: ${themeGet("colors.text")};
     }
   }
 
   p {
     a {
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
 
     svg {
       vertical-align: middle;
-      color: ${themeGet('colors.danger')};
+      color: ${themeGet("colors.danger")};
     }
   }
 `;
 
 export const SettingsItem = styled.div`
-  font-family: ${themeGet('fonts.heading')};
+  font-family: ${themeGet("fonts.heading")};
 
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -45,7 +45,7 @@ export const SettingsItem = styled.div`
 
   label {
     font-size: 15px;
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    font-weight: ${themeGet("fontWeights.subHeading")};
   }
 `;
 

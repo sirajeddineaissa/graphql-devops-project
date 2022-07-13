@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import Layout from '@components/layout';
-import settings from '@data/settings.json';
+import Head from "next/head";
+import Layout from "@components/layout";
+import settings from "@data/settings.json";
 // import LatestBlog from '@components/blog/posts';
 // import Promotions from '@components/promotions';
-import Categories from '@components/categories';
-import sliderData from '@data/slider/home-1.json';
-import { ProductsTab } from '@components/product/feed';
-import { SliderOne as Slider } from '@components/slider';
-import { client, blogsQuery, productsQuery, collectionsQuery } from '@graphql';
+import Categories from "@components/categories";
+import sliderData from "@data/slider/home-1.json";
+import { ProductsTab } from "@components/product/feed";
+import { SliderOne as Slider } from "@components/slider";
+import { client, blogsQuery, productsQuery, collectionsQuery } from "@graphql";
 
 const Home = ({ blogs, products, collections }) => {
   return (

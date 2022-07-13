@@ -1,10 +1,10 @@
-import styled, { css, themeGet } from '@styled';
-import { fadeInUp, fadeOutUp } from '@assets/css/keyframes';
-import { SlideContent, SliderThumb } from '@components/slider/slider.style';
+import styled, { css, themeGet } from "@styled";
+import { fadeInUp, fadeOutUp } from "@assets/css/keyframes";
+import { SlideContent, SliderThumb } from "@components/slider/slider.style";
 
 export const SliderWrap = styled.div`
   position: relative;
-  transition: ${themeGet('transition')};
+  transition: ${themeGet("transition")};
 
   ${({ arrows }) =>
     arrows &&
@@ -22,19 +22,19 @@ export const SliderWrap = styled.div`
           visibility: hidden;
           text-align: center;
           transform: translateY(-50%);
-          color: ${themeGet('colors.heading')};
-          transition: ${themeGet('transition')};
-          border-radius: ${themeGet('radii.circle')};
-          background-color: ${themeGet('colors.white')};
+          color: ${themeGet("colors.heading")};
+          transition: ${themeGet("transition")};
+          border-radius: ${themeGet("radii.circle")};
+          background-color: ${themeGet("colors.white")};
           box-shadow: 0 3px 25.5px 4.5px rgba(0, 0, 0, 0.06);
 
           &:hover {
-            color: ${themeGet('colors.white')};
-            background-color: ${themeGet('colors.primary')};
+            color: ${themeGet("colors.white")};
+            background-color: ${themeGet("colors.primary")};
           }
 
           &:after {
-            font-size: ${themeGet('fontSizes.standard')};
+            font-size: ${themeGet("fontSizes.standard")};
           }
         }
 
@@ -90,18 +90,18 @@ export const SliderWrap = styled.div`
           width: 14px;
           height: 14px;
           display: inline-block;
-          border-radius: ${themeGet('radii.circle')};
+          border-radius: ${themeGet("radii.circle")};
           background: transparent;
           opacity: 1;
-          border: 1px solid ${themeGet('colors.black')};
+          border: 1px solid ${themeGet("colors.black")};
           margin: 0 5px;
           box-shadow: none;
-          transition: ${themeGet('transition')};
+          transition: ${themeGet("transition")};
 
           &:hover,
           &-active {
-            background-color: ${themeGet('colors.primary')};
-            border-color: ${themeGet('colors.primary')};
+            background-color: ${themeGet("colors.primary")};
+            border-color: ${themeGet("colors.primary")};
           }
         }
       }

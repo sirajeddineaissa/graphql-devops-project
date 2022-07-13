@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import { BiError } from 'react-icons/bi';
-import { ErrorMessageWrap } from '@components/ui/error/error.style';
+import PropTypes from "prop-types";
+import { BiError } from "react-icons/bi";
+import { ErrorMessageWrap } from "@components/ui/error/error.style";
 
 const ErrorMessage = ({ message }) => {
   return (

@@ -1,7 +1,7 @@
-import { Modal, ModalBody, Row, Col } from '@bootstrap';
-import { OffCanvasCloseBtn } from '@components/ui/offCanvas/style';
-import ProductDetailsThumb from '@components/product/details/thumbnail';
-import ProductDetailsContent from '@components/product/details/content';
+import { Modal, ModalBody, Row, Col } from "@bootstrap";
+import { OffCanvasCloseBtn } from "@components/ui/offCanvas/style";
+import ProductDetailsThumb from "@components/product/details/thumbnail";
+import ProductDetailsContent from "@components/product/details/content";
 
 const QuickView = ({ product, isOpen, onHandler }) => {
   return (

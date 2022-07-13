@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import parse from 'react-html-parser';
-import { toCapitalize } from '@utils/method';
-import reviewsDefaultData from '@data/rating';
-import { Row, Col, Container } from '@bootstrap';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Review from '@components/product/details/review';
-import ReviewForm from '@components/product/details/review-form';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import parse from "react-html-parser";
+import { toCapitalize } from "@utils/method";
+import reviewsDefaultData from "@data/rating";
+import { Row, Col, Container } from "@bootstrap";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Review from "@components/product/details/review";
+import ReviewForm from "@components/product/details/review-form";
 import {
   ProductDescReviewWrapper,
   ProductDescReviewContent,
   ProInfoList,
   ProDescription,
-} from './details.style';
+} from "./details.style";
 
 const ProductDescriptionReview = ({ product, ...props }) => {
   const { descriptionHtml, options, variants } = product;
@@ -45,11 +45,11 @@ const ProductDescriptionReview = ({ product, ...props }) => {
                 <ProInfoList>
                   {options?.map((option) => (
                     <li key={option?.id}>
-                      <span>{option?.name}:</span>{' '}
+                      <span>{option?.name}:</span>{" "}
                       {option?.values?.map((value, idx) => (
                         <>
                           {toCapitalize(value)}
-                          {option?.values.length !== idx + 1 && ', '}
+                          {option?.values.length !== idx + 1 && ", "}
                         </>
                       ))}
                     </li>

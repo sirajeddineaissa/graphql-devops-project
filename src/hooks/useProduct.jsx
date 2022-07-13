@@ -1,19 +1,19 @@
-import cogoToast from 'cogo-toast';
-import { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import cogoToast from "cogo-toast";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
   addToCompareAction,
   removeCompareAction,
-} from '@global/actions/compareAction';
+} from "@global/actions/compareAction";
 import {
   addToWishlistAction,
   removeWishlistAction,
-} from '@global/actions/wishlistAction';
+} from "@global/actions/wishlistAction";
 import {
   getCartProduct,
   getCartProductQuantity,
   getWishCompareProduct,
-} from '@utils/product';
+} from "@utils/product";
 
 const useProduct = (product) => {
   const variants = product?.variants?.edges;
@@ -52,7 +52,7 @@ const useProduct = (product) => {
       .toString();
     const selectedVariant = variants?.find(
       ({ node }) =>
-        node?.title.split(' / ').sort().toString() === selectedVariantTitle,
+        node?.title.split(" / ").sort().toString() === selectedVariantTitle,
     )?.node;
 
     const { id, title, sku, priceV2, quantityAvailable, compareAtPriceV2 } =
@@ -71,13 +71,13 @@ const useProduct = (product) => {
       : dispatch(removeWishlistAction(product));
     !isInWishlist
       ? cogoToast.success(`"${product?.title}" is successfully added.`, {
-          position: 'top-right',
-          heading: 'Added to Wishlist!',
+          position: "top-right",
+          heading: "Added to Wishlist!",
           hideAfter: 3,
         })
       : cogoToast.error(`"${product?.title}" is removed.`, {
-          position: 'top-right',
-          heading: 'Remove from Wishlist!',
+          position: "top-right",
+          heading: "Remove from Wishlist!",
           hideAfter: 3,
         });
   };
@@ -88,13 +88,13 @@ const useProduct = (product) => {
       : dispatch(removeCompareAction(product));
     !isInCompareList
       ? cogoToast.success(`"${product?.title}" is successfully added.`, {
-          position: 'top-right',
-          heading: 'Added to Compare!',
+          position: "top-right",
+          heading: "Added to Compare!",
           hideAfter: 3,
         })
       : cogoToast.error(`"${product?.title}" is removed.`, {
-          position: 'top-right',
-          heading: 'Remove from Compare!',
+          position: "top-right",
+          heading: "Remove from Compare!",
           hideAfter: 3,
         });
   };

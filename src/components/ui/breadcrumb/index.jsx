@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { Container, Col, Row } from '@bootstrap';
+import Link from "next/link";
+import PropTypes from "prop-types";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { Container } from "@bootstrap";
 import {
   BreadcrumbWrap,
   BreadcrumbTitle,
   BreadcrumbNav,
   BreadcrumbNavItem,
   BreadcrumbNavLink,
-} from './breadcrumb.style';
+} from "./breadcrumb.style";
 
 const Breadcrumb = ({ pageTitle, ...props }) => {
   const router = useRouter();
@@ -17,13 +17,13 @@ const Breadcrumb = ({ pageTitle, ...props }) => {
 
   useEffect(() => {
     if (router) {
-      const linkPath = router.asPath.split('/');
+      const linkPath = router.asPath.split("/");
       linkPath.shift();
 
       const pathArray = linkPath.map((path, i) => {
         return {
-          breadcrumb: path.replace(/-/g, ' '),
-          href: '/' + linkPath.slice(0, i + 1).join('/'),
+          breadcrumb: path.replace(/-/g, " "),
+          href: "/" + linkPath.slice(0, i + 1).join("/"),
         };
       });
 
@@ -55,7 +55,7 @@ const Breadcrumb = ({ pageTitle, ...props }) => {
               </BreadcrumbNavItem>
             ) : (
               <BreadcrumbNavItem key={breadcrumb.breadcrumb}>
-                {breadcrumb?.breadcrumb.replace(/\?(.*)/g, '')}
+                {breadcrumb?.breadcrumb.replace(/\?(.*)/g, "")}
               </BreadcrumbNavItem>
             ),
           )}

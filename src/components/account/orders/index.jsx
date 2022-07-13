@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import { useSelector } from 'react-redux';
-import { formatDate } from '@utils/method';
-import { CURRENCY } from '@utils/constant';
-import { AiOutlineEye } from 'react-icons/ai';
-import { Td, Tr, Th, Thead, Tbody, Table } from '@bootstrap';
-import { TableResponsive } from '@components/cart/listing/style';
-import { OrdersTable } from '@components/account/orders/order.style';
-import { ButtonView, EmptyStatus } from '@components/account/account.style';
+import Link from "next/link";
+import { useSelector } from "react-redux";
+import { formatDate } from "@utils/method";
+import { CURRENCY } from "@utils/constant";
+import { AiOutlineEye } from "react-icons/ai";
+import { Td, Tr, Th, Thead, Tbody, Table } from "@bootstrap";
+import { TableResponsive } from "@components/cart/listing/style";
+import { OrdersTable } from "@components/account/orders/order.style";
+import { ButtonView, EmptyStatus } from "@components/account/account.style";
 
 const OrdersList = () => {
   const customer = useSelector((state) => state.customer);

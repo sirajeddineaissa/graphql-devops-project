@@ -1,10 +1,10 @@
-import styled, { themeGet } from '@styled';
+import styled, { themeGet } from "@styled";
 
 export const MobileNav = styled.nav`
   padding: 20px;
 
   ul {
-    font-family: ${themeGet('fonts.body')};
+    font-family: ${themeGet("fonts.body")};
 
     li {
       a {
@@ -14,17 +14,17 @@ export const MobileNav = styled.nav`
         padding: 5px 0;
         text-transform: uppercase;
         justify-content: space-between;
-        color: ${themeGet('colors.dark2')};
-        font-weight: ${themeGet('fontWeights.subHeading')};
+        color: ${themeGet("colors.dark2")};
+        font-weight: ${themeGet("fontWeights.subHeading")};
 
         &:hover {
-          color: ${themeGet('colors.primary')};
+          color: ${themeGet("colors.primary")};
         }
 
         svg {
           font-size: 16px;
           line-height: 1;
-          color: ${themeGet('colors.darkgray')};
+          color: ${themeGet("colors.darkgray")};
 
           &.minus {
             display: none;

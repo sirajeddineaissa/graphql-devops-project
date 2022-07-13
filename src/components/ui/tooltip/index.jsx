@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Tooltip as BootTooltip } from '@bootstrap';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { Tooltip as BootTooltip } from "@bootstrap";
 
 const Tooltip = ({ children, placement, target }) => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = {
     ...BootTooltip.defaultProps.theme,
-    '$tooltip-font-size': '12px',
+    "$tooltip-font-size": "12px",
   };
 
   return (
@@ -24,7 +24,7 @@ const Tooltip = ({ children, placement, target }) => {
 };
 
 Tooltip.defaultProps = {
-  placement: 'left',
+  placement: "left",
 };
 
 Tooltip.propTypes = {

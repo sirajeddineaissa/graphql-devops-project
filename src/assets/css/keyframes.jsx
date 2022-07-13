@@ -1,4 +1,4 @@
-import { keyframes } from '@styled';
+import { keyframes } from "@styled";
 
 export const fadeOutUp = keyframes`
   from {

@@ -1,18 +1,18 @@
-import Cookies from 'js-cookie';
-import { useState } from 'react';
-import cogoToast from 'cogo-toast';
-import Input from '@components/ui/input';
-import { totalDays } from '@utils/method';
-import Button from '@components/ui/button';
-import { decode, encode } from 'js-base64';
-import { SettingsForm } from './account.style';
-import { useSelector, useDispatch } from 'react-redux';
-import { previewModeNotification } from '@utils/constant';
-import { AlertMessage } from '@components/auth/auth.style';
-import { Row, Col, Form, Fieldset, Legend } from '@bootstrap';
-import { saveCustomerData } from '@global/actions/customerAction';
-import { InputField } from '@components/checkout/checkout-form.style';
-import { client, customerUpdate, customerAccessTokenCreate } from '@graphql';
+import Cookies from "js-cookie";
+import { useState } from "react";
+import cogoToast from "cogo-toast";
+import Input from "@components/ui/input";
+import { totalDays } from "@utils/method";
+import Button from "@components/ui/button";
+import { decode, encode } from "js-base64";
+import { SettingsForm } from "./account.style";
+import { useSelector, useDispatch } from "react-redux";
+import { previewModeNotification } from "@utils/constant";
+import { AlertMessage } from "@components/auth/auth.style";
+import { Row, Col, Form, Fieldset, Legend } from "@bootstrap";
+import { saveCustomerData } from "@global/actions/customerAction";
+import { InputField } from "@components/checkout/checkout-form.style";
+import { client, customerUpdate, customerAccessTokenCreate } from "@graphql";
 
 const SettingsContent = () => {
   const customer = useSelector((state) => state.customer);
@@ -32,7 +32,7 @@ const SettingsContent = () => {
   const onFormSubmit = (e) => {
     e.preventDefault();
     if (Object.keys(formValue).length) {
-      const currentToken = decode(Cookies.get('access_token'));
+      const currentToken = decode(Cookies.get("access_token"));
 
       if (
         formValue?.password &&
@@ -65,11 +65,11 @@ const SettingsContent = () => {
                   res?.customerUpdate?.customerAccessToken?.accessToken;
                 const expiresAt =
                   res?.customerUpdate?.customerAccessToken?.expiresAt;
-                Cookies.set('access_token', encode(newToken), {
+                Cookies.set("access_token", encode(newToken), {
                   expires: totalDays(expiresAt),
                 });
-                cogoToast.success('Successfully updated!', {
-                  position: 'top-right',
+                cogoToast.success("Successfully updated!", {
+                  position: "top-right",
                 });
               });
             }
@@ -77,7 +77,7 @@ const SettingsContent = () => {
             if (
               res?.customerAccessTokenCreate?.customerUserErrors?.length !== 0
             ) {
-              setError([{ message: 'Current password not correct!' }]);
+              setError([{ message: "Current password not correct!" }]);
               setIsLoading(false);
               e.target.reset();
             }
@@ -99,8 +99,8 @@ const SettingsContent = () => {
             if (res?.customerUpdate?.customer) {
               e.target.reset();
               dispatch(saveCustomerData(res?.customerUpdate?.customer));
-              cogoToast.success('Successfully updated!', {
-                position: 'top-right',
+              cogoToast.success("Successfully updated!", {
+                position: "top-right",
               });
               setFormValue({});
             }
@@ -112,7 +112,7 @@ const SettingsContent = () => {
           });
       }
     } else {
-      setError([{ message: 'No have anything to changes!' }]);
+      setError([{ message: "No have anything to changes!" }]);
     }
   };
 
@@ -122,7 +122,7 @@ const SettingsContent = () => {
     <SettingsForm>
       <Form
         onSubmit={
-          process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
+          process.env.NEXT_PUBLIC_DEMO_MODE === "true"
             ? previewModeNotification
             : onFormSubmit
         }

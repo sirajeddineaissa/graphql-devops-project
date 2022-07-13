@@ -1,25 +1,25 @@
-import Link from 'next/link';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useIsLoggedIn } from '@hooks';
-import Logo from '@components/ui/logo';
-import { useSelector } from 'react-redux';
-import { Col, Container, Row } from '@bootstrap';
-import { HiOutlineShoppingBag } from 'react-icons/hi';
-import { getCartProductsQuantity } from '@utils/product';
-import { AiOutlineMenu, AiOutlineSetting } from 'react-icons/ai';
-import { IoPersonOutline, IoSearchOutline } from 'react-icons/io5';
+import Link from "next/link";
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { useIsLoggedIn } from "@hooks";
+import Logo from "@components/ui/logo";
+import { useSelector } from "react-redux";
+import { Col, Container, Row } from "@bootstrap";
+import { HiOutlineShoppingBag } from "react-icons/hi";
+import { getCartProductsQuantity } from "@utils/product";
+import { AiOutlineMenu, AiOutlineSetting } from "react-icons/ai";
+import { IoPersonOutline, IoSearchOutline } from "react-icons/io5";
 import {
   DropdownMenu,
   DropdownToggleButton,
-} from '@components/ui/dropdown/dropdwon.style';
+} from "@components/ui/dropdown/dropdwon.style";
 import {
   ActionItem,
   CartItemCount,
   HeaderAction,
   HeaderActionBtn,
   HeaderBottomWrap,
-} from '@components/layout/header/header.style';
+} from "@components/layout/header/header.style";
 
 const HeaderBottom = ({
   onConfigHandler,
@@ -87,7 +87,7 @@ const HeaderBottom = ({
                 </DropdownToggleButton>
                 <DropdownMenu
                   align="center"
-                  className={isDropdownOpen ? 'show' : 'hide'}
+                  className={isDropdownOpen ? "show" : "hide"}
                 >
                   {isLoggedIn ? (
                     <li>

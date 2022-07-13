@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request';
+import { gql } from "graphql-request";
 
 const blogsQuery = (limit = 3) => {
   const queryArguments = `first: ${limit}`;

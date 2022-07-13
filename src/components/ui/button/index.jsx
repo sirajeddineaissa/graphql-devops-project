@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { ImSpinner2 } from 'react-icons/im';
-import { spin } from '@assets/css/keyframes';
+import Link from "next/link";
+import { Fragment } from "react";
+import PropTypes from "prop-types";
+import { ImSpinner2 } from "react-icons/im";
+import { spin } from "@assets/css/keyframes";
 import styled, {
   themeGet,
   color,
@@ -11,12 +11,12 @@ import styled, {
   space,
   css,
   devices,
-} from '@styled';
+} from "@styled";
 
 const Button = ({ tag, children, href, loading, ...props }) => {
   return (
     <Fragment>
-      {tag === 'a' && (
+      {tag === "a" && (
         <Link href={href} passHref>
           <StyledLink {...props}>
             {children}
@@ -29,7 +29,7 @@ const Button = ({ tag, children, href, loading, ...props }) => {
         </Link>
       )}
 
-      {tag === 'button' && (
+      {tag === "button" && (
         <StyledButton {...props}>
           {children}
           {loading && (
@@ -44,7 +44,7 @@ const Button = ({ tag, children, href, loading, ...props }) => {
 };
 
 Button.propTypes = {
-  tag: PropTypes.oneOf(['a', 'button']),
+  tag: PropTypes.oneOf(["a", "button"]),
   href: PropTypes.string,
   bg: PropTypes.string,
   color: PropTypes.string,
@@ -70,10 +70,10 @@ const ButtonCSS = css`
   border-radius: 0;
   line-height: 1;
   border: 0;
-  transition: ${themeGet('transition')};
-  font-size: ${themeGet('fontSizes.body')};
-  font-family: ${themeGet('fonts.heading')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  transition: ${themeGet("transition")};
+  font-size: ${themeGet("fontSizes.body")};
+  font-family: ${themeGet("fonts.heading")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   ${devices.sm} {
     padding: 15px 25px;

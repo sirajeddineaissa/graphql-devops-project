@@ -1,28 +1,28 @@
-import Link from 'next/link';
-import { useState } from 'react';
-import Cookie from 'js-cookie';
-import { encode } from 'js-base64';
-import { useRouter } from 'next/router';
-import Input from '@components/ui/input';
-import Button from '@components/ui/button';
-import Checkbox from '@components/ui/checkout';
-import { Col, Container, Form, Row } from '@bootstrap';
-import { previewModeNotification } from '@utils/constant';
-import { FormWrap, AlertMessage } from '@components/auth/auth.style';
-import { client, customerAccessTokenCreate, customerCreate } from '@graphql';
+import Link from "next/link";
+import { useState } from "react";
+import Cookie from "js-cookie";
+import { encode } from "js-base64";
+import { useRouter } from "next/router";
+import Input from "@components/ui/input";
+import Button from "@components/ui/button";
+import Checkbox from "@components/ui/checkout";
+import { Col, Container, Form, Row } from "@bootstrap";
+import { previewModeNotification } from "@utils/constant";
+import { FormWrap, AlertMessage } from "@components/auth/auth.style";
+import { client, customerAccessTokenCreate, customerCreate } from "@graphql";
 import {
   InputField,
   InputNote,
-} from '@components/checkout/checkout-form.style';
+} from "@components/checkout/checkout-form.style";
 
 const defaultValue = {
-  email: '',
-  phone: '',
-  password: '',
+  email: "",
+  phone: "",
+  password: "",
   policy: false,
-  last_name: '',
-  first_name: '',
-  confirm_password: '',
+  last_name: "",
+  first_name: "",
+  confirm_password: "",
 };
 
 const SignupForm = () => {
@@ -33,7 +33,7 @@ const SignupForm = () => {
 
   const onInputChange = (e) => {
     const target = e.target;
-    if (target.type === 'checkbox') {
+    if (target.type === "checkbox") {
       if (target.checked) {
         setFormData((prevState) => ({
           ...prevState,
@@ -86,8 +86,8 @@ const SignupForm = () => {
               const token =
                 res?.customerAccessTokenCreate?.customerAccessToken
                   ?.accessToken;
-              Cookie.set('access_token', encode(token));
-              router.push('/');
+              Cookie.set("access_token", encode(token));
+              router.push("/");
             });
           }
           setIsLoading(false);
@@ -105,7 +105,7 @@ const SignupForm = () => {
           <FormWrap>
             <Form
               onSubmit={
-                process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
+                process.env.NEXT_PUBLIC_DEMO_MODE === "true"
                   ? previewModeNotification
                   : onFormSubmit
               }
@@ -190,7 +190,7 @@ const SignupForm = () => {
                 />
 
                 <InputNote className="mt-3">
-                  By signing up, you agree to our{' '}
+                  By signing up, you agree to our{" "}
                   <Link href="/">Terms of Service.</Link> Learn how we collect
                   and use your data in our <Link href="/">Privacy Policy.</Link>
                 </InputNote>

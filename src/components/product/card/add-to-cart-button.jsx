@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { useProduct } from '@hooks';
-import cogoToast from 'cogo-toast';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { IoIosCart } from 'react-icons/io';
-import { addToCartAction } from '@global/actions/cartAction';
+import Link from "next/link";
+import { useProduct } from "@hooks";
+import cogoToast from "cogo-toast";
+import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import { IoIosCart } from "react-icons/io";
+import { addToCartAction } from "@global/actions/cartAction";
 import {
   AddToCartButton as CartButtonStyle,
   SelectOptionButton,
-} from './product.style';
+} from "./product.style";
 
 const AddToCartButton = ({ isShowInMobile, product }) => {
   const { title, variants, handle } = product;
@@ -20,14 +20,14 @@ const AddToCartButton = ({ isShowInMobile, product }) => {
     if (!isInCart) {
       dispatch(addToCartAction(rest));
       cogoToast.success(`${rest?.title} is added to cart.`, {
-        position: 'top-right',
-        heading: 'Successfully Add!',
+        position: "top-right",
+        heading: "Successfully Add!",
         hideAfter: 1,
       });
     } else {
       cogoToast.warn(`${rest?.title} is already added.`, {
-        position: 'top-right',
-        heading: 'Already Added!',
+        position: "top-right",
+        heading: "Already Added!",
         hideAfter: 1,
       });
     }
@@ -54,10 +54,10 @@ const AddToCartButton = ({ isShowInMobile, product }) => {
     >
       <IoIosCart />
       {!isStock && !isInCart
-        ? 'Add to Cart'
+        ? "Add to Cart"
         : !isStock && isInCart
-        ? 'Already Added'
-        : 'Out of Stock'}
+        ? "Already Added"
+        : "Out of Stock"}
     </CartButtonStyle>
   );
 };

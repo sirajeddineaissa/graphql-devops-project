@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import cn from 'classnames';
-import navData from '@data/nav';
-import PropTypes from 'prop-types';
-import { IoIosArrowDown } from 'react-icons/io';
-import { Container, Col, Row } from '@bootstrap';
-import { NavbarWrap, Nav, NavList, SubMenu } from './desktop-nav.style';
+import Link from "next/link";
+import cn from "classnames";
+import navData from "@data/nav";
+import PropTypes from "prop-types";
+import { IoIosArrowDown } from "react-icons/io";
+import { Container, Col, Row } from "@bootstrap";
+import { NavbarWrap, Nav, NavList, SubMenu } from "./desktop-nav.style";
 
 const DesktopNav = ({ bg, className }) => {
   return (
@@ -17,7 +17,7 @@ const DesktopNav = ({ bg, className }) => {
                 {navData.map((navItem, index) => (
                   <li
                     key={index}
-                    className={navItem.submenu ? 'dropdown' : undefined}
+                    className={navItem.submenu ? "dropdown" : undefined}
                   >
                     <Link href={navItem.link}>
                       <a>

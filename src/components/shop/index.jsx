@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useRouter } from 'next/router';
-import Select from '@components/ui/select';
-import { Container, Col, Row } from '@bootstrap';
-import ProductCard from '@components/product/card';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { useRouter } from "next/router";
+import Select from "@components/ui/select";
+import { Container, Col, Row } from "@bootstrap";
+import ProductCard from "@components/product/card";
 import {
   ShopTopBar,
   ShopTopBarLeft,
   ShopTopBarRight,
   ProductsFeedWrap,
-} from '@components/shop/shop.style';
+} from "@components/shop/shop.style";
 
 export const sortByOptions = [
-  { label: 'Relevance', value: 'relevance' },
-  { label: 'Name (A - Z)', value: 'title-ascending' },
-  { label: 'Name (Z - A)', value: 'title-descending' },
-  { label: 'Price (Low - High)', value: 'price-ascending' },
-  { label: 'Price (High - Low)', value: 'price-descending' },
+  { label: "Relevance", value: "relevance" },
+  { label: "Name (A - Z)", value: "title-ascending" },
+  { label: "Name (Z - A)", value: "title-descending" },
+  { label: "Price (Low - High)", value: "price-ascending" },
+  { label: "Price (High - Low)", value: "price-descending" },
 ];
 
 const ShopProductsFeed = ({ products }) => {
@@ -55,7 +55,7 @@ const ShopProductsFeed = ({ products }) => {
           </Col>
         </Row>
 
-        <Row className="products-grid-mobile" style={{ marginTop: '-30px' }}>
+        <Row className="products-grid-mobile" style={{ marginTop: "-30px" }}>
           {products?.map((product) => (
             <Col xs={6} md={4} lg={3} key={product?.node.id}>
               <ProductCard product={product?.node} />

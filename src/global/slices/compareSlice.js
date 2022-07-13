@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const compareSlice = createSlice({
-  name: 'compareList',
+  name: "compareList",
   initialState: [],
   reducers: {
     addToCompare: (state, action) => {

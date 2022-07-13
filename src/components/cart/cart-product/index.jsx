@@ -1,18 +1,18 @@
-import Link from 'next/link';
-import { Td } from '@bootstrap';
-import Image from 'next/image';
-import PropTypes from 'prop-types';
-import { FiEdit } from 'react-icons/fi';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { useDispatch, useSelector } from 'react-redux';
-import { Quantity } from '@components/cart/cart.style';
-import { CgMathMinus, CgMathPlus } from 'react-icons/cg';
-import { getCartProductTotalPrice, getProductStock } from '@utils/product';
+import Link from "next/link";
+import { Td } from "@bootstrap";
+import Image from "next/image";
+import PropTypes from "prop-types";
+import { FiEdit } from "react-icons/fi";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useDispatch, useSelector } from "react-redux";
+import { Quantity } from "@components/cart/cart.style";
+import { CgMathMinus, CgMathPlus } from "react-icons/cg";
+import { getCartProductTotalPrice, getProductStock } from "@utils/product";
 import {
   removeCartAction,
   incrementCartQuantityAction,
   decrementCartQuantityAction,
-} from '@global/actions/cartAction';
+} from "@global/actions/cartAction";
 import {
   CartProInfo,
   CartProMeta,
@@ -22,7 +22,7 @@ import {
   CartActionBtn,
   CartProAction,
   SingleCartItem,
-} from '@components/cart/cart-product/style';
+} from "@components/cart/cart-product/style";
 
 const CartItem = ({ product }) => {
   const { title, images, price, variations, quantity, handle, variants } =
@@ -60,14 +60,14 @@ const CartItem = ({ product }) => {
       <Td>
         <Quantity>
           <button
-            style={{ pointerEvents: quantity === 1 ? 'none' : 'visible' }}
+            style={{ pointerEvents: quantity === 1 ? "none" : "visible" }}
             onClick={() => dispatch(decrementCartQuantityAction(product))}
           >
             <CgMathMinus />
           </button>
           <input type="text" value={quantity} size={stock} readOnly />
           <button
-            style={{ pointerEvents: quantity === stock ? 'none' : 'visible' }}
+            style={{ pointerEvents: quantity === stock ? "none" : "visible" }}
             onClick={() => dispatch(incrementCartQuantityAction(product))}
           >
             <CgMathPlus />

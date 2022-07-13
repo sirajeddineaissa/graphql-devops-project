@@ -1,17 +1,17 @@
-import Head from 'next/head';
-import { Fragment } from 'react';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import { client, blogQuery } from '@graphql';
-import Loader from '@components/ui/loader';
-import Breadcrumb from '@components/ui/breadcrumb';
-import PostDetailsContent from '@components/blog/details';
+import Head from "next/head";
+import { Fragment } from "react";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import { client, blogQuery } from "@graphql";
+import Loader from "@components/ui/loader";
+import Breadcrumb from "@components/ui/breadcrumb";
+import PostDetailsContent from "@components/blog/details";
 
 const BlogDetailsPage = ({ post }) => {
   return (
     <Layout>
       <Head>
-        <title>{post?.title + ' - ' + settings?.title}</title>
+        <title>{post?.title + " - " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

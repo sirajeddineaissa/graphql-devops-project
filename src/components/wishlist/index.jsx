@@ -1,12 +1,12 @@
-import { useSelector } from 'react-redux';
-import { Container, Thead, Tbody, Tr } from '@bootstrap';
-import WishlistItem from '@components/wishlist/wishlist-product';
+import { useSelector } from "react-redux";
+import { Container, Thead, Tbody, Tr } from "@bootstrap";
+import WishlistItem from "@components/wishlist/wishlist-product";
 import {
   CartProductsList,
   CartListTable,
   TableResponsive,
   TableHeading,
-} from '@components/cart/listing/style';
+} from "@components/cart/listing/style";
 
 const WishlistProducts = (props) => {
   const wishlist = useSelector((state) => state.wishlist);

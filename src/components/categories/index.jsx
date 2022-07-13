@@ -1,10 +1,10 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import { Container } from '@bootstrap';
-import Category from '@components/category';
-import { CategoriesWrap } from './categories.style';
-import Slider, { Slide } from '@components/ui/swiper';
-import EmptyProduct from '@components/ui/empty';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { Container } from "@bootstrap";
+import Category from "@components/category";
+import { CategoriesWrap } from "./categories.style";
+import Slider, { Slide } from "@components/ui/swiper";
+import EmptyProduct from "@components/ui/empty";
 
 const Categories = ({ categories, className, ...props }) => {
   const settings = {

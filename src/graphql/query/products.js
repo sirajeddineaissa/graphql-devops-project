@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request';
+import { gql } from "graphql-request";
 
 const productsQuery = (limit = 200, sortKey, reverse, search) => {
   let queryArguments = `first: ${limit}`;

@@ -1,11 +1,11 @@
-import settings from '@data/settings';
-import { Form, Col, Row } from '@bootstrap';
-import Select from '@components/ui/select';
-import Input, { TextArea } from '@components/ui/input';
+import settings from "@data/settings";
+import { Form, Col, Row } from "@bootstrap";
+import Select from "@components/ui/select";
+import Input, { TextArea } from "@components/ui/input";
 import {
   FormCheckout,
   InputField,
-} from '@components/checkout/checkout-form.style';
+} from "@components/checkout/checkout-form.style";
 
 const CheckoutForm = () => {
   return (

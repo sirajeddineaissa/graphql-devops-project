@@ -1,7 +1,7 @@
-import Promo from '@components/promo';
-import promotions from '@data/promotions';
-import { Container, Col, Row } from '@bootstrap';
-import { PromotionsWrap } from './promotions.style';
+import Promo from "@components/promo";
+import promotions from "@data/promotions";
+import { Container, Col, Row } from "@bootstrap";
+import { PromotionsWrap } from "./promotions.style";
 
 const Promotions = ({ fluid }) => {
   return (

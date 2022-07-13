@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import Layout from '@components/layout';
-import Breadcrumb from '@components/ui/breadcrumb';
+import PropTypes from "prop-types";
+import Layout from "@components/layout";
+import Breadcrumb from "@components/ui/breadcrumb";
 
 const PageLayout = ({ children, pageTitle, ...props }) => {
   return (

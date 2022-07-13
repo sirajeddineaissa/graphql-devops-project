@@ -1,12 +1,12 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import Loader from '@components/ui/loader';
-import { Col, Container, Row } from '@bootstrap';
-import EmptyProduct from '@components/ui/empty';
-import { getRelatedProducts } from '@utils/product';
-import ProductCard from '@components/product/card';
-import SectionTitle from '@components/ui/section-title';
-import { RelatedProductsWrapper } from '@components/product/feed/style';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import Loader from "@components/ui/loader";
+import { Col, Container, Row } from "@bootstrap";
+import EmptyProduct from "@components/ui/empty";
+import { getRelatedProducts } from "@utils/product";
+import ProductCard from "@components/product/card";
+import SectionTitle from "@components/ui/section-title";
+import { RelatedProductsWrapper } from "@components/product/feed/style";
 
 const RelatedProducts = ({
   products,

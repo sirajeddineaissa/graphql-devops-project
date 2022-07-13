@@ -1,8 +1,8 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import { SliderWrap } from './swiper.style';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Thumbs, EffectFade } from 'swiper';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { SliderWrap } from "./swiper.style";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Thumbs, EffectFade } from "swiper";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Thumbs, EffectFade]);

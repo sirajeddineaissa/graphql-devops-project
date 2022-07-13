@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import Breadcrumb from '@components/ui/breadcrumb';
-import SigninForm from '@components/auth/signin-form';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import Breadcrumb from "@components/ui/breadcrumb";
+import SigninForm from "@components/auth/signin-form";
 
 const SigninPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Login - ' + settings?.title}</title>
+        <title>{"Login - " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

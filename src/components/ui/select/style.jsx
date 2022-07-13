@@ -2,35 +2,35 @@ export const customStyles = {
   option: (provided, state) => ({
     ...provided,
     fontSize: 14,
-    color: state.isSelected ? '#fff' : '#474747',
+    color: state.isSelected ? "#fff" : "#474747",
     paddingLeft: 15,
     paddingRight: 15,
     paddingTop: 10,
     paddingBottom: 10,
-    cursor: 'pointer',
-    borderBottom: '1px solid #ebebeb',
+    cursor: "pointer",
+    borderBottom: "1px solid #ebebeb",
     backgroundColor: state.isSelected
-      ? '#ff7004'
+      ? "#ff7004"
       : state.isFocused
-      ? '#F9FAFB'
-      : '#ffffff',
+      ? "#F9FAFB"
+      : "#ffffff",
   }),
   control: (provided, state) => ({
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     minHeight: 45,
-    backgroundColor: '#ffffff',
+    backgroundColor: "#ffffff",
     borderRadius: 3,
-    border: '1px solid #D1D5DB',
-    borderColor: state.isFocused ? '#ff7004' : '#ebebeb',
+    border: "1px solid #D1D5DB",
+    borderColor: state.isFocused ? "#ff7004" : "#ebebeb",
   }),
   indicatorSeparator: () => ({
-    display: 'none',
+    display: "none",
   }),
   menu: (provided, _) => ({
     ...provided,
     borderRadius: 3,
-    border: 'none',
+    border: "none",
     marginTop: 5,
     fontSize: 13,
     paddingBottom: 0,
@@ -48,6 +48,6 @@ export const customStyles = {
   singleValue: (provided, _) => ({
     ...provided,
     fontSize: 14,
-    color: '#191919',
+    color: "#191919",
   }),
 };

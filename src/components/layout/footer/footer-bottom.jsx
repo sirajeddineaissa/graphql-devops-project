@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { IoIosHeart } from 'react-icons/io';
-import { Container, Col, Row } from '@bootstrap';
-import { CopyrightText, FooterBottomWrapper } from './footer.style';
+import Image from "next/image";
+import { IoIosHeart } from "react-icons/io";
+import { Container, Col, Row } from "@bootstrap";
+import { CopyrightText, FooterBottomWrapper } from "./footer.style";
 
 const FooterBottom = ({ bg }) => {
   return (

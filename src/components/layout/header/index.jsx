@@ -1,9 +1,9 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import HeaderTop from '@components/layout/header/header-top';
-import { DesktopNavbar as Navbar } from '@components/layout/navbar';
-import { HeaderArea } from '@components/layout/header/header.style';
-import HeaderBottom from '@components/layout/header/header-bottom';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import HeaderTop from "@components/layout/header/header-top";
+import { DesktopNavbar as Navbar } from "@components/layout/navbar";
+import { HeaderArea } from "@components/layout/header/header.style";
+import HeaderBottom from "@components/layout/header/header-bottom";
 
 const Header = ({
   bg,
@@ -14,7 +14,7 @@ const Header = ({
   onConfigHandler,
 }) => {
   return (
-    <HeaderArea className={cn('header', className)}>
+    <HeaderArea className={cn("header", className)}>
       <HeaderTop className="d-none d-lg-block" />
 
       <HeaderBottom

@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types';
-import Button from '@components/ui/button';
-import { Col, Container, Row } from '@bootstrap';
+import PropTypes from "prop-types";
+import Button from "@components/ui/button";
+import { Col, Container, Row } from "@bootstrap";
 import {
   SlideContent,
   SlideItem,
   SlideSubTitle,
   SlideTitle,
   SliderThumb,
-} from '@components/slider/slider.style';
+} from "@components/slider/slider.style";
 
 const SlideOne = ({ subTitle, title, content, thumb }) => {
   return (

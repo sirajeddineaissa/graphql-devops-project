@@ -1,4 +1,4 @@
-import styled, { devices, space, themeGet } from '@styled';
+import styled, { devices, space, themeGet } from "@styled";
 
 export const ShopTopBarRight = styled.div`
   display: flex;
@@ -30,9 +30,9 @@ export const ShopTopBar = styled.div`
   margin-bottom: 40px;
   align-items: center;
   justify-content: space-between;
-  border-radius: ${themeGet('radii.sm ')};
-  font-size: ${themeGet('fontSizes.standard')};
-  background: ${themeGet('colors.borderLight')};
+  border-radius: ${themeGet("radii.sm ")};
+  font-size: ${themeGet("fontSizes.standard")};
+  background: ${themeGet("colors.borderLight")};
 
   ${devices.xs} {
     display: block;

@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
-import { Fragment, useState } from 'react';
-import Image from '@components/ui/image';
-import Slider, { Slide } from '@components/ui/swiper';
+import PropTypes from "prop-types";
+import { Fragment, useState } from "react";
+import Image from "@components/ui/image";
+import Slider, { Slide } from "@components/ui/swiper";
 import {
   ProductThumbGallery,
   ProductThumbNav,
-} from '@components/product/details/details.style';
+} from "@components/product/details/details.style";
 
 const ProductDetailsThumb = ({ thumbnails }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);

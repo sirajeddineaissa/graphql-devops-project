@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { useIsLoggedIn } from '@hooks';
-import { CURRENCY } from '@utils/constant';
-import Button from '@components/ui/button';
-import Coupon from '@components/cart/coupon';
-import { createCheckout, client } from '@graphql';
-import { getCartTotalPrice } from '@utils/product';
-import CartItem from '@components/cart/cart-product';
-import { useDispatch, useSelector } from 'react-redux';
-import { clearCartAction } from '@global/actions/cartAction';
-import { CartUpdateAction } from '@components/cart/cart.style';
-import { Container, Thead, Tbody, Tr, Td, Col, Row } from '@bootstrap';
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { useIsLoggedIn } from "@hooks";
+import { CURRENCY } from "@utils/constant";
+import Button from "@components/ui/button";
+import Coupon from "@components/cart/coupon";
+import { createCheckout, client } from "@graphql";
+import { getCartTotalPrice } from "@utils/product";
+import CartItem from "@components/cart/cart-product";
+import { useDispatch, useSelector } from "react-redux";
+import { clearCartAction } from "@global/actions/cartAction";
+import { CartUpdateAction } from "@components/cart/cart.style";
+import { Container, Thead, Tbody, Tr, Td, Col, Row } from "@bootstrap";
 import {
   GrandPrice,
   TableHeading,
@@ -18,7 +18,7 @@ import {
   TableResponsive,
   CartProductsList,
   CartCouponActions,
-} from '@components/cart/listing/style';
+} from "@components/cart/listing/style";
 
 const CartList = (props) => {
   const router = useRouter();
@@ -47,12 +47,12 @@ const CartList = (props) => {
       client(createCheckout(), variables).then((res) => {
         setIsLoading(false);
         if (res?.checkoutCreate?.checkout) {
-          window.open(res?.checkoutCreate?.checkout?.webUrl, '_blank');
+          window.open(res?.checkoutCreate?.checkout?.webUrl, "_blank");
         }
         dispatch(clearCartAction());
       });
     } else {
-      router.push('/signin');
+      router.push("/signin");
     }
   };
 
@@ -78,7 +78,7 @@ const CartList = (props) => {
               <Tr>
                 <Td colSpan={6}>
                   <GrandPrice>
-                    Grand Total:{' '}
+                    Grand Total:{" "}
                     <span>{CURRENCY + totalProductsPrice.toFixed(2)}</span>
                   </GrandPrice>
                 </Td>

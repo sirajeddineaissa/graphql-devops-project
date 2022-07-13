@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request';
+import { gql } from "graphql-request";
 
 const collectionsQuery = (limit = 10) => {
   const queryArguments = `first: ${limit}`;

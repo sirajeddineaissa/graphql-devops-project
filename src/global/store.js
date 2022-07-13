@@ -1,8 +1,8 @@
-import { PREFIX } from '@utils/constant';
-import { rootReducer } from './rootReducers';
-import storage from 'redux-persist/lib/storage';
-import { persistReducer, persistStore } from 'redux-persist';
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { PREFIX } from "@utils/constant";
+import { rootReducer } from "./rootReducers";
+import storage from "redux-persist/lib/storage";
+import { persistReducer, persistStore } from "redux-persist";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 
 const persistConfig = {
   key: `${PREFIX}-furns`,
@@ -16,10 +16,10 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: ['persist/PERSIST'],
+        ignoredActions: ["persist/PERSIST"],
       },
     }),
-  devTools: process.env.NODE_ENV !== 'production',
+  devTools: process.env.NODE_ENV !== "production",
 });
 
 export const persistor = persistStore(store);

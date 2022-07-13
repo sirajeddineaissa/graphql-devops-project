@@ -1,4 +1,4 @@
-import styled, { devices, space } from '@styled';
+import styled, { devices, space } from "@styled";
 
 export const Main = styled.main`
   ${space};

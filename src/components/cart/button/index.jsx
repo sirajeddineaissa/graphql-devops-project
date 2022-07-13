@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
-import { useEffect, useRef } from 'react';
-import { CURRENCY } from '@utils/constant';
-import { FiShoppingBag } from 'react-icons/fi';
-import { CartButtonWrap, Price } from './style';
-import { getCartTotalPrice } from '@utils/product';
+import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
+import { useEffect, useRef } from "react";
+import { CURRENCY } from "@utils/constant";
+import { FiShoppingBag } from "react-icons/fi";
+import { CartButtonWrap, Price } from "./style";
+import { getCartTotalPrice } from "@utils/product";
 
 const CartButton = ({ onHandler }) => {
   const cart = useSelector((state) => state.shoppingCart);
@@ -17,9 +17,9 @@ const CartButton = ({ onHandler }) => {
       firstUpdate.current = false;
       return;
     }
-    buttonRef.current.classList.add('animated');
+    buttonRef.current.classList.add("animated");
     setTimeout(() => {
-      buttonRef.current.classList.remove('animated');
+      buttonRef.current.classList.remove("animated");
     }, 1000);
   }, [cart]);
 

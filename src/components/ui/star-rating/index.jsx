@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { StarRatingWrap } from '@components/ui/star-rating/star.style';
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { StarRatingWrap } from "@components/ui/star-rating/star.style";
 
 const Star = ({ selected = false, onClick = (f) => f }) => (
-  <span className={selected ? 'star selected' : 'star'} onClick={onClick} />
+  <span className={selected ? "star selected" : "star"} onClick={onClick} />
 );
 
 const StarRating = ({ totalStars, getRatingValue }) => {

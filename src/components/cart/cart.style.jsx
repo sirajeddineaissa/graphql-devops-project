@@ -1,9 +1,9 @@
-import styled, { devices, themeGet, space } from '@styled';
+import styled, { devices, themeGet, space } from "@styled";
 
 export const Title = styled.h3`
   font-size: 18px;
   margin-bottom: 10px;
-  font-weight: ${themeGet('fontWeights.heading')};
+  font-weight: ${themeGet("fontWeights.heading")};
 `;
 
 export const CouponForm = styled.div`
@@ -17,7 +17,7 @@ export const CouponForm = styled.div`
   div {
     input {
       border-radius: 3px 0 0 3px;
-      border-color: ${themeGet('colors.primary')};
+      border-color: ${themeGet("colors.primary")};
 
       @media screen and (min-width: 576px) {
         border-right: 0;
@@ -46,10 +46,10 @@ export const EstimateCartItem = styled.div`
   ${space};
 
   form {
-    font-family: ${themeGet('fonts.body')};
+    font-family: ${themeGet("fonts.body")};
 
     label {
-      font-size: ${themeGet('fontSizes.standard')};
+      font-size: ${themeGet("fontSizes.standard")};
     }
   }
 `;
@@ -90,8 +90,8 @@ export const Quantity = styled.div`
   margin-top: 10px;
   align-items: center;
   justify-content: center;
-  border-radius: ${themeGet('radii.rounded')};
-  background-color: ${themeGet('colors.gray150')};
+  border-radius: ${themeGet("radii.rounded")};
+  background-color: ${themeGet("colors.gray150")};
 
   ${devices.sm} {
     height: 30px;

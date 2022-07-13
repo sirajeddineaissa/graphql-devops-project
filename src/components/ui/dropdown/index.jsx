@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import {
   DropdownWrap,
   DropdownToggleButton,
   DropdownMenu,
-} from './dropdwon.style';
+} from "./dropdwon.style";
 
 const Dropdown = ({ align, heading, children }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,13 +12,13 @@ const Dropdown = ({ align, heading, children }) => {
   return (
     <DropdownWrap>
       <DropdownToggleButton
-        className={isDropdownOpen ? 'show' : 'hide'}
+        className={isDropdownOpen ? "show" : "hide"}
         onClick={() => setIsDropdownOpen((prevState) => !prevState)}
       >
         {heading && heading}
         {isDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </DropdownToggleButton>
-      <DropdownMenu align={align} className={isDropdownOpen ? 'show' : 'hide'}>
+      <DropdownMenu align={align} className={isDropdownOpen ? "show" : "hide"}>
         {children}
       </DropdownMenu>
     </DropdownWrap>

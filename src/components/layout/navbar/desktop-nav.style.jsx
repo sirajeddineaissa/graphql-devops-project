@@ -1,8 +1,8 @@
-import styled, { color, themeGet, css } from '@styled';
+import styled, { color, themeGet, css } from "@styled";
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: ${(props) => (props.align ? props.align : 'center')};
+  justify-content: ${(props) => (props.align ? props.align : "center")};
 `;
 
 export const NavList = styled.ul`
@@ -25,9 +25,9 @@ export const NavList = styled.ul`
       letter-spacing: 0.5px;
       text-decoration: none;
       text-transform: capitalize;
-      color: ${themeGet('colors.white')};
-      font-family: ${themeGet('fonts.body')};
-      font-size: ${themeGet('fontSizes.standard')};
+      color: ${themeGet("colors.white")};
+      font-family: ${themeGet("fonts.body")};
+      font-size: ${themeGet("fontSizes.standard")};
 
       svg {
         transform: translate(2px, 3px);
@@ -50,14 +50,14 @@ export const NavList = styled.ul`
     &:hover,
     &.active {
       & > a {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     }
   }
 `;
 
 export const SubMenu = styled.ul`
-  background-color: ${themeGet('colors.white')};
+  background-color: ${themeGet("colors.white")};
   position: absolute;
   z-index: 2;
   text-align: left;
@@ -77,12 +77,12 @@ export const SubMenu = styled.ul`
       display: block;
       line-height: 19px;
       padding: 10px 0 10px 20px;
-      border-bottom: 1px solid ${themeGet('colors.borderLight')};
+      border-bottom: 1px solid ${themeGet("colors.borderLight")};
       height: 40px;
-      color: ${themeGet('colors.black')};
+      color: ${themeGet("colors.black")};
 
       &:hover {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     }
   }
@@ -96,23 +96,23 @@ export const NavbarWrap = styled.div`
     & > li {
       a {
         ${({ bg }) =>
-          bg !== 'secondary' &&
+          bg !== "secondary" &&
           css`
-            color: ${themeGet('colors.secondary')};
+            color: ${themeGet("colors.secondary")};
           `}
       }
 
       &:hover,
       &.active {
         & > a {
-          color: ${themeGet('colors.primary')};
+          color: ${themeGet("colors.primary")};
         }
 
         ul {
           li {
             a {
               &:hover {
-                color: ${themeGet('colors.primary')};
+                color: ${themeGet("colors.primary")};
               }
             }
           }

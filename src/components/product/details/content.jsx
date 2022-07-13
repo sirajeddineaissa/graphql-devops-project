@@ -1,34 +1,33 @@
-import { useProduct } from '@hooks';
-import PropTypes from 'prop-types';
-import cogoToast from 'cogo-toast';
-import { useDispatch } from 'react-redux';
-import { CURRENCY } from '@utils/constant';
-import { useState, useEffect } from 'react';
-import Select from '@components/ui/select';
-import Button from '@components/ui/button';
-import { excerpt, toCapitalize } from '@utils/method';
+import { useProduct } from "@hooks";
+import PropTypes from "prop-types";
+import cogoToast from "cogo-toast";
+import { useDispatch } from "react-redux";
+import { CURRENCY } from "@utils/constant";
+import { useState, useEffect } from "react";
+import Select from "@components/ui/select";
+import Button from "@components/ui/button";
+import { excerpt, toCapitalize } from "@utils/method";
 import {
   IoLogoTwitter,
   IoLogoLinkedin,
   IoLogoFacebook,
   IoIosHeartEmpty,
   IoIosGitCompare,
-} from 'react-icons/io';
+} from "react-icons/io";
 import {
   ProductSKU,
   ContentWrap,
   ProductName,
   ProductPrices,
-  ProductRatings,
   ProductSwatches,
   ProductSwatchItem,
   ProductSocialShare,
   ProductActionButton,
   QuantityIncDecButton,
-} from '@components/product/details/details.style';
-import { CgMathMinus, CgMathPlus } from 'react-icons/cg';
-import Ratings from '@components/product/details/rating';
-import { addToCartAction } from '@global/actions/cartAction';
+} from "@components/product/details/details.style";
+import { CgMathMinus, CgMathPlus } from "react-icons/cg";
+// import Ratings from "@components/product/details/rating";
+import { addToCartAction } from "@global/actions/cartAction";
 
 const ProductDetailsContent = ({ product, ...props }) => {
   let { title, description, variants, options } = product;
@@ -59,8 +58,8 @@ const ProductDetailsContent = ({ product, ...props }) => {
   const onAddToCartHandler = (rest) => {
     dispatch(addToCartAction(rest));
     cogoToast.success(`${rest?.title} is added to cart.`, {
-      position: 'top-right',
-      heading: 'Successfully Add!',
+      position: "top-right",
+      heading: "Successfully Add!",
       hideAfter: 3,
     });
   };
@@ -94,7 +93,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
       </ProductSKU>
       <ProductSKU>
         <strong>Availability: </strong>
-        {isStock ? 'Out of Stock' : `${stock - cartProductQuantity} in Stock`}
+        {isStock ? "Out of Stock" : `${stock - cartProductQuantity} in Stock`}
       </ProductSKU>
       <ProductName>{title}</ProductName>
       {/*<ProductRatings>*/}
@@ -149,7 +148,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
             <button
               className="btn btn-decrement"
               onClick={() => onDecrementQuantity()}
-              style={{ pointerEvents: quantity === 1 ? 'none' : 'visible' }}
+              style={{ pointerEvents: quantity === 1 ? "none" : "visible" }}
             >
               <CgMathMinus />
             </button>
@@ -157,7 +156,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
             <button
               className="btn btn-increment"
               onClick={() => onIncrementQuantity()}
-              style={{ pointerEvents: quantity === stock ? 'none' : 'visible' }}
+              style={{ pointerEvents: quantity === stock ? "none" : "visible" }}
             >
               <CgMathPlus />
             </button>
@@ -171,7 +170,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
             className="btn-cart"
             style={{
               opacity: isStock ? 0.6 : 1,
-              pointerEvents: isStock ? 'none' : 'visible',
+              pointerEvents: isStock ? "none" : "visible",
             }}
             onClick={() =>
               onAddToCartHandler({
@@ -182,7 +181,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
               })
             }
           >
-            {isStock ? 'Out of Stock' : 'Add to Cart'}
+            {isStock ? "Out of Stock" : "Add to Cart"}
           </Button>
         </div>
 
@@ -191,15 +190,15 @@ const ProductDetailsContent = ({ product, ...props }) => {
             className="btn btn--wishlist"
             onClick={() => onWishlistHandler()}
           >
-            <IoIosHeartEmpty />{' '}
-            {!isInWishlist ? 'Add to wishlist' : 'Remove from wishlist'}
+            <IoIosHeartEmpty />{" "}
+            {!isInWishlist ? "Add to wishlist" : "Remove from wishlist"}
           </button>
           <button
             className="btn btn--compare"
             onClick={() => onCompareHandler()}
           >
-            <IoIosGitCompare />{' '}
-            {!isInCompareList ? 'Add to Compare' : 'Remove from compare'}
+            <IoIosGitCompare />{" "}
+            {!isInCompareList ? "Add to Compare" : "Remove from compare"}
           </button>
         </div>
       </ProductActionButton>

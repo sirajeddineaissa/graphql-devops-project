@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import Button from '@components/ui/button';
-import StarRating from '@components/ui/star-rating';
-import { Form, FormGroup, Row, Col } from '@bootstrap';
-import Input, { TextArea } from '@components/ui/input';
-import { Label } from '@components/ui/input/input.style';
-import { ReviewFormWrap } from '@components/product/details/details.style';
+import { useState } from "react";
+import Button from "@components/ui/button";
+import StarRating from "@components/ui/star-rating";
+import { Form, FormGroup, Row, Col } from "@bootstrap";
+import Input, { TextArea } from "@components/ui/input";
+import { Label } from "@components/ui/input/input.style";
+import { ReviewFormWrap } from "@components/product/details/details.style";
 
 const defaultValue = {
   rating: 0,
-  name: '',
-  message: '',
-  email: '',
+  name: "",
+  message: "",
+  email: "",
 };
 
 const ReviewForm = ({ getReviewValue }) => {

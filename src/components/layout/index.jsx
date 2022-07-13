@@ -1,14 +1,14 @@
-import { useRouter } from 'next/router';
-import Header from '@components/layout/header';
-import Footer from '@components/layout/footer';
-import SearchForm from '@components/ui/search';
-import CartButton from '@components/cart/button';
-import { Fragment, useState, useEffect } from 'react';
-import { Main } from '@components/layout/header/style';
-import MiniCartSidebar from '@components/cart/minicart-sidebar';
-import SettingsSidebar from '@components/layout/settings';
-import MobileFooter from '@components/layout/mobile-footer';
-import MobileNavbar from '@components/layout/navbar/mobile-nav';
+import { useRouter } from "next/router";
+import Header from "@components/layout/header";
+import Footer from "@components/layout/footer";
+import SearchForm from "@components/ui/search";
+import CartButton from "@components/cart/button";
+import { Fragment, useState, useEffect } from "react";
+import { Main } from "@components/layout/header/style";
+import MiniCartSidebar from "@components/cart/minicart-sidebar";
+import SettingsSidebar from "@components/layout/settings";
+import MobileFooter from "@components/layout/mobile-footer";
+import MobileNavbar from "@components/layout/navbar/mobile-nav";
 
 const Layout = ({ children, bg, ...props }) => {
   const router = useRouter();
@@ -18,28 +18,28 @@ const Layout = ({ children, bg, ...props }) => {
   const [isShowMobileNav, setIsShowMobileNav] = useState(false);
 
   const onMiniCartHandler = () => {
-    document.querySelector('body').classList.toggle('overflow');
+    document.querySelector("body").classList.toggle("overflow");
     setShowMiniCart((prevState) => !prevState);
   };
 
   const onSearchBoxHandler = () => {
-    document.querySelector('body').classList.toggle('overflow');
+    document.querySelector("body").classList.toggle("overflow");
     setIsShowSearchBox((prevState) => !prevState);
   };
 
   const onMobileNavHandler = () => {
-    document.querySelector('body').classList.toggle('overflow');
+    document.querySelector("body").classList.toggle("overflow");
     setIsShowMobileNav((prevState) => !prevState);
   };
 
   const onConfigHandler = () => {
-    document.querySelector('body').classList.toggle('overflow');
+    document.querySelector("body").classList.toggle("overflow");
     setIsShowConfig((prevState) => !prevState);
   };
 
   useEffect(() => {
-    router.events.on('routeChangeStart', () => {
-      document.querySelector('body').classList.remove('overflow');
+    router.events.on("routeChangeStart", () => {
+      document.querySelector("body").classList.remove("overflow");
     });
   }, []);
 
@@ -74,7 +74,7 @@ const Layout = ({ children, bg, ...props }) => {
 };
 
 Layout.defaultProps = {
-  bg: 'secondary',
+  bg: "secondary",
 };
 
 export default Layout;

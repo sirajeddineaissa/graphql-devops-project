@@ -1,8 +1,8 @@
-import { useSelector } from 'react-redux';
-import { CURRENCY } from '@utils/constant';
-import Radio from '@components/ui/radio';
-import Button from '@components/ui/button';
-import { getCartProductTotalPrice, getCartTotalPrice } from '@utils/product';
+import { useSelector } from "react-redux";
+import { CURRENCY } from "@utils/constant";
+import Radio from "@components/ui/radio";
+import Button from "@components/ui/button";
+import { getCartProductTotalPrice, getCartTotalPrice } from "@utils/product";
 import {
   OrderShipping,
   DetailsOrdered,
@@ -13,7 +13,7 @@ import {
   OrderDetailsMiddle,
   OrderDetailsTopItem,
   OrderDetailsMiddleItem,
-} from '@components/checkout/order-details.style';
+} from "@components/checkout/order-details.style";
 
 const OrderDetails = () => {
   const cart = useSelector((state) => state.shoppingCart);
