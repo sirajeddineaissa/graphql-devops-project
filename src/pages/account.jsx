@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import { useEffect } from 'react';
-import { decode } from 'js-base64';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import { useDispatch } from 'react-redux';
-import { client, customerQuery } from '@graphql';
-import Breadcrumb from '@components/ui/breadcrumb';
-import { getCookieFromContext } from '@utils/method';
-import AccountPageContent from '@components/account';
-import { saveCustomerData } from '@global/actions/customerAction';
+import Head from "next/head";
+import { useEffect } from "react";
+import { decode } from "js-base64";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import { useDispatch } from "react-redux";
+import { client, customerQuery } from "@graphql";
+import Breadcrumb from "@components/ui/breadcrumb";
+import { getCookieFromContext } from "@utils/method";
+import AccountPageContent from "@components/account";
+import { saveCustomerData } from "@global/actions/customerAction";
 
 const AccountPage = ({ data }) => {
   const dispatch = useDispatch();
@@ -39,7 +39,7 @@ export const getServerSideProps = async (context) => {
   if (!token) {
     return {
       redirect: {
-        destination: '/signin',
+        destination: "/signin",
         permanent: false,
       },
     };

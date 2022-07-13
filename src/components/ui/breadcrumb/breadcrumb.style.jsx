@@ -1,12 +1,12 @@
-import styled, { themeGet, space, devices } from '@styled';
+import styled, { themeGet, space, devices } from "@styled";
 
 export const BreadcrumbNavLink = styled.a`
   position: relative;
-  color: ${themeGet('colors.text')};
-  font-weight: ${themeGet('fontWeights.medium')};
+  color: ${themeGet("colors.text")};
+  font-weight: ${themeGet("fontWeights.medium")};
 
   &::after {
-    content: '';
+    content: "";
     width: 0;
     right: 0;
     bottom: 0;
@@ -19,7 +19,7 @@ export const BreadcrumbNavLink = styled.a`
   }
 
   &:hover {
-    color: ${themeGet('colors.primary')};
+    color: ${themeGet("colors.primary")};
 
     &::after {
       left: 0;
@@ -39,8 +39,8 @@ export const BreadcrumbNavItem = styled.li`
   display: inline-block;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  font-family: ${themeGet('fonts.body')};
-  font-size: ${themeGet('fontSizes.standard')};
+  font-family: ${themeGet("fonts.body")};
+  font-size: ${themeGet("fontSizes.standard")};
 
   ${devices.sm} {
     font-size: 12px;
@@ -56,9 +56,9 @@ export const BreadcrumbNav = styled.ul`
 
       &:before {
         float: left;
-        content: '/';
+        content: "/";
         padding-right: 5px;
-        color: ${themeGet('colors.text')};
+        color: ${themeGet("colors.text")};
       }
     }
   }
@@ -72,7 +72,7 @@ export const BreadcrumbTitle = styled.h2`
   white-space: nowrap;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   ${devices.md} {
     font-size: 28px;
@@ -88,7 +88,7 @@ export const BreadcrumbWrap = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: ${themeGet('colors.gray100')};
+  background-color: ${themeGet("colors.gray100")};
 
   ${space}
 `;

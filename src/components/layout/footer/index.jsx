@@ -1,6 +1,6 @@
-import { FooterWrap } from './footer.style';
-import FooterWidget from './footer-widget';
-import FooterBottom from '@components/layout/footer/footer-bottom';
+import { FooterWrap } from "./footer.style";
+import FooterWidget from "./footer-widget";
+import FooterBottom from "@components/layout/footer/footer-bottom";
 
 const Footer = (props) => {
   return (

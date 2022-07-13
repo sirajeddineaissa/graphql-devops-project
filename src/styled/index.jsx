@@ -1,12 +1,12 @@
-import { theme } from './theme';
-import { themeGet } from '@styled-system/theme-get';
+import { theme } from "./theme";
+import { themeGet } from "@styled-system/theme-get";
 import styled, {
   createGlobalStyle,
   css,
   keyframes,
   ThemeProvider,
   ServerStyleSheet,
-} from 'styled-components';
+} from "styled-components";
 
 export const devices = {
   xs: `@media screen and (max-width: 575px)`,
@@ -27,5 +27,5 @@ export {
   createGlobalStyle,
 };
 
-export * from 'styled-system';
+export * from "styled-system";
 export default styled;

@@ -1,4 +1,4 @@
-import styled, { devices, themeGet, space } from '@styled';
+import styled, { devices, themeGet } from "@styled";
 
 export const EmptyContent = styled.div`
   text-align: center;
@@ -10,14 +10,14 @@ export const EmptyContent = styled.div`
 
   svg {
     font-size: 100px;
-    color: ${themeGet('colors.primary')};
+    color: ${themeGet("colors.primary")};
   }
 
   h2 {
     font-size: 20px;
-    color: ${themeGet('colors.heading')};
+    color: ${themeGet("colors.heading")};
     margin-top: 15px;
-    font-weight: ${themeGet('fontWeights.subHeading')};
+    font-weight: ${themeGet("fontWeights.subHeading")};
 
     ${devices.sm} {
       font-size: 18px;
@@ -26,12 +26,12 @@ export const EmptyContent = styled.div`
 `;
 
 export const EmptyHeading = styled.h2`
-  color: ${themeGet('colors.heading')};
+  color: ${themeGet("colors.heading")};
   text-align: left;
   font-size: 24px;
   line-height: 16px;
   font-style: normal;
   text-transform: none;
   margin: 0 0 30px;
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 `;

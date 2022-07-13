@@ -1,8 +1,8 @@
-import { v4 as uuid } from 'uuid';
-import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuid } from "uuid";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const cartSlice = createSlice({
-  name: 'shoppingCart',
+  name: "shoppingCart",
   initialState: [],
   reducers: {
     addToCart: (state, action) => {
@@ -20,7 +20,7 @@ export const cartSlice = createSlice({
         state[cartProductIndex].quantity =
           state[cartProductIndex].quantity + product.quantity;
       } else {
-        product['cartId'] = uuid();
+        product["cartId"] = uuid();
         return [product, ...state];
       }
     },

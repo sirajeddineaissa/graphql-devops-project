@@ -1,4 +1,4 @@
-import styled, { space, themeGet } from '@styled';
+import styled, { space, themeGet } from "@styled";
 
 export const SettingsForm = styled.div`
   ${space};
@@ -6,30 +6,30 @@ export const SettingsForm = styled.div`
   fieldset {
     legend {
       margin-bottom: 20px;
-      font-family: ${themeGet('fonts.body')};
-      font-weight: ${themeGet('fontWeights.subHeading')};
+      font-family: ${themeGet("fonts.body")};
+      font-weight: ${themeGet("fontWeights.subHeading")};
     }
   }
 `;
 
 export const ButtonView = styled.a`
   font-size: 20px;
-  color: ${themeGet('colors.dark')};
+  color: ${themeGet("colors.dark")};
 `;
 
 export const EmptyStatus = styled.div`
   padding: 15px 10px 0;
   border-radius: 5px 5px 0 0;
-  font-family: ${themeGet('fonts.body')};
-  font-size: ${themeGet('fontSizes.standard')};
-  background-color: ${themeGet('colors.white')};
-  font-weight: ${themeGet('fontWeights.heading')};
-  border-top: 3px solid ${themeGet('colors.primary')};
+  font-family: ${themeGet("fonts.body")};
+  font-size: ${themeGet("fontSizes.standard")};
+  background-color: ${themeGet("colors.white")};
+  font-weight: ${themeGet("fontWeights.heading")};
+  border-top: 3px solid ${themeGet("colors.primary")};
 `;
 
 export const TabContentTitle = styled.h3`
   font-size: 20px;
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 `;
 
 export const TabContentHeader = styled.div`
@@ -38,7 +38,7 @@ export const TabContentHeader = styled.div`
   margin-bottom: 25px;
   padding-bottom: 10px;
   justify-content: space-between;
-  border-bottom: 1px dashed ${themeGet('colors.borderLight')};
+  border-bottom: 1px dashed ${themeGet("colors.borderLight")};
 
   button {
     padding: 7px 15px;
@@ -47,7 +47,7 @@ export const TabContentHeader = styled.div`
 
 export const AccountTabContent = styled.div`
   padding: 30px;
-  border: 1px solid ${themeGet('colors.borderLight')};
+  border: 1px solid ${themeGet("colors.borderLight")};
 
   p {
     &:not(:last-child) {
@@ -56,16 +56,16 @@ export const AccountTabContent = styled.div`
   }
 
   a {
-    color: ${themeGet('colors.text')};
+    color: ${themeGet("colors.text")};
     &:hover {
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
   }
 `;
 
 export const AccountNav = styled.nav`
-  font-family: ${themeGet('fonts.body')};
-  border: 1px solid ${themeGet('colors.borderLight')};
+  font-family: ${themeGet("fonts.body")};
+  border: 1px solid ${themeGet("colors.borderLight")};
 
   ul {
     li {
@@ -73,22 +73,22 @@ export const AccountNav = styled.nav`
       font-size: 13px;
       padding: 12px 15px;
       text-transform: uppercase;
-      color: ${themeGet('colors.heading')};
-      transition: ${themeGet('transition')};
-      font-weight: ${themeGet('fontWeights.subHeading')};
+      color: ${themeGet("colors.heading")};
+      transition: ${themeGet("transition")};
+      font-weight: ${themeGet("fontWeights.subHeading")};
 
       &:not(:last-child) {
-        border-bottom: 1px solid ${themeGet('colors.borderLight')};
+        border-bottom: 1px solid ${themeGet("colors.borderLight")};
       }
 
       &:hover,
       &.react-tabs__tab--selected {
         cursor: pointer;
-        color: ${themeGet('colors.white')};
-        background-color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.white")};
+        background-color: ${themeGet("colors.primary")};
 
         a {
-          color: ${themeGet('colors.white')};
+          color: ${themeGet("colors.white")};
         }
       }
 
@@ -101,10 +101,10 @@ export const AccountNav = styled.nav`
 
       a {
         flex-basis: 100%;
-        color: ${themeGet('colors.heading')};
+        color: ${themeGet("colors.heading")};
 
         &:hover {
-          color: ${themeGet('colors.white')};
+          color: ${themeGet("colors.white")};
         }
       }
     }

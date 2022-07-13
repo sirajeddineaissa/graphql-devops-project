@@ -1,35 +1,35 @@
-import cn from 'classnames';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import Loader from '@components/ui/loader';
-import EmptyProduct from '@components/ui/empty';
-import ProductCard from '@components/product/card';
-import SectionTitle from '@components/ui/section-title';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Col, Container, Row } from '@bootstrap-styled/v4';
-import { ProductNav } from '@components/product/feed/style';
+import cn from "classnames";
+import { useState } from "react";
+import PropTypes from "prop-types";
+import Loader from "@components/ui/loader";
+import EmptyProduct from "@components/ui/empty";
+import ProductCard from "@components/product/card";
+import SectionTitle from "@components/ui/section-title";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Col, Container, Row } from "@bootstrap-styled/v4";
+import { ProductNav } from "@components/product/feed/style";
 import {
   getFeaturedProducts,
   getSaleProducts,
   getTendingProducts,
-} from '@utils/product';
+} from "@utils/product";
 
 const productNav = [
   {
-    key: 'new',
-    title: 'New Arrival',
+    key: "new",
+    title: "New Arrival",
   },
   {
-    key: 'featured',
-    title: 'Featured',
+    key: "featured",
+    title: "Featured",
   },
   {
-    key: 'sale',
-    title: 'On Sale',
+    key: "sale",
+    title: "On Sale",
   },
   {
-    key: 'trending',
-    title: 'Trending',
+    key: "trending",
+    title: "Trending",
   },
 ];
 
@@ -40,13 +40,13 @@ const ProductsTab = ({ products, limit = 8, className }) => {
     const target = event.target;
     const key = target.dataset.key;
     switch (key) {
-      case 'sale':
+      case "sale":
         setData(getSaleProducts(products));
         break;
-      case 'featured':
+      case "featured":
         setData(getFeaturedProducts(products));
         break;
-      case 'tending':
+      case "tending":
         setData(getTendingProducts(products));
         break;
       default:

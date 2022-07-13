@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import Image from '@components/ui/image';
-import settings from '@data/settings.json';
-import Button from '@components/ui/button';
-import thumb from '/public/images/error.png';
-import { ErrorPage } from '@assets/css/global.style';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Image from "@components/ui/image";
+import settings from "@data/settings.json";
+import Button from "@components/ui/button";
+import thumb from "/public/images/error.png";
+import { ErrorPage } from "@assets/css/global.style";
 
 const Error404Page = () => {
   const router = useRouter();
@@ -12,7 +12,7 @@ const Error404Page = () => {
   return (
     <div>
       <Head>
-        <title>{'NOT FOUND 404 - ' + settings?.title}</title>
+        <title>{"NOT FOUND 404 - " + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 

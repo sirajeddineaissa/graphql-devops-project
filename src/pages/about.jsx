@@ -1,15 +1,15 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import Image from '@components/ui/image';
-import { Container, Col, Row } from '@bootstrap';
-import Breadcrumb from '@components/ui/breadcrumb';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import Image from "@components/ui/image";
+import { Container, Col, Row } from "@bootstrap";
+import Breadcrumb from "@components/ui/breadcrumb";
 
 const AboutPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'About | ' + settings?.title}</title>
+        <title>{"About | " + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 
@@ -19,7 +19,7 @@ const AboutPage = () => {
         <Container>
           <h2>
             Hype Renting is a luxury and high-end clothing rental platform that
-            connects our customers with our renters.{' '}
+            connects our customers with our renters.{" "}
           </h2>
         </Container>
 

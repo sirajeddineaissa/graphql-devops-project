@@ -1,39 +1,39 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import navData from '@data/nav';
-import PropTypes from 'prop-types';
-import Logo from '@components/ui/logo';
-import OffCanvas from '@components/ui/offCanvas';
-import { CgMathPlus, CgMathMinus } from 'react-icons/cg';
-import { MobileNav } from '@components/layout/navbar/mobile-nav.style';
-import { getClosest, getSiblings, slideToggle, slideUp } from '@utils/method';
+import cn from "classnames";
+import Link from "next/link";
+import navData from "@data/nav";
+import PropTypes from "prop-types";
+import Logo from "@components/ui/logo";
+import OffCanvas from "@components/ui/offCanvas";
+import { CgMathPlus, CgMathMinus } from "react-icons/cg";
+import { MobileNav } from "@components/layout/navbar/mobile-nav.style";
+import { getClosest, getSiblings, slideToggle, slideUp } from "@utils/method";
 import {
   OffCanvasCloseBtn,
   OffCanvasHead,
-} from '@components/ui/offCanvas/style';
+} from "@components/ui/offCanvas/style";
 
 const MobileNavbar = ({ isOpen, onHandler }) => {
   const onNavHandler = (e) => {
     const target = e.target;
     const hasSubmenus = getSiblings(target);
     hasSubmenus.length > 0 && e.preventDefault();
-    target.classList.toggle('menu-expand');
-    const parent = getClosest(target, 'LI');
+    target.classList.toggle("menu-expand");
+    const parent = getClosest(target, "LI");
     const childNodes = parent.childNodes;
     const parentSiblings = getSiblings(parent);
     parentSiblings.forEach((sibling) => {
       const sibChildNodes = sibling.childNodes;
       sibChildNodes.forEach((child) => {
-        if (child.classList.contains('mm-next-level')) {
-          child.classList.remove('menu-expand');
+        if (child.classList.contains("mm-next-level")) {
+          child.classList.remove("menu-expand");
         }
-        if (child.nodeName === 'UL') {
+        if (child.nodeName === "UL") {
           slideUp(child, 300);
         }
       });
     });
     childNodes.forEach((child) => {
-      if (child.nodeName === 'UL') {
+      if (child.nodeName === "UL") {
         slideToggle(child, 300);
       }
     });
@@ -54,7 +54,7 @@ const MobileNavbar = ({ isOpen, onHandler }) => {
                 <a
                   onClick={(event) => onNavHandler(event)}
                   className={cn({
-                    'mm-next-level': nav?.submenu || nav?.mega_menu,
+                    "mm-next-level": nav?.submenu || nav?.mega_menu,
                   })}
                 >
                   {nav?.text}

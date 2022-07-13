@@ -1,17 +1,17 @@
-import { useProduct } from '@hooks';
-import cogoToast from 'cogo-toast';
-import PropTypes from 'prop-types';
-import { excerpt } from '@utils/method';
-import { BiTrash } from 'react-icons/bi';
-import { useDispatch } from 'react-redux';
-import { CURRENCY } from '@utils/constant';
-import Image from '@components/ui/image';
-import Button from '@components/ui/button';
-import { getProductStock } from '@utils/product';
-import { Container, Tbody, Tr, Td } from '@bootstrap';
-import { addToCartAction } from '@global/actions/cartAction';
-import { TableResponsive } from '@components/cart/listing/style';
-import { removeCompareAction } from '@global/actions/compareAction';
+import { useProduct } from "@hooks";
+import cogoToast from "cogo-toast";
+import PropTypes from "prop-types";
+import { excerpt } from "@utils/method";
+import { BiTrash } from "react-icons/bi";
+import { useDispatch } from "react-redux";
+import { CURRENCY } from "@utils/constant";
+import Image from "@components/ui/image";
+import Button from "@components/ui/button";
+import { getProductStock } from "@utils/product";
+import { Container, Tbody, Tr, Td } from "@bootstrap";
+import { addToCartAction } from "@global/actions/cartAction";
+import { TableResponsive } from "@components/cart/listing/style";
+import { removeCompareAction } from "@global/actions/compareAction";
 import {
   CompareTable,
   CompareTitle,
@@ -21,7 +21,7 @@ import {
   CompareListWrap,
   CompareProTitle,
   CompareProDelete,
-} from '@components/compare/compare.style';
+} from "@components/compare/compare.style";
 
 const CompareList = ({ products }) => {
   const dispatch = useDispatch();
@@ -29,8 +29,8 @@ const CompareList = ({ products }) => {
   const onAddToCart = (rest) => {
     dispatch(addToCartAction(rest));
     cogoToast.success(`${rest.title} is added to cart.`, {
-      position: 'top-right',
-      heading: 'Successfully Add!',
+      position: "top-right",
+      heading: "Successfully Add!",
       hideAfter: 3,
     });
   };
@@ -38,8 +38,8 @@ const CompareList = ({ products }) => {
   const onRemoveCompare = (product) => {
     dispatch(removeCompareAction(product));
     cogoToast.error(`${product?.title} remove from compare!.`, {
-      position: 'top-right',
-      heading: 'Successfully removed!',
+      position: "top-right",
+      heading: "Successfully removed!",
       hideAfter: 3,
     });
   };
@@ -101,7 +101,7 @@ const CompareList = ({ products }) => {
                   <CompareProData>
                     {product?.variants?.edges.length > 1
                       ? product?.variants?.edges[0]?.node?.title
-                      : '-'}
+                      : "-"}
                   </CompareProData>
                 ))}
               </Tr>
@@ -117,8 +117,8 @@ const CompareList = ({ products }) => {
                   const stock = getProductStock(product, variations);
                   return (
                     <CompareProData>
-                      <span style={{ color: stock ? 'green' : 'red' }}>
-                        {stock ? 'Available' : 'Out of Stock'}
+                      <span style={{ color: stock ? "green" : "red" }}>
+                        {stock ? "Available" : "Out of Stock"}
                       </span>
                     </CompareProData>
                   );
@@ -144,7 +144,7 @@ const CompareList = ({ products }) => {
                         fontSize={12}
                         style={{
                           opacity: !isStock ? 0.5 : 1,
-                          pointerEvents: !isStock ? 'none' : 'visible',
+                          pointerEvents: !isStock ? "none" : "visible",
                         }}
                         onClick={() =>
                           onAddToCart({
@@ -157,7 +157,7 @@ const CompareList = ({ products }) => {
                           })
                         }
                       >
-                        {isStock ? 'Add to Cart' : 'Out of Stock'}
+                        {isStock ? "Add to Cart" : "Out of Stock"}
                       </Button>
                     </CompareProData>
                   );

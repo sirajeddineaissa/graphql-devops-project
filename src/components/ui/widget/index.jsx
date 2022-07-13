@@ -1,7 +1,7 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import parse from 'react-html-parser';
-import { WidgetItem, WidgetTitle, WidgetBody } from './widget.style';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import parse from "react-html-parser";
+import { WidgetItem, WidgetTitle, WidgetBody } from "./widget.style";
 
 const Widget = ({ title, children, className, ...props }) => {
   return (

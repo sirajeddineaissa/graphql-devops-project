@@ -1,9 +1,9 @@
-import styled, { space, themeGet, devices } from '@styled';
+import styled, { space, themeGet, devices } from "@styled";
 
 export const WidgetBody = styled.div`
   ${space}
   .about-text {
-    font-size: ${themeGet('fontSizes.standard')};
+    font-size: ${themeGet("fontSizes.standard")};
     max-width: 290px;
     line-height: 24px;
 
@@ -13,7 +13,7 @@ export const WidgetBody = styled.div`
   }
 
   p {
-    color: ${themeGet('colors.white')};
+    color: ${themeGet("colors.white")};
   }
 
   .widget-list {
@@ -25,15 +25,15 @@ export const WidgetBody = styled.div`
       }
 
       a {
-        font-size: ${themeGet('fontSizes.standard')};
+        font-size: ${themeGet("fontSizes.standard")};
         line-height: 24px;
         padding: 0;
-        color: ${themeGet('colors.white')};
-        transition: ${themeGet('transition')};
+        color: ${themeGet("colors.white")};
+        transition: ${themeGet("transition")};
 
         &:hover {
           padding-left: 6px;
-          color: ${themeGet('colors.primary')};
+          color: ${themeGet("colors.primary")};
         }
       }
     }
@@ -46,7 +46,7 @@ export const WidgetTitle = styled.h4`
   position: relative;
   margin-bottom: 15px;
   letter-spacing: 1.2px;
-  color: ${themeGet('colors.white')};
+  color: ${themeGet("colors.white")};
 `;
 
 export const WidgetItem = styled.div`

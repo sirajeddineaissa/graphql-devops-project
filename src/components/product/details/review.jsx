@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { FaUserTie } from 'react-icons/fa';
-import Ratings from '@components/product/details/rating';
-import { ReviewItem } from '@components/product/details/details.style';
+import PropTypes from "prop-types";
+import { FaUserTie } from "react-icons/fa";
+import Ratings from "@components/product/details/rating";
+import { ReviewItem } from "@components/product/details/details.style";
 
 const Review = ({ data }) => {
   const { name, rating, message } = data;

@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import parse from 'react-html-parser';
-import Image from '@components/ui/image';
-import { formatDate } from '@utils/method';
-import { Container, Col, Row } from '@bootstrap';
+import Link from "next/link";
+import PropTypes from "prop-types";
+import parse from "react-html-parser";
+import Image from "@components/ui/image";
+import { formatDate } from "@utils/method";
+import { Container, Col, Row } from "@bootstrap";
 import {
   BlogList,
   BlogPostText,
@@ -12,9 +12,9 @@ import {
   BlogPostContent,
   BlogPostFooterItem,
   PostDetailsContentWrapper,
-} from '@components/blog/details/post.details.style';
-import { FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
-import { PostMeta, PostTitle } from '@components/blog/post/post.style';
+} from "@components/blog/details/post.details.style";
+import { FaFacebook, FaTwitter, FaPinterest } from "react-icons/fa";
+import { PostMeta, PostTitle } from "@components/blog/post/post.style";
 
 const PostDetailsContent = ({ post }) => {
   const { title, image, contentHtml, handle, authorV2, publishedAt, tags } =

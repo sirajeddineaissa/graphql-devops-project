@@ -132,7 +132,7 @@ export const getFeaturedProducts = (products, limit = -1) => {
       return {
         node: {
           ...product,
-          featured: product?.tags.some((tag) => tag === 'featured'),
+          featured: product?.tags.some((tag) => tag === "featured"),
         },
       };
     })
@@ -162,7 +162,7 @@ export const getTendingProducts = (products, limit = -1) => {
       return {
         node: {
           ...product,
-          tending: product?.tags.some((tag) => tag === 'tending'),
+          tending: product?.tags.some((tag) => tag === "tending"),
         },
       };
     })

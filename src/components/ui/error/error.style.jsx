@@ -1,11 +1,11 @@
-import styled, { devices, themeGet } from '@styled';
+import styled, { devices, themeGet } from "@styled";
 
 export const ErrorMessageWrap = styled.div`
   margin: auto;
   padding: 15px;
   max-width: 400px;
   text-align: center;
-  border-radius: ${themeGet('radii.md')};
+  border-radius: ${themeGet("radii.md")};
   box-shadow: rgba(100, 100, 111, 0.2) 0 5px 29px 0;
 
   ${devices.sm} {
@@ -17,6 +17,6 @@ export const ErrorMessageWrap = styled.div`
   }
 
   h2 {
-    font-weight: ${themeGet('fontWeights.medium')};
+    font-weight: ${themeGet("fontWeights.medium")};
   }
 `;

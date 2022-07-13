@@ -10,6 +10,7 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "dependencies": {
+    "@babel/core": "^7.18.6",
     "@bootstrap-styled/provider": "^2.0.3",
     "@bootstrap-styled/v4": "^3.4.0",
     "@fontsource/montserrat": "^4.5.11",
@@ -41,15 +42,12 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/node": "^18.0.3",
     "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "^8.19.0",
     "graphql": "^16.5.0",
     "graphql-request": "^4.3.0",
     "gray-matter": "^4.0.3",
     "prettier": "^2.7.1",
     "react-html-parser": "^2.0.2",
-    "sass": "^1.53.0",
-    "typescript": "^4.7.4"
+    "sass": "^1.53.0"
   }
 }

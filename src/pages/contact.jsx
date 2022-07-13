@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import Breadcrumb from '@components/ui/breadcrumb';
-import Contact from '@components/contact';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import Breadcrumb from "@components/ui/breadcrumb";
+import Contact from "@components/contact";
 
 const ContactPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Contact | ' + settings?.title}</title>
+        <title>{"Contact | " + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 

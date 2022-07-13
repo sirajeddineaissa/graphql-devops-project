@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {
   OffCanvasWrap,
   OffCanvasInner,
   OffCanvasOverlay,
   OffCanvasContent,
-} from './style';
+} from "./style";
 
 const OffCanvas = ({ children, open, onHandler, position, maxWidth }) => {
   return (

@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import Image from '@components/ui/image';
-import { placeholder } from '@utils/constant';
-import { CategoryItem, CatItemInner, CatName } from './category.style';
+import Link from "next/link";
+import PropTypes from "prop-types";
+import Image from "@components/ui/image";
+import { placeholder } from "@utils/constant";
+import { CategoryItem, CatItemInner, CatName } from "./category.style";
 
 const Category = ({ category, icon, slug }) => {
   return (

@@ -1,12 +1,12 @@
-import styled, { themeGet } from '@styled';
+import styled, { themeGet } from "@styled";
 
 export const PostTitle = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   a {
-    color: ${themeGet('colors.heading')};
+    color: ${themeGet("colors.heading")};
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -18,16 +18,16 @@ export const PostMeta = styled.div`
   display: flex;
   margin-bottom: 15px;
   font-size: 13px;
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   a,
   span {
     text-decoration: none;
-    color: ${themeGet('colors.text')};
+    color: ${themeGet("colors.text")};
 
     &:hover {
       cursor: pointer;
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
 
     &:first-child {
@@ -45,11 +45,11 @@ export const PostContent = styled.div`
 
   .btn-read {
     margin-top: 20px;
-    font-size: ${themeGet('fontSizes.standard')};
+    font-size: ${themeGet("fontSizes.standard")};
   }
 `;
 
 export const PostItem = styled.article`
   position: relative;
-  background-color: ${themeGet('colors.gray100')};
+  background-color: ${themeGet("colors.gray100")};
 `;

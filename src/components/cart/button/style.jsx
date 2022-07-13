@@ -1,5 +1,5 @@
-import { bounce } from '@assets/css/keyframes';
-import styled, { devices, themeGet } from '@styled';
+import { bounce } from "@assets/css/keyframes";
+import styled, { devices, themeGet } from "@styled";
 
 export const Price = styled.span`
   width: 65px;
@@ -7,11 +7,11 @@ export const Price = styled.span`
   padding: 0 5px;
   margin-top: 5px;
   line-height: 25px;
-  color: ${themeGet('colors.primary')};
-  border-radius: ${themeGet('radii.sm')};
-  font-size: ${themeGet('fontSizes.standard')};
-  background-color: ${themeGet('colors.white')};
-  font-weight: ${themeGet('fontWeights.heading')};
+  color: ${themeGet("colors.primary")};
+  border-radius: ${themeGet("radii.sm")};
+  font-size: ${themeGet("fontSizes.standard")};
+  background-color: ${themeGet("colors.white")};
+  font-weight: ${themeGet("fontWeights.heading")};
 `;
 
 export const CartButtonWrap = styled.button`
@@ -25,11 +25,11 @@ export const CartButtonWrap = styled.button`
   top: calc(110px + 30%);
   flex-direction: column;
   border-radius: 3px 0 0 3px;
-  color: ${themeGet('colors.white')};
+  color: ${themeGet("colors.white")};
   box-shadow: 0 0 16px -1px rgb(0 0 0 / 75%);
-  font-family: ${themeGet('fonts.body')};
-  background-color: ${themeGet('colors.secondary')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  font-family: ${themeGet("fonts.body")};
+  background-color: ${themeGet("colors.secondary")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   &.animated {
     animation-duration: 1s;
@@ -45,6 +45,6 @@ export const CartButtonWrap = styled.button`
   svg {
     font-size: 20px;
     margin-bottom: 3px;
-    color: ${themeGet('colors.primary')};
+    color: ${themeGet("colors.primary")};
   }
 `;

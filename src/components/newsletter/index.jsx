@@ -1,7 +1,7 @@
-import Button from '@components/ui/button';
-import { IoIosSend } from 'react-icons/io';
-import { Form, FormGroup, Label } from '@bootstrap';
-import { FormNewsletter, Input } from './newsletter.style';
+import Button from "@components/ui/button";
+import { IoIosSend } from "react-icons/io";
+import { Form, FormGroup, Label } from "@bootstrap";
+import { FormNewsletter, Input } from "./newsletter.style";
 
 const NewsletterForm = () => {
   return (

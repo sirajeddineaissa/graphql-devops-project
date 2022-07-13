@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Button from '@components/ui/button';
-import OffCanvas from '@components/ui/offCanvas';
-import AddressForm from '@components/account/address/address-form';
-import AddressList from '@components/account/address/address-list';
+import { useState } from "react";
+import Button from "@components/ui/button";
+import OffCanvas from "@components/ui/offCanvas";
+import AddressForm from "@components/account/address/address-form";
+import AddressList from "@components/account/address/address-list";
 import {
   TabContentTitle,
   TabContentHeader,
-} from '@components/account/account.style';
+} from "@components/account/account.style";
 
 const CustomerAddress = () => {
   const [addressFormShow, setAddressFormShow] = useState(false);

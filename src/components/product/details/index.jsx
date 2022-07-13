@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import { Container, Col, Row } from '@bootstrap';
-import ProductDetailsThumb from '@components/product/details/thumbnail';
-import ProductDetailsContent from '@components/product/details/content';
-import { ProductDetailsWrapper } from '@components/product/details/details.style';
+import PropTypes from "prop-types";
+import { Container, Col, Row } from "@bootstrap";
+import ProductDetailsThumb from "@components/product/details/thumbnail";
+import ProductDetailsContent from "@components/product/details/content";
+import { ProductDetailsWrapper } from "@components/product/details/details.style";
 
 const ProductDetails = ({ product, ...props }) => {
   return (

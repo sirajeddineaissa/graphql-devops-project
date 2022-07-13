@@ -1,4 +1,4 @@
-import { gql } from 'graphql-request';
+import { gql } from "graphql-request";
 
 const collectionQuery = (handle, sortKey, reverse, limit = 100) => {
   const queryArguments = `handle: "${handle}"`;

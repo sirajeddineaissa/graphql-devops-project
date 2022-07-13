@@ -1,11 +1,11 @@
-import { Table, Th } from '@bootstrap';
-import styled, { css, devices, space, themeGet } from '@styled';
+import { Table, Th } from "@bootstrap";
+import styled, { css, devices, space, themeGet } from "@styled";
 
 export const CartCouponActions = styled.div`
   ${space};
 
   padding: 20px;
-  background-color: ${themeGet('colors.borderLight')};
+  background-color: ${themeGet("colors.borderLight")};
 
   ${devices.md} {
     padding-top: 30px;
@@ -20,12 +20,12 @@ export const GrandPrice = styled.div`
   display: flex;
   margin-right: 35px;
   justify-content: flex-end;
-  color: ${themeGet('colors.primary')};
-  font-family: ${themeGet('fonts.heading')};
+  color: ${themeGet("colors.primary")};
+  font-family: ${themeGet("fonts.heading")};
 
   span {
     margin-left: 40px;
-    color: ${themeGet('colors.heading')};
+    color: ${themeGet("colors.heading")};
   }
 `;
 
@@ -35,15 +35,15 @@ export const TableHeading = styled(Th)`
   text-transform: uppercase;
   text-align: center !important;
   padding: 21px 45px 22px !important;
-  color: ${themeGet('colors.heading')};
-  font-size: ${themeGet('fontSizes.standard')};
-  font-weight: ${themeGet('fontWeights.heading')};
-  background-color: ${themeGet('colors.borderLight')};
+  color: ${themeGet("colors.heading")};
+  font-size: ${themeGet("fontSizes.standard")};
+  font-weight: ${themeGet("fontWeights.heading")};
+  background-color: ${themeGet("colors.borderLight")};
 `;
 
 export const CartListTable = styled(Table)`
-  font-family: ${themeGet('fonts.body')};
-  border: 1px solid ${themeGet('colors.borderLight')};
+  font-family: ${themeGet("fonts.body")};
+  border: 1px solid ${themeGet("colors.borderLight")};
 `;
 
 export const TableResponsive = styled.div`

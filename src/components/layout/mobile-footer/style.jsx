@@ -1,4 +1,4 @@
-import styled, { devices, themeGet } from '@styled';
+import styled, { devices, themeGet } from "@styled";
 
 export const FooterButtons = styled.div`
   height: 50px;
@@ -13,8 +13,8 @@ export const FooterButtons = styled.div`
     line-height: 1;
     font-size: 20px;
     text-align: center;
-    transition: ${themeGet('transition')};
-    font-family: ${themeGet('fonts.body')};
+    transition: ${themeGet("transition")};
+    font-family: ${themeGet("fonts.body")};
 
     span {
       display: block;
@@ -23,7 +23,7 @@ export const FooterButtons = styled.div`
     }
 
     &:hover {
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
   }
 `;
@@ -36,7 +36,7 @@ export const MobileFooterWrap = styled.div`
   display: none;
   position: fixed;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px 0;
-  background-color: ${themeGet('colors.secondary')};
+  background-color: ${themeGet("colors.secondary")};
 
   ${devices.md} {
     display: block;

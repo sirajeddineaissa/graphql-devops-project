@@ -1,5 +1,5 @@
-import { Table, Td } from '@bootstrap';
-import styled, { themeGet, space } from '@styled';
+import { Table, Td } from "@bootstrap";
+import styled, { themeGet, space } from "@styled";
 
 export const CompareProDelete = styled.button`
   display: block;
@@ -9,14 +9,14 @@ export const CompareProDelete = styled.button`
   margin-bottom: 5px;
 
   &:hover {
-    color: ${themeGet('colors.danger')};
+    color: ${themeGet("colors.danger")};
   }
 `;
 
 export const CompareProData = styled(Td)`
-  color: ${themeGet('colors.text')};
-  font-size: ${themeGet('fontSizes.standard')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.text")};
+  font-size: ${themeGet("fontSizes.standard")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 `;
 
 export const CompareProDesc = styled(Td)`
@@ -24,21 +24,21 @@ export const CompareProDesc = styled(Td)`
   min-width: 200px;
   text-align: left !important;
   white-space: normal !important;
-  color: ${themeGet('colors.text')};
-  font-size: ${themeGet('fontSizes.standard')};
+  color: ${themeGet("colors.text")};
+  font-size: ${themeGet("fontSizes.standard")};
 `;
 
 export const CompareProTitle = styled.span`
   display: block;
   margin-top: 10px;
-  color: ${themeGet('colors.heading')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.heading")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 `;
 
 export const CompareTitle = styled(Td)`
   font-size: 16px;
-  color: ${themeGet('colors.heading')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.heading")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 `;
 
 export const CompareProduct = styled(Td)`
@@ -46,8 +46,8 @@ export const CompareProduct = styled(Td)`
 `;
 
 export const CompareTable = styled(Table)`
-  font-family: ${themeGet('fonts.body')};
-  border: 1px solid ${themeGet('colors.borderLight')};
+  font-family: ${themeGet("fonts.body")};
+  border: 1px solid ${themeGet("colors.borderLight")};
 `;
 
 export const CompareListWrap = styled.div`
@@ -59,7 +59,7 @@ export const CompareListWrap = styled.div`
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
-        border-right: 1px solid ${themeGet('colors.borderLight')};
+        border-right: 1px solid ${themeGet("colors.borderLight")};
       }
     }
   }

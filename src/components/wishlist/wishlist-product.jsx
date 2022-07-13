@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { Td } from '@bootstrap';
-import Image from 'next/image';
-import { useProduct } from '@hooks';
-import PropTypes from 'prop-types';
-import cogoToast from 'cogo-toast';
-import { useDispatch } from 'react-redux';
-import Button from '@components/ui/button';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { addToCartAction } from '@global/actions/cartAction';
-import { removeWishlistAction } from '@global/actions/wishlistAction';
+import Link from "next/link";
+import { Td } from "@bootstrap";
+import Image from "next/image";
+import { useProduct } from "@hooks";
+import PropTypes from "prop-types";
+import cogoToast from "cogo-toast";
+import { useDispatch } from "react-redux";
+import Button from "@components/ui/button";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { addToCartAction } from "@global/actions/cartAction";
+import { removeWishlistAction } from "@global/actions/wishlistAction";
 import {
   CartProInfo,
   CartProName,
@@ -17,7 +17,7 @@ import {
   CartActionBtn,
   CartProAction,
   SingleCartItem,
-} from '@components/cart/cart-product/style';
+} from "@components/cart/cart-product/style";
 
 const WishlistItem = ({ product }) => {
   const { title, images, slug } = product;
@@ -28,8 +28,8 @@ const WishlistItem = ({ product }) => {
   const onAddToCart = (rest) => {
     dispatch(addToCartAction(rest));
     cogoToast.success(`${product.name} is added to cart.`, {
-      position: 'top-right',
-      heading: 'Successfully Add!',
+      position: "top-right",
+      heading: "Successfully Add!",
       hideAfter: 3,
     });
   };
@@ -62,7 +62,7 @@ const WishlistItem = ({ product }) => {
           fontSize={12}
           style={{
             opacity: isStock ? 0.5 : 1,
-            pointerEvents: isStock ? 'none' : 'visible',
+            pointerEvents: isStock ? "none" : "visible",
           }}
           onClick={() =>
             onAddToCart({
@@ -74,10 +74,10 @@ const WishlistItem = ({ product }) => {
           }
         >
           {!isStock && !isInCart
-            ? 'Add to Cart'
+            ? "Add to Cart"
             : !isStock && isInCart
-            ? 'Already Added'
-            : 'Out of Stock'}
+            ? "Already Added"
+            : "Out of Stock"}
         </Button>
       </Td>
       <CartProAction>

@@ -1,4 +1,4 @@
-import styled, { space } from '@styled';
+import styled, { space } from "@styled";
 
 export const BlogWrap = styled.section`
   ${space}

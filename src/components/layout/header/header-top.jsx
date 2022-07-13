@@ -1,13 +1,13 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import Dropdown from '@components/ui/dropdown';
-import { Col, Container, DropdownItem, Row } from '@bootstrap';
+import cn from "classnames";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import Dropdown from "@components/ui/dropdown";
+import { Col, Container, DropdownItem, Row } from "@bootstrap";
 import {
   HeaderTopWrap,
   HeaderTopMessage,
   HeaderTopSetLanCurr,
-} from '@components/layout/header/header.style';
+} from "@components/layout/header/header.style";
 
 const HeaderTop = ({ className }) => {
   return (

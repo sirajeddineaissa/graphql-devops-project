@@ -1,10 +1,10 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import { BlogWrap } from './blog.style';
-import Post from '@components/blog/post';
-import { Container, Col, Row, H3 } from '@bootstrap';
-import Slider, { Slide } from '@components/ui/swiper';
-import SectionTitle from '@components/ui/section-title';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { BlogWrap } from "./blog.style";
+import Post from "@components/blog/post";
+import { Container, Col, Row, H3 } from "@bootstrap";
+import Slider, { Slide } from "@components/ui/swiper";
+import SectionTitle from "@components/ui/section-title";
 
 const LatestBlog = ({ posts, className, props }) => {
   const settings = {

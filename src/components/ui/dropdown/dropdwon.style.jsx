@@ -1,4 +1,4 @@
-import styled, { css, themeGet } from '@styled';
+import styled, { css, themeGet } from "@styled";
 
 export const DropdownToggleButton = styled.button`
   border: none;
@@ -10,8 +10,8 @@ export const DropdownToggleButton = styled.button`
   align-items: center;
   transition: all 0.3s ease 0s;
   background-color: transparent;
-  font-family: ${themeGet('fonts.heading')};
-  color: ${(props) => (props.color ? props.color : themeGet('colors.white'))};
+  font-family: ${themeGet("fonts.heading")};
+  color: ${(props) => (props.color ? props.color : themeGet("colors.white"))};
 
   svg {
     font-size: 18px;
@@ -29,7 +29,7 @@ export const DropdownToggleButton = styled.button`
   }
 
   &:hover {
-    color: ${themeGet('colors.primary')};
+    color: ${themeGet("colors.primary")};
   }
 `;
 
@@ -39,7 +39,7 @@ export const DropdownWrap = styled.div`
   &:not(:last-child) {
     button {
       padding-right: 15px;
-      border-right: 1px solid ${themeGet('colors.borderDark')};
+      border-right: 1px solid ${themeGet("colors.borderDark")};
     }
   }
 `;
@@ -56,13 +56,13 @@ export const DropdownMenu = styled.ul`
   overflow: hidden;
   position: absolute;
   pointer-events: none;
-  transition: ${themeGet('transition')};
-  background: ${themeGet('colors.white')};
+  transition: ${themeGet("transition")};
+  background: ${themeGet("colors.white")};
   box-shadow: 0 3px 25.5px 4.5px rgb(0 0 0 / 6%);
 
   li {
     &:not(:last-child) {
-      border-bottom: 1px solid ${themeGet('colors.borderLight')};
+      border-bottom: 1px solid ${themeGet("colors.borderLight")};
     }
 
     a {
@@ -71,10 +71,10 @@ export const DropdownMenu = styled.ul`
       display: block;
       line-height: 25px;
       text-decoration: none;
-      color: ${themeGet('colors.text')};
+      color: ${themeGet("colors.text")};
 
       &:hover {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     }
   }
@@ -86,21 +86,21 @@ export const DropdownMenu = styled.ul`
   }
 
   ${(props) =>
-    props.align === 'left' &&
+    props.align === "left" &&
     css`
       left: 0;
       right: auto;
     `}
 
   ${(props) =>
-    props.align === 'right' &&
+    props.align === "right" &&
     css`
       right: 0;
       left: auto;
     `}
 
   ${(props) =>
-    props.align === 'center' &&
+    props.align === "center" &&
     css`
       right: 0;
       left: 50%;

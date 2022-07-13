@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { SectionText, SectionTitleWrap, Title } from './title.style';
+import PropTypes from "prop-types";
+import { SectionText, SectionTitleWrap, Title } from "./title.style";
 
 const SectionTitle = ({ title, content, align, ...props }) => {
   return (
@@ -11,7 +11,7 @@ const SectionTitle = ({ title, content, align, ...props }) => {
 };
 
 SectionTitle.defaultProps = {
-  align: 'center',
+  align: "center",
 };
 
 SectionTitle.propTypes = {

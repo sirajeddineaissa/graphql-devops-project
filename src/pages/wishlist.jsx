@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import { useSelector } from 'react-redux';
-import Wishlist from '@components/wishlist';
-import EmptyProduct from '@components/ui/empty';
-import Breadcrumb from '@components/ui/breadcrumb';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import { useSelector } from "react-redux";
+import Wishlist from "@components/wishlist";
+import EmptyProduct from "@components/ui/empty";
+import Breadcrumb from "@components/ui/breadcrumb";
 
 const WishlistPage = () => {
   const wishlist = useSelector((state) => state.wishlist);
@@ -12,7 +12,7 @@ const WishlistPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Wishlist - ' + settings?.title}</title>
+        <title>{"Wishlist - " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

@@ -4,7 +4,7 @@ import {
   increment,
   decrement,
   clear,
-} from '@slices/cartSlice';
+} from "@slices/cartSlice";
 
 export const addToCartAction = (payload) => (dispatch) => {
   dispatch(addToCart(payload));

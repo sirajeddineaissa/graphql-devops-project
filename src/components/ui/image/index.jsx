@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import NextImage from 'next/image';
+import PropTypes from "prop-types";
+import NextImage from "next/image";
 
 const shimmer = (w, h) => `
     <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -17,8 +17,8 @@ const shimmer = (w, h) => `
 `;
 
 const toBase64 = (str) =>
-  typeof window === 'undefined'
-    ? Buffer.from(str).toString('base64')
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 
 const Image = ({ src, alt, width, height, ...props }) => {

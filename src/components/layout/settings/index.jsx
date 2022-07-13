@@ -1,18 +1,18 @@
-import Logo from '@components/ui/logo';
-import Select from '@components/ui/select';
-import settings from '@data/settings';
-import OffCanvas from '@components/ui/offCanvas';
+import Logo from "@components/ui/logo";
+import Select from "@components/ui/select";
+import settings from "@data/settings";
+import OffCanvas from "@components/ui/offCanvas";
 import {
   OffCanvasCloseBtn,
   OffCanvasHead,
-} from '@components/ui/offCanvas/style';
+} from "@components/ui/offCanvas/style";
 import {
   SettingsWrap,
   SettingsItem,
   SettingsFooter,
-} from '@components/layout/settings/settings.style';
-import { IoIosHeart } from 'react-icons/io';
-import { BiSupport } from 'react-icons/bi';
+} from "@components/layout/settings/settings.style";
+import { IoIosHeart } from "react-icons/io";
+import { BiSupport } from "react-icons/bi";
 
 const SettingsSidebar = ({ isOpen, onHandler }) => {
   return (
@@ -38,13 +38,13 @@ const SettingsSidebar = ({ isOpen, onHandler }) => {
           <a href="tel:+882836272324">+882836272324</a>
         </div>
         <p>
-          © 2021, Furns. Made With <IoIosHeart /> by{' '}
+          © 2021, Furns. Made With <IoIosHeart /> by{" "}
           <a
             href="https://hasthemes.com/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            {' '}
+            {" "}
             HasThemes.
           </a>
         </p>

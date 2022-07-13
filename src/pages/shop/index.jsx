@@ -1,15 +1,15 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import Breadcrumb from '@components/ui/breadcrumb';
-import ShopProductsFeed from '@components/shop';
-import { client, productsQuery } from '@graphql';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import Breadcrumb from "@components/ui/breadcrumb";
+import ShopProductsFeed from "@components/shop";
+import { client, productsQuery } from "@graphql";
 
 const ShopPage = ({ products }) => {
   return (
     <Layout>
       <Head>
-        <title>{'Products - ' + settings?.title}</title>
+        <title>{"Products - " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 
@@ -22,8 +22,8 @@ const ShopPage = ({ products }) => {
 
 export const getServerSideProps = async ({ query }) => {
   const { sort } = query;
-  const sortKey = sort?.split('-')[0].toUpperCase();
-  const reverse = sort?.split('-')[1] !== 'ascending';
+  const sortKey = sort?.split("-")[0].toUpperCase();
+  const reverse = sort?.split("-")[1] !== "ascending";
   const productsData = await client(productsQuery(20, sortKey, reverse)),
     products = productsData?.products?.edges;
 

@@ -1,9 +1,9 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import Image from 'next/image';
-import PropTypes from 'prop-types';
-import styled, { css, devices } from '@styled';
-import settings from '@data/settings';
+import cn from "classnames";
+import Link from "next/link";
+import Image from "next/image";
+import PropTypes from "prop-types";
+import styled, { css, devices } from "@styled";
+import settings from "@data/settings";
 
 const LogoWrap = styled.div`
   &.logo--desktop {
@@ -28,13 +28,13 @@ const LogoWrap = styled.div`
     ${({ width }) =>
       width &&
       css`
-        width: ${width + 'px'};
+        width: ${width + "px"};
       `}
 
     ${({ height }) =>
       height &&
       css`
-        height: ${height + 'px'};
+        height: ${height + "px"};
       `}
   }
 `;

@@ -1,11 +1,11 @@
-import styled, { css, devices, themeGet } from '@styled';
+import styled, { css, devices, themeGet } from "@styled";
 
 export const PromoTitle = styled.h3`
   font-size: 30px;
   line-height: 39px;
   margin-bottom: 16px;
-  color: ${themeGet('colors.heading')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.heading")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   ${devices.xs} {
     font-size: 26px;
@@ -32,13 +32,13 @@ export const PromoInfo = styled.div`
   }
 
   ${(props) =>
-    props.align === 'right' &&
+    props.align === "right" &&
     css`
       justify-content: flex-end;
     `}
 
   ${(props) =>
-    props.align === 'center' &&
+    props.align === "center" &&
     css`
       justify-content: center;
       text-align: center;
@@ -53,6 +53,6 @@ export const PromoItem = styled.a`
 
   img {
     width: 100%;
-    transition: ${themeGet('transition')};
+    transition: ${themeGet("transition")};
   }
 `;

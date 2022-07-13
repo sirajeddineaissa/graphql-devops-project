@@ -1,9 +1,9 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import parse from 'react-html-parser';
-import Image from '@components/ui/image';
-import { PromoItem, PromoInfo, PromoContent, PromoTitle } from './promo.style';
+import cn from "classnames";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import parse from "react-html-parser";
+import Image from "@components/ui/image";
+import { PromoItem, PromoInfo, PromoContent, PromoTitle } from "./promo.style";
 
 const Promo = ({ title, content, thumb, slug, className, align }) => {
   return (
@@ -18,7 +18,7 @@ const Promo = ({ title, content, thumb, slug, className, align }) => {
             layout="responsive"
           />
         </figure>
-        <PromoInfo align={align ? align : 'left'}>
+        <PromoInfo align={align ? align : "left"}>
           <PromoContent>
             <PromoTitle>{parse(title)}</PromoTitle>
             {content && <p>{content}</p>}

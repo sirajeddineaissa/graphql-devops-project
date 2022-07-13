@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import { useSelector } from 'react-redux';
-import CartList from '@components/cart/listing';
-import EmptyProduct from '@components/ui/empty';
-import Breadcrumb from '@components/ui/breadcrumb';
+import Head from "next/head";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import { useSelector } from "react-redux";
+import CartList from "@components/cart/listing";
+import EmptyProduct from "@components/ui/empty";
+import Breadcrumb from "@components/ui/breadcrumb";
 
 const CartPage = () => {
   const cart = useSelector((state) => state.shoppingCart);
@@ -12,7 +12,7 @@ const CartPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{'Shopping Cart - ' + settings?.title}</title>
+        <title>{"Shopping Cart - " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

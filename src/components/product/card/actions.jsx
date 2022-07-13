@@ -1,9 +1,9 @@
-import { useProduct } from '@hooks';
-import PropTypes from 'prop-types';
-import Tooltip from '@components/ui/tooltip';
-import { ActionButton } from './product.style';
-import { IoIosGitCompare, IoMdHeartEmpty } from 'react-icons/io';
-import { AiOutlineDelete, AiOutlineFullscreen } from 'react-icons/ai';
+import { useProduct } from "@hooks";
+import PropTypes from "prop-types";
+import Tooltip from "@components/ui/tooltip";
+import { ActionButton } from "./product.style";
+import { IoIosGitCompare, IoMdHeartEmpty } from "react-icons/io";
+import { AiOutlineDelete, AiOutlineFullscreen } from "react-icons/ai";
 
 const ProductActions = ({ product, onQuickViewHandler }) => {
   const { id } = product;
@@ -22,7 +22,7 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
           {isInWishlist ? <AiOutlineDelete /> : <IoMdHeartEmpty />}
         </ActionButton>
         <Tooltip target={`wishlist-button-${id}`}>
-          {!isInWishlist ? 'Add to Wishlist' : 'Remove from Wishlist'}
+          {!isInWishlist ? "Add to Wishlist" : "Remove from Wishlist"}
         </Tooltip>
       </div>
 
@@ -47,7 +47,7 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
           {isInCompareList ? <AiOutlineDelete /> : <IoIosGitCompare />}
         </ActionButton>
         <Tooltip target={`compare-button-${id}`}>
-          {!isInCompareList ? 'Add to Compare' : 'Remove from Compare'}
+          {!isInCompareList ? "Add to Compare" : "Remove from Compare"}
         </Tooltip>
       </div>
     </>

@@ -1,7 +1,7 @@
-import { Form, FormGroup } from '@bootstrap';
-import Input from '@components/ui/input';
-import Button from '@components/ui/button';
-import { EstimateCartItem, CouponForm } from '@components/cart/cart.style';
+import { Form, FormGroup } from "@bootstrap";
+import Input from "@components/ui/input";
+import Button from "@components/ui/button";
+import { EstimateCartItem, CouponForm } from "@components/cart/cart.style";
 
 const Coupon = (props) => {
   return (

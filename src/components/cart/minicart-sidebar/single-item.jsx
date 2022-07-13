@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { CURRENCY } from '@utils/constant';
-import { getProductStock } from '@utils/product';
-import { Quantity } from '@components/cart/cart.style';
-import { CgMathPlus, CgMathMinus } from 'react-icons/cg';
+import Link from "next/link";
+import Image from "next/image";
+import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import { CURRENCY } from "@utils/constant";
+import { getProductStock } from "@utils/product";
+import { Quantity } from "@components/cart/cart.style";
+import { CgMathPlus, CgMathMinus } from "react-icons/cg";
 import {
   PriceAmount,
   RemoveButton,
@@ -15,12 +15,12 @@ import {
   MiniCartProThumb,
   MiniCartProContent,
   MiniCartProductItem,
-} from '@components/cart/minicart-sidebar/style';
+} from "@components/cart/minicart-sidebar/style";
 import {
   removeCartAction,
   incrementCartQuantityAction,
   decrementCartQuantityAction,
-} from '@global/actions/cartAction';
+} from "@global/actions/cartAction";
 
 const MiniCartProduct = ({ product }) => {
   const { title, handle, images, quantity, price, variations, variants } =
@@ -57,14 +57,14 @@ const MiniCartProduct = ({ product }) => {
 
           <Quantity>
             <button
-              style={{ pointerEvents: quantity === 1 ? 'none' : 'visible' }}
+              style={{ pointerEvents: quantity === 1 ? "none" : "visible" }}
               onClick={() => dispatch(decrementCartQuantityAction(product))}
             >
               <CgMathMinus />
             </button>
             <input type="text" value={quantity} size={stock} readOnly />
             <button
-              style={{ pointerEvents: quantity === stock ? 'none' : 'visible' }}
+              style={{ pointerEvents: quantity === stock ? "none" : "visible" }}
               onClick={() => dispatch(incrementCartQuantityAction(product))}
             >
               <CgMathPlus />

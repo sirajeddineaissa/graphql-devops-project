@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useRouter } from 'next/router';
-import { Form, Input } from '@bootstrap';
-import { IoSearchOutline } from 'react-icons/io5';
-import { SearchBoxWrap, SearchBox, SearchButton } from './style';
-import { OffCanvasCloseBtn } from '@components/ui/offCanvas/style';
+import Link from "next/link";
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { useRouter } from "next/router";
+import { Form, Input } from "@bootstrap";
+import { IoSearchOutline } from "react-icons/io5";
+import { SearchBoxWrap, SearchBox, SearchButton } from "./style";
+import { OffCanvasCloseBtn } from "@components/ui/offCanvas/style";
 
 const SearchForm = ({ isShow, onHandler }) => {
   const router = useRouter();
-  const [searchParam, setSearchParam] = useState('');
+  const [searchParam, setSearchParam] = useState("");
 
   const onSearchFormHandler = (event) => {
     event.preventDefault();

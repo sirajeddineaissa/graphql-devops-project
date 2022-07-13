@@ -1,5 +1,5 @@
-import styled, { css, devices, themeGet } from '@styled';
-import { OffCanvasCloseBtn } from '@components/ui/offCanvas/style';
+import styled, { css, devices, themeGet } from "@styled";
+import { OffCanvasCloseBtn } from "@components/ui/offCanvas/style";
 
 export const hiddenElem = css`
   visibility: hidden;
@@ -24,15 +24,15 @@ export const SearchButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 0 5px 5px 0;
-  color: ${themeGet('colors.white')};
-  background: ${themeGet('colors.primary')};
+  color: ${themeGet("colors.white")};
+  background: ${themeGet("colors.primary")};
 `;
 
 export const SearchBox = styled.div`
   padding: 30px 25px 25px;
   transform: translateY(-100%);
-  transition: ${themeGet('transition')};
-  background-color: ${themeGet('colors.white')};
+  transition: ${themeGet("transition")};
+  background-color: ${themeGet("colors.white")};
 
   .form-wrap {
     width: 50%;
@@ -54,7 +54,7 @@ export const SearchBox = styled.div`
         background-color: transparent;
 
         &:focus {
-          border-color: ${themeGet('colors.primary')};
+          border-color: ${themeGet("colors.primary")};
         }
       }
     }
@@ -68,19 +68,19 @@ export const SearchBoxWrap = styled.aside`
   z-index: 999;
   height: 100vh;
   position: fixed;
-  transition: ${themeGet('transition')};
+  transition: ${themeGet("transition")};
 
   ${hiddenElem}
   .popular-searches {
     display: flex;
     margin-top: 15px;
     justify-content: center;
-    font-family: ${themeGet('fonts.body')};
+    font-family: ${themeGet("fonts.body")};
 
     h4 {
       margin-right: 10px;
-      font-size: ${themeGet('fontSizes.standard')};
-      font-weight: ${themeGet('fontWeights.subHeading')};
+      font-size: ${themeGet("fontSizes.standard")};
+      font-weight: ${themeGet("fontWeights.subHeading")};
     }
 
     ul {
@@ -90,13 +90,13 @@ export const SearchBoxWrap = styled.aside`
       li {
         a {
           text-decoration: underline;
-          color: ${themeGet('colors.dark')};
-          transition: ${themeGet('transition')};
-          font-size: ${themeGet('fontSizes.standard')};
-          font-weight: ${themeGet('fontWeights.subHeading')};
+          color: ${themeGet("colors.dark")};
+          transition: ${themeGet("transition")};
+          font-size: ${themeGet("fontSizes.standard")};
+          font-weight: ${themeGet("fontWeights.subHeading")};
 
           &:hover {
-            color: ${themeGet('colors.primary')};
+            color: ${themeGet("colors.primary")};
           }
         }
 

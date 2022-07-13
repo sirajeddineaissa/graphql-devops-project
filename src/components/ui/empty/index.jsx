@@ -1,7 +1,7 @@
-import cn from 'classnames';
-import PropTypes from 'prop-types';
-import { EmptyContent } from './style';
-import { IoBagHandleOutline } from 'react-icons/io5';
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { EmptyContent } from "./style";
+import { IoBagHandleOutline } from "react-icons/io5";
 
 const EmptyProduct = ({ message, className }) => {
   return (
@@ -13,7 +13,7 @@ const EmptyProduct = ({ message, className }) => {
 };
 
 EmptyProduct.defaultProps = {
-  message: 'There are no products!',
+  message: "There are no products!",
 };
 
 EmptyProduct.propTypes = {

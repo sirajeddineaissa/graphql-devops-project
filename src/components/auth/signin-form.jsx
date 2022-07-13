@@ -1,18 +1,18 @@
-import Cookie from 'js-cookie';
-import { useState } from 'react';
-import { encode } from 'js-base64';
-import { useRouter } from 'next/router';
-import Input from '@components/ui/input';
-import { totalDays } from '@utils/method';
-import Button from '@components/ui/button';
-import { Col, Container, Form, Row } from '@bootstrap';
-import { client, customerAccessTokenCreate } from '@graphql';
-import { FormWrap, AlertMessage } from '@components/auth/auth.style';
-import { InputField } from '@components/checkout/checkout-form.style';
+import Cookie from "js-cookie";
+import { useState } from "react";
+import { encode } from "js-base64";
+import { useRouter } from "next/router";
+import Input from "@components/ui/input";
+import { totalDays } from "@utils/method";
+import Button from "@components/ui/button";
+import { Col, Container, Form, Row } from "@bootstrap";
+import { client, customerAccessTokenCreate } from "@graphql";
+import { FormWrap, AlertMessage } from "@components/auth/auth.style";
+import { InputField } from "@components/checkout/checkout-form.style";
 
 const defaultValue = {
-  email: 'sirajeddineaissa516@gmail.com',
-  password: 'tryingoutthis',
+  email: "sirajeddineaissa516@gmail.com",
+  password: "tryingoutthis",
 };
 
 const SigninForm = () => {
@@ -52,10 +52,10 @@ const SigninForm = () => {
           res?.customerAccessTokenCreate?.customerAccessToken?.accessToken;
         const expiresAt =
           res?.customerAccessTokenCreate?.customerAccessToken?.expiresAt;
-        Cookie.set('access_token', encode(token), {
+        Cookie.set("access_token", encode(token), {
           expires: totalDays(expiresAt),
         });
-        router.push('/account');
+        router.push("/account");
       }
 
       setIsLoading(false);

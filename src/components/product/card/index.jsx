@@ -1,13 +1,13 @@
-import cn from 'classnames';
-import Link from 'next/link';
-import { Fragment } from 'react';
-import { useProduct } from '@hooks';
-import PropTypes from 'prop-types';
-import ProductActions from './actions';
-import { CURRENCY } from '@utils/constant';
-import ProductThumbnail from './thumbnail';
-import AddToCartButton from './add-to-cart-button';
-import QuickView from '@components/product/card/quick-view';
+import cn from "classnames";
+import Link from "next/link";
+import { Fragment } from "react";
+import { useProduct } from "@hooks";
+import PropTypes from "prop-types";
+import ProductActions from "./actions";
+import { CURRENCY } from "@utils/constant";
+import ProductThumbnail from "./thumbnail";
+import AddToCartButton from "./add-to-cart-button";
+import QuickView from "@components/product/card/quick-view";
 import {
   Badge,
   Product,
@@ -18,8 +18,8 @@ import {
   ProductBadges,
   ProductActionsMobile,
   ProductActions as ActionsWrap,
-} from './product.style';
-import { getDiscountPercentage } from '@utils/product';
+} from "./product.style";
+import { getDiscountPercentage } from "@utils/product";
 
 const ProductCard = ({ product, className }) => {
   let { title, handle } = product;
@@ -44,7 +44,7 @@ const ProductCard = ({ product, className }) => {
           <ProductThumbnail product={product} />
           <ProductBadges>
             {isDiscounted && percentage > 0 && (
-              <Badge type="sale">{'-' + Math.round(percentage) + '%'}</Badge>
+              <Badge type="sale">{"-" + Math.round(percentage) + "%"}</Badge>
             )}
             {isStock && <Badge type="featured">Stock out</Badge>}
           </ProductBadges>

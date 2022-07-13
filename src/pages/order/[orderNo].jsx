@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import { decode } from 'js-base64';
-import settings from '@data/settings';
-import Layout from '@components/layout';
-import { client, customerQuery } from '@graphql';
-import { getCookieFromContext } from '@utils/method';
-import OrderDetails from '@components/account/orders/order-details';
+import Head from "next/head";
+import { decode } from "js-base64";
+import settings from "@data/settings";
+import Layout from "@components/layout";
+import { client, customerQuery } from "@graphql";
+import { getCookieFromContext } from "@utils/method";
+import OrderDetails from "@components/account/orders/order-details";
 
 const OrderDetailsPage = ({ order, customer }) => {
   return (
@@ -29,7 +29,7 @@ export const getServerSideProps = async ({ req, params }) => {
   if (!token) {
     return {
       redirect: {
-        destination: '/',
+        destination: "/",
         permanent: false,
       },
     };

@@ -1,4 +1,4 @@
-import { Container, Col, Row, Form } from '@bootstrap';
+import { Container, Col, Row, Form } from "@bootstrap";
 import {
   ContactMap,
   ContactWrapper,
@@ -8,10 +8,10 @@ import {
   ContactInfoMethod,
   ContactInfoText,
   ContactForm,
-} from '@components/contact/contact.style';
-import { InputField } from '@components/checkout/checkout-form.style';
-import Input, { TextArea } from '@components/ui/input';
-import Button from '@components/ui/button';
+} from "@components/contact/contact.style";
+import { InputField } from "@components/checkout/checkout-form.style";
+import Input, { TextArea } from "@components/ui/input";
+import Button from "@components/ui/button";
 
 const Contact = (props) => {
   return (

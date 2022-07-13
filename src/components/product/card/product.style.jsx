@@ -1,4 +1,4 @@
-import styled, { themeGet, css, devices } from '@styled';
+import styled, { themeGet, css, devices } from "@styled";
 
 const hvrVisible = css`
   visibility: visible;
@@ -7,13 +7,13 @@ const hvrVisible = css`
 `;
 
 export const ProductPrice = styled.div`
-  font-size: ${themeGet('fontSizes.body')};
+  font-size: ${themeGet("fontSizes.body")};
   line-height: 1;
-  font-family: ${themeGet('fonts.montserrat')};
+  font-family: ${themeGet("fonts.montserrat")};
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${themeGet('colors.heading')};
+  color: ${themeGet("colors.heading")};
   margin-top: 9px;
 
   &:not(:last-child) {
@@ -21,35 +21,35 @@ export const ProductPrice = styled.div`
   }
 
   .price {
-    font-weight: ${themeGet('fontWeights.medium')};
+    font-weight: ${themeGet("fontWeights.medium")};
 
     &.old {
       margin-right: 10px;
-      color: ${themeGet('colors.darkgray')};
+      color: ${themeGet("colors.darkgray")};
     }
   }
 `;
 
 export const ProductTitle = styled.h2`
-  font-size: ${themeGet('fontSizes.standard')};
-  font-family: ${themeGet('fonts.montserrat')};
-  font-weight: ${themeGet('fontWeights.medium')};
+  font-size: ${themeGet("fontSizes.standard")};
+  font-family: ${themeGet("fonts.montserrat")};
+  font-weight: ${themeGet("fontWeights.medium")};
 
   a {
     text-decoration: none;
-    color: ${themeGet('colors.heading')};
-    font-size: ${themeGet('fontSizes.body')};
+    color: ${themeGet("colors.heading")};
+    font-size: ${themeGet("fontSizes.body")};
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
 
     ${devices.sm} {
-      font-size: ${themeGet('fontSizes.standard')};
+      font-size: ${themeGet("fontSizes.standard")};
     }
 
     &:hover {
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
   }
 `;
@@ -61,8 +61,8 @@ export const ProductMeta = styled.div`
   flex-direction: column;
   padding: 20px 15px 0;
   text-align: center;
-  transition: ${themeGet('transition')};
-  background-color: ${themeGet('colors.white')};
+  transition: ${themeGet("transition")};
+  background-color: ${themeGet("colors.white")};
 
   ${devices.sm} {
     padding-top: 5px;
@@ -79,17 +79,17 @@ const buttonStyle = css`
   line-height: 32px;
   text-align: center;
   margin: 10px auto 0;
-  color: ${themeGet('colors.white')};
-  transition: ${themeGet('transition')};
-  border-radius: ${themeGet('radii.sm')};
-  font-family: ${themeGet('fonts.heading')};
-  background-color: ${themeGet('colors.primary')};
-  font-weight: ${themeGet('fontWeights.subHeading')};
+  color: ${themeGet("colors.white")};
+  transition: ${themeGet("transition")};
+  border-radius: ${themeGet("radii.sm")};
+  font-family: ${themeGet("fonts.heading")};
+  background-color: ${themeGet("colors.primary")};
+  font-weight: ${themeGet("fontWeights.subHeading")};
 
   svg {
     margin-right: 3px;
     vertical-align: text-bottom;
-    font-size: ${themeGet('fontSizes.body')};
+    font-size: ${themeGet("fontSizes.body")};
   }
 
   ${devices.md} {
@@ -97,7 +97,7 @@ const buttonStyle = css`
   }
 
   &:hover {
-    color: ${themeGet('colors.white')};
+    color: ${themeGet("colors.white")};
   }
 
   ${({ mobile }) =>
@@ -113,16 +113,16 @@ const buttonStyle = css`
       position: absolute;
       visibility: hidden;
       transform: translateY(20px);
-      color: ${themeGet('colors.secondary')};
-      font-size: ${themeGet('fontSizes.standard')};
-      background-color: ${themeGet('colors.white')};
+      color: ${themeGet("colors.secondary")};
+      font-size: ${themeGet("fontSizes.standard")};
+      background-color: ${themeGet("colors.white")};
 
       ${devices.md} {
         display: none;
       }
 
       &:hover {
-        color: ${themeGet('colors.primary')};
+        color: ${themeGet("colors.primary")};
       }
     `}
 `;
@@ -148,11 +148,11 @@ export const ActionButton = styled.button`
   justify-content: center;
   width: 40px;
   height: 40px;
-  transition: ${themeGet('transition')};
+  transition: ${themeGet("transition")};
   text-decoration: none;
-  color: ${themeGet('colors.heading')};
-  border-radius: ${themeGet('radii.circle')};
-  background-color: ${themeGet('colors.white')};
+  color: ${themeGet("colors.heading")};
+  border-radius: ${themeGet("radii.circle")};
+  background-color: ${themeGet("colors.white")};
 
   svg {
     font-size: 20px;
@@ -168,11 +168,11 @@ export const ActionButton = styled.button`
   ${({ isActive }) =>
     isActive &&
     css`
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     `}
   &:hover {
-    color: ${themeGet('colors.white')};
-    background-color: ${themeGet('colors.primary')};
+    color: ${themeGet("colors.white")};
+    background-color: ${themeGet("colors.primary")};
   }
 `;
 
@@ -183,7 +183,7 @@ export const ProductActions = styled.div`
   right: 18px;
   display: flex;
   flex-direction: column;
-  transition: ${themeGet('transition')};
+  transition: ${themeGet("transition")};
 
   .btn-action {
     &:not(:last-child) {
@@ -222,24 +222,24 @@ export const ProductActionsMobile = styled.div`
 
     &:hover {
       background: transparent;
-      color: ${themeGet('colors.primary')};
+      color: ${themeGet("colors.primary")};
     }
   }
 `;
 
 export const Badge = styled.span`
-  background-color: ${themeGet('colors.secondary')};
+  background-color: ${themeGet("colors.secondary")};
   font-size: 12px;
-  font-weight: ${themeGet('fontWeights.medium')};
-  font-family: ${themeGet('fonts.body')};
+  font-weight: ${themeGet("fontWeights.medium")};
+  font-family: ${themeGet("fonts.body")};
   line-height: 1;
   display: block;
   padding: 5px 7px;
   text-align: center;
   text-transform: uppercase;
   width: auto;
-  border-radius: ${themeGet('radii.sm')};
-  color: ${themeGet('colors.white')};
+  border-radius: ${themeGet("radii.sm")};
+  color: ${themeGet("colors.white")};
 
   ${devices.xs} {
     font-size: 11px;
@@ -255,21 +255,21 @@ export const Badge = styled.span`
   }
 
   ${(props) =>
-    props.type === 'new' &&
+    props.type === "new" &&
     css`
-      background-color: ${themeGet('colors.green')};
+      background-color: ${themeGet("colors.green")};
     `}
 
   ${(props) =>
-    props.type === 'sale' &&
+    props.type === "sale" &&
     css`
-      background-color: ${themeGet('colors.danger')};
+      background-color: ${themeGet("colors.danger")};
     `}
 
   ${(props) =>
-    props.type === 'featured' &&
+    props.type === "featured" &&
     css`
-      background-color: ${themeGet('colors.primary')};
+      background-color: ${themeGet("colors.primary")};
     `}
 `;
 
