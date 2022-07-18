@@ -124,7 +124,7 @@ const SigninForm = () => {
                       fontSize="standard"
                       textTransform="uppercase"
                     >
-                      Create a account
+                      Create an account
                     </Button>
                   </Col>
 
@@ -141,7 +141,7 @@ const SigninForm = () => {
                       fontSize="standard"
                       textTransform="uppercase"
                     >
-                      Forget Password?
+                      Forgot Password?
                     </Button>
                   </Col>
                 </Row>

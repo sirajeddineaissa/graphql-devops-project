@@ -16,11 +16,11 @@ const AboutPage = () => {
       <Breadcrumb py={[40, 80]} mb={[60, null, 100]} pageTitle="About Us" />
 
       <section className="about-page-wrapper">
-        <Container>
+        {/* <Container>
           <h2>
             We want you to dress fresh and be cool 😎
           </h2>
-        </Container>
+        </Container> */}
 
         <Container fluid className="mt-3 mt-md-5">
           <Row>
