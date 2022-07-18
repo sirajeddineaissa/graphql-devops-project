@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Slider, { Slide } from "@components/ui/swiper";
 import { SlideTwo as SlideItem } from "@components/slider/slide/slide-two";
 
-const SliderTwo = ({ data, animate, settings, className }) => {
+const SliderComp = ({ data, animate, settings, className }) => {
   return (
     <Slider animate={animate} settings={settings} className={className}>
       {data.map((slide) => (
@@ -19,7 +19,7 @@ const SliderTwo = ({ data, animate, settings, className }) => {
   );
 };
 
-SliderTwo.propTypes = {
+SliderComp.propTypes = {
   data: PropTypes.array.isRequired,
   settings: PropTypes.shape({
     navigation: PropTypes.bool,
@@ -33,4 +33,4 @@ SliderTwo.propTypes = {
   className: PropTypes.string
 };
 
-export default SliderTwo;
+export default SliderComp;

@@ -269,7 +269,7 @@ export const Badge = styled.span`
   ${(props) =>
     props.type === "featured" &&
     css`
-      background-color: ${themeGet("colors.primary")};
+      background-color: ${themeGet("colors.orange")};
     `}
 `;
 

@@ -11,9 +11,9 @@ import { client, blogsQuery, productsQuery, collectionsQuery } from "@graphql";
 
 const HomeTwo = ({ blogs, products, collections }) => {
   return (
-    <Layout bg="gray250">
+    <Layout>
       <Head>
-        <title>{"Home 2 - " + settings?.title}</title>
+        <title>{settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 
