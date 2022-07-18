@@ -9,13 +9,13 @@ import MiniCartProduct from "@components/cart/minicart-sidebar/single-item";
 import {
   OffCanvasCloseBtn,
   OffCanvasHead,
-  OffCanvasTitle,
+  OffCanvasTitle
 } from "@components/ui/offCanvas/style";
 import {
   MiniCartList,
   MiniCartFooter,
   BtnCheckout,
-  TotalPrice,
+  TotalPrice
 } from "@components/cart/minicart-sidebar/style";
 
 const MiniCartSidebar = ({ isOpen, onHandler }) => {
@@ -61,7 +61,7 @@ const MiniCartSidebar = ({ isOpen, onHandler }) => {
 
 MiniCartSidebar.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  onHandler: PropTypes.func.isRequired,
+  onHandler: PropTypes.func.isRequired
 };
 
 export default MiniCartSidebar;

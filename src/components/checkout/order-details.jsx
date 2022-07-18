@@ -12,7 +12,7 @@ import {
   PaymentMethodItem,
   OrderDetailsMiddle,
   OrderDetailsTopItem,
-  OrderDetailsMiddleItem,
+  OrderDetailsMiddleItem
 } from "@components/checkout/order-details.style";
 
 const OrderDetails = () => {

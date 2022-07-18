@@ -9,7 +9,7 @@ import { MobileNav } from "@components/layout/navbar/mobile-nav.style";
 import { getClosest, getSiblings, slideToggle, slideUp } from "@utils/method";
 import {
   OffCanvasCloseBtn,
-  OffCanvasHead,
+  OffCanvasHead
 } from "@components/ui/offCanvas/style";
 
 const MobileNavbar = ({ isOpen, onHandler }) => {
@@ -54,7 +54,7 @@ const MobileNavbar = ({ isOpen, onHandler }) => {
                 <a
                   onClick={(event) => onNavHandler(event)}
                   className={cn({
-                    "mm-next-level": nav?.submenu || nav?.mega_menu,
+                    "mm-next-level": nav?.submenu || nav?.mega_menu
                   })}
                 >
                   {nav?.text}
@@ -86,7 +86,7 @@ const MobileNavbar = ({ isOpen, onHandler }) => {
 
 MobileNavbar.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  onHandler: PropTypes.func.isRequired,
+  onHandler: PropTypes.func.isRequired
 };
 
 export default MobileNavbar;

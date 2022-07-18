@@ -5,7 +5,7 @@ import AddressForm from "@components/account/address/address-form";
 import AddressList from "@components/account/address/address-list";
 import {
   TabContentTitle,
-  TabContentHeader,
+  TabContentHeader
 } from "@components/account/account.style";
 
 const CustomerAddress = () => {

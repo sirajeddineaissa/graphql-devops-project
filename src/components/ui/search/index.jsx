@@ -60,7 +60,7 @@ const SearchForm = ({ isShow, onHandler }) => {
 
 SearchForm.propTypes = {
   isShow: PropTypes.bool.isRequired,
-  onHandler: PropTypes.func.isRequired,
+  onHandler: PropTypes.func.isRequired
 };
 
 export default SearchForm;

@@ -7,7 +7,7 @@ import {
   ContactContentTitle,
   ContactInfoMethod,
   ContactInfoText,
-  ContactForm,
+  ContactForm
 } from "@components/contact/contact.style";
 import { InputField } from "@components/checkout/checkout-form.style";
 import Input, { TextArea } from "@components/ui/input";

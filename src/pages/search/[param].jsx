@@ -36,8 +36,8 @@ export const getServerSideProps = async ({ params, query }) => {
 
   return {
     props: {
-      products: products?.products?.edges,
-    },
+      products: products?.products?.edges
+    }
   };
 };
 

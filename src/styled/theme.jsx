@@ -59,26 +59,26 @@ export const theme = {
     instagram: "#B23A94",
     css3: "#0277BD",
     html5: "#E44D26",
-    javascript: "#F9DC3D",
+    javascript: "#F9DC3D"
   },
   fonts: {
     body: "Open Sans",
     heading: "Raleway",
-    montserrat: "Montserrat",
+    montserrat: "Montserrat"
   },
   fontSizes: {
     body: "16px",
-    standard: "14px",
+    standard: "14px"
   },
   fontWeights: {
     body: 400,
     medium: 500,
     subHeading: 600,
-    heading: 700,
+    heading: 700
   },
   lineHeights: {
     body: 1.625,
-    heading: 1.25,
+    heading: 1.25
   },
   radii: {
     sm: "3px",
@@ -86,14 +86,14 @@ export const theme = {
     lg: "8px",
     rounded: "4px",
     circle: "50%",
-    pill: "500px",
+    pill: "500px"
   },
   shadows: {
     default: "0 0 12px 3px rgba(0, 0, 0, 0.06)",
     sm: "0px -1px 1px 0px rgba(0,0,0, .2)",
     lg: "0 1rem 3rem rgba(0, 0, 0, .175)",
-    input: "0 0 0 0.2rem rgb(1 104 250 / 25%)",
+    input: "0 0 0 0.2rem rgb(1 104 250 / 25%)"
   },
   breakpoints: [...breakpoints],
-  transition: "all 0.4s ease 0s",
+  transition: "all 0.4s ease 0s"
 };

@@ -13,7 +13,7 @@ export const customStyles = {
       ? "#ff7004"
       : state.isFocused
       ? "#F9FAFB"
-      : "#ffffff",
+      : "#ffffff"
   }),
   control: (provided, state) => ({
     display: "flex",
@@ -22,10 +22,10 @@ export const customStyles = {
     backgroundColor: "#ffffff",
     borderRadius: 3,
     border: "1px solid #D1D5DB",
-    borderColor: state.isFocused ? "#ff7004" : "#ebebeb",
+    borderColor: state.isFocused ? "#ff7004" : "#ebebeb"
   }),
   indicatorSeparator: () => ({
-    display: "none",
+    display: "none"
   }),
   menu: (provided, _) => ({
     ...provided,
@@ -34,20 +34,20 @@ export const customStyles = {
     marginTop: 5,
     fontSize: 13,
     paddingBottom: 0,
-    zIndex: 99,
+    zIndex: 99
   }),
   menuList: (provided, _) => ({
     ...provided,
     paddingTop: 0,
-    paddingBottom: 0,
+    paddingBottom: 0
   }),
   valueContainer: (provided, _) => ({
     ...provided,
-    paddingLeft: 16,
+    paddingLeft: 16
   }),
   singleValue: (provided, _) => ({
     ...provided,
     fontSize: 14,
-    color: "#191919",
-  }),
+    color: "#191919"
+  })
 };

@@ -16,19 +16,19 @@ const Categories = ({ categories, className, ...props }) => {
     navigation: false,
     breakpoints: {
       420: {
-        spaceBetween: 10,
+        spaceBetween: 10
       },
       500: {
-        slidesPerView: 3,
+        slidesPerView: 3
       },
       992: {
-        slidesPerView: 4,
+        slidesPerView: 4
       },
       1200: {
         slidesPerView: 5,
-        spaceBetween: 30,
-      },
-    },
+        spaceBetween: 30
+      }
+    }
   };
 
   return (
@@ -55,7 +55,7 @@ const Categories = ({ categories, className, ...props }) => {
 };
 
 Categories.propTypes = {
-  categories: PropTypes.array.isRequired,
+  categories: PropTypes.array.isRequired
 };
 
 export default Categories;

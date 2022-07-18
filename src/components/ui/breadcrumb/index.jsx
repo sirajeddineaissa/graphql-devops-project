@@ -8,7 +8,7 @@ import {
   BreadcrumbTitle,
   BreadcrumbNav,
   BreadcrumbNavItem,
-  BreadcrumbNavLink,
+  BreadcrumbNavLink
 } from "./breadcrumb.style";
 
 const Breadcrumb = ({ pageTitle, ...props }) => {
@@ -23,7 +23,7 @@ const Breadcrumb = ({ pageTitle, ...props }) => {
       const pathArray = linkPath.map((path, i) => {
         return {
           breadcrumb: path.replace(/-/g, " "),
-          href: "/" + linkPath.slice(0, i + 1).join("/"),
+          href: "/" + linkPath.slice(0, i + 1).join("/")
         };
       });
 
@@ -57,7 +57,7 @@ const Breadcrumb = ({ pageTitle, ...props }) => {
               <BreadcrumbNavItem key={breadcrumb.breadcrumb}>
                 {breadcrumb?.breadcrumb.replace(/\?(.*)/g, "")}
               </BreadcrumbNavItem>
-            ),
+            )
           )}
         </BreadcrumbNav>
       </Container>
@@ -66,7 +66,7 @@ const Breadcrumb = ({ pageTitle, ...props }) => {
 };
 
 Breadcrumb.propTypes = {
-  pageTitle: PropTypes.string,
+  pageTitle: PropTypes.string
 };
 
 export default Breadcrumb;

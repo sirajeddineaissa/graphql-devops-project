@@ -11,7 +11,7 @@ import {
   ProductDescReviewWrapper,
   ProductDescReviewContent,
   ProInfoList,
-  ProDescription,
+  ProDescription
 } from "./details.style";
 
 const ProductDescriptionReview = ({ product, ...props }) => {
@@ -21,7 +21,7 @@ const ProductDescriptionReview = ({ product, ...props }) => {
   const getReviewValue = (value) => {
     setReviews((prevState) => [
       ...prevState,
-      { id: prevState.length + 1, ...value },
+      { id: prevState.length + 1, ...value }
     ]);
   };
 
@@ -83,7 +83,7 @@ const ProductDescriptionReview = ({ product, ...props }) => {
 };
 
 ProductDescriptionReview.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default ProductDescriptionReview;

@@ -74,7 +74,7 @@ const Layout = ({ children, bg, ...props }) => {
 };
 
 Layout.defaultProps = {
-  bg: "secondary",
+  bg: "secondary"
 };
 
 export default Layout;

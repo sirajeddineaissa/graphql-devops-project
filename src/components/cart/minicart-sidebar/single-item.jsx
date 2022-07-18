@@ -14,12 +14,12 @@ import {
   MiniCartProPrice,
   MiniCartProThumb,
   MiniCartProContent,
-  MiniCartProductItem,
+  MiniCartProductItem
 } from "@components/cart/minicart-sidebar/style";
 import {
   removeCartAction,
   incrementCartQuantityAction,
-  decrementCartQuantityAction,
+  decrementCartQuantityAction
 } from "@global/actions/cartAction";
 
 const MiniCartProduct = ({ product }) => {
@@ -81,7 +81,7 @@ const MiniCartProduct = ({ product }) => {
 };
 
 MiniCartProduct.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default MiniCartProduct;

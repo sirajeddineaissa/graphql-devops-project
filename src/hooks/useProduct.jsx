@@ -3,16 +3,16 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToCompareAction,
-  removeCompareAction,
+  removeCompareAction
 } from "@global/actions/compareAction";
 import {
   addToWishlistAction,
-  removeWishlistAction,
+  removeWishlistAction
 } from "@global/actions/wishlistAction";
 import {
   getCartProduct,
   getCartProductQuantity,
-  getWishCompareProduct,
+  getWishCompareProduct
 } from "@utils/product";
 
 const useProduct = (product) => {
@@ -41,7 +41,7 @@ const useProduct = (product) => {
   const cartProductQuantity = getCartProductQuantity(
     shoppingCart,
     product,
-    variations,
+    variations
   );
   const isStock = Boolean(stock === cartProductQuantity);
 
@@ -52,7 +52,7 @@ const useProduct = (product) => {
       .toString();
     const selectedVariant = variants?.find(
       ({ node }) =>
-        node?.title.split(" / ").sort().toString() === selectedVariantTitle,
+        node?.title.split(" / ").sort().toString() === selectedVariantTitle
     )?.node;
 
     const { id, title, sku, priceV2, quantityAvailable, compareAtPriceV2 } =
@@ -73,12 +73,12 @@ const useProduct = (product) => {
       ? cogoToast.success(`"${product?.title}" is successfully added.`, {
           position: "top-right",
           heading: "Added to Wishlist!",
-          hideAfter: 3,
+          hideAfter: 3
         })
       : cogoToast.error(`"${product?.title}" is removed.`, {
           position: "top-right",
           heading: "Remove from Wishlist!",
-          hideAfter: 3,
+          hideAfter: 3
         });
   };
 
@@ -90,12 +90,12 @@ const useProduct = (product) => {
       ? cogoToast.success(`"${product?.title}" is successfully added.`, {
           position: "top-right",
           heading: "Added to Compare!",
-          hideAfter: 3,
+          hideAfter: 3
         })
       : cogoToast.error(`"${product?.title}" is removed.`, {
           position: "top-right",
           heading: "Remove from Compare!",
-          hideAfter: 3,
+          hideAfter: 3
         });
   };
 
@@ -105,7 +105,7 @@ const useProduct = (product) => {
     setQuantity((prevState) => (prevState > 1 ? (prevState -= 1) : 1));
   const onIncrementQuantity = () =>
     setQuantity((prevState) =>
-      prevState < stock - cartProductQuantity ? (prevState += 1) : prevState,
+      prevState < stock - cartProductQuantity ? (prevState += 1) : prevState
     );
 
   useEffect(() => {
@@ -120,7 +120,7 @@ const useProduct = (product) => {
     setCompareAtPrice(
       variants[0].node?.compareAtPriceV2
         ? variants[0].node?.compareAtPriceV2?.amount
-        : 0,
+        : 0
     );
   }, []);
 
@@ -147,7 +147,7 @@ const useProduct = (product) => {
     onQuickViewHandler,
     cartProductQuantity,
     onDecrementQuantity,
-    onIncrementQuantity,
+    onIncrementQuantity
   };
 };
 

@@ -9,7 +9,7 @@ import { getCartProductsQuantity } from "@utils/product";
 import { MobileFooterWrap, FooterButtons } from "./style";
 import {
   CartItemCount,
-  HeaderActionBtn,
+  HeaderActionBtn
 } from "@components/layout/header/header.style";
 
 const MobileFooter = ({ onMiniCartHandler }) => {

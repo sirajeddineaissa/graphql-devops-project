@@ -12,7 +12,7 @@ const PageLayout = ({ children, pageTitle, ...props }) => {
 };
 
 PageLayout.propTypes = {
-  pageTitle: PropTypes.string,
+  pageTitle: PropTypes.string
 };
 
 export default PageLayout;

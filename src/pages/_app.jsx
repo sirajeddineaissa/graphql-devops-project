@@ -27,8 +27,8 @@ const themeBootstrap = {
     sm: "540px",
     md: "720px",
     lg: "960px",
-    xl: "1200px",
-  },
+    xl: "1200px"
+  }
 };
 
 const HypeRenting = ({ Component, pageProps }) => {

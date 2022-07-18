@@ -10,7 +10,7 @@ const defaultValue = {
   rating: 0,
   name: "",
   message: "",
-  email: "",
+  email: ""
 };
 
 const ReviewForm = ({ getReviewValue }) => {
@@ -20,7 +20,7 @@ const ReviewForm = ({ getReviewValue }) => {
     setFormValue((prevState) => {
       return {
         ...prevState,
-        rating: value,
+        rating: value
       };
     });
   };
@@ -36,7 +36,7 @@ const ReviewForm = ({ getReviewValue }) => {
     const target = event.target;
     setFormValue((prevState) => ({
       ...prevState,
-      [target.name]: target.value,
+      [target.name]: target.value
     }));
   };
 

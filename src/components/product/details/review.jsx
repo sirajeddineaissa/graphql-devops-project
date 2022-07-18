@@ -22,7 +22,7 @@ const Review = ({ data }) => {
 };
 
 Review.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default Review;

@@ -15,8 +15,8 @@ const FooterWidget = (props) => {
               <p className="about-text">
                 Hype Renting is a luxury and high-end clothing rental platform
                 that connects our customers with our renters. We provide a
-                platform for fashion collectors to rent the amazing clothes
-                they have.
+                platform for fashion collectors to rent the amazing clothes they
+                have.
               </p>
 
               <SocialIcons mt={15}>

@@ -12,7 +12,7 @@ import { FormWrap, AlertMessage } from "@components/auth/auth.style";
 import { client, customerAccessTokenCreate, customerCreate } from "@graphql";
 import {
   InputField,
-  InputNote,
+  InputNote
 } from "@components/checkout/checkout-form.style";
 
 const defaultValue = {
@@ -22,7 +22,7 @@ const defaultValue = {
   policy: false,
   last_name: "",
   first_name: "",
-  confirm_password: "",
+  confirm_password: ""
 };
 
 const SignupForm = () => {
@@ -37,18 +37,18 @@ const SignupForm = () => {
       if (target.checked) {
         setFormData((prevState) => ({
           ...prevState,
-          policy: true,
+          policy: true
         }));
       } else {
         setFormData((prevState) => ({
           ...prevState,
-          policy: false,
+          policy: false
         }));
       }
     } else {
       setFormData((prevState) => ({
         ...prevState,
-        [target.name]: target.value,
+        [target.name]: target.value
       }));
     }
   };
@@ -62,14 +62,14 @@ const SignupForm = () => {
         email: formData.email,
         password: formData.password,
         lastName: formData.last_name,
-        firstName: formData.first_name,
-      },
+        firstName: formData.first_name
+      }
     };
     const loginVariables = {
       input: {
         email: formData.email,
-        password: formData.password,
-      },
+        password: formData.password
+      }
     };
 
     if (formData.password === formData.confirm_password) {

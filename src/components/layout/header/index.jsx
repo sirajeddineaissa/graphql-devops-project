@@ -11,7 +11,7 @@ const Header = ({
   onMiniCartHandler,
   onSearchBoxHandler,
   onMobileNavHandler,
-  onConfigHandler,
+  onConfigHandler
 }) => {
   return (
     <HeaderArea className={cn("header", className)}>
@@ -34,7 +34,7 @@ Header.propTypes = {
   onMiniCartHandler: PropTypes.func.isRequired,
   onSearchBoxHandler: PropTypes.func.isRequired,
   onMobileNavHandler: PropTypes.func.isRequired,
-  onConfigHandler: PropTypes.func.isRequired,
+  onConfigHandler: PropTypes.func.isRequired
 };
 
 export default Header;

@@ -6,7 +6,7 @@ const Tooltip = ({ children, placement, target }) => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = {
     ...BootTooltip.defaultProps.theme,
-    "$tooltip-font-size": "12px",
+    "$tooltip-font-size": "12px"
   };
 
   return (
@@ -24,12 +24,12 @@ const Tooltip = ({ children, placement, target }) => {
 };
 
 Tooltip.defaultProps = {
-  placement: "left",
+  placement: "left"
 };
 
 Tooltip.propTypes = {
   placement: PropTypes.string,
-  target: PropTypes.string,
+  target: PropTypes.string
 };
 
 export default Tooltip;

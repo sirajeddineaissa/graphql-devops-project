@@ -30,7 +30,7 @@ const Ratings = ({ ratings, className, ...props }) => {
 
 Ratings.propTypes = {
   ratings: PropTypes.number.isRequired,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default Ratings;

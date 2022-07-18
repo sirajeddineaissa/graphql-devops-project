@@ -6,7 +6,7 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 
 const persistConfig = {
   key: `${PREFIX}-furns`,
-  storage,
+  storage
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -16,10 +16,10 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: ["persist/PERSIST"],
-      },
+        ignoredActions: ["persist/PERSIST"]
+      }
     }),
-  devTools: process.env.NODE_ENV !== "production",
+  devTools: process.env.NODE_ENV !== "production"
 });
 
 export const persistor = persistStore(store);

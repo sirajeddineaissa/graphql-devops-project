@@ -10,6 +10,6 @@ export const previewModeNotification = (e) => {
   e.preventDefault();
   cogoToast.warn("On Demo Mode this functionality is disabled!", {
     heading: "Demo Mode",
-    hideAfter: 6,
+    hideAfter: 6
   });
 };

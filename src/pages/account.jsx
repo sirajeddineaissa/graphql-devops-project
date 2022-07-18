@@ -40,8 +40,8 @@ export const getServerSideProps = async (context) => {
     return {
       redirect: {
         destination: "/signin",
-        permanent: false,
-      },
+        permanent: false
+      }
     };
   } else {
     data = await client(customerQuery(decode(token)));
@@ -49,8 +49,8 @@ export const getServerSideProps = async (context) => {
 
   return {
     props: {
-      data: data?.customer,
-    },
+      data: data?.customer
+    }
   };
 };
 

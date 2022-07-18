@@ -39,8 +39,8 @@ export const getServerSideProps = async ({ params }) => {
 
   return {
     props: {
-      post,
-    },
+      post
+    }
   };
 };
 

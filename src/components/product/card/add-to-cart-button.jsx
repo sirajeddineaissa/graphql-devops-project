@@ -7,7 +7,7 @@ import { IoIosCart } from "react-icons/io";
 import { addToCartAction } from "@global/actions/cartAction";
 import {
   AddToCartButton as CartButtonStyle,
-  SelectOptionButton,
+  SelectOptionButton
 } from "./product.style";
 
 const AddToCartButton = ({ isShowInMobile, product }) => {
@@ -22,13 +22,13 @@ const AddToCartButton = ({ isShowInMobile, product }) => {
       cogoToast.success(`${rest?.title} is added to cart.`, {
         position: "top-right",
         heading: "Successfully Add!",
-        hideAfter: 1,
+        hideAfter: 1
       });
     } else {
       cogoToast.warn(`${rest?.title} is already added.`, {
         position: "top-right",
         heading: "Already Added!",
-        hideAfter: 1,
+        hideAfter: 1
       });
     }
   };
@@ -48,7 +48,7 @@ const AddToCartButton = ({ isShowInMobile, product }) => {
           ...product,
           price,
           quantity,
-          variations,
+          variations
         })
       }
     >
@@ -63,12 +63,12 @@ const AddToCartButton = ({ isShowInMobile, product }) => {
 };
 
 AddToCartButton.defaultProps = {
-  isShowInMobile: false,
+  isShowInMobile: false
 };
 
 AddToCartButton.propTypes = {
   product: PropTypes.object.isRequired,
-  isShowInMobile: PropTypes.bool,
+  isShowInMobile: PropTypes.bool
 };
 
 export default AddToCartButton;

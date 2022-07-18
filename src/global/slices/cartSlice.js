@@ -10,12 +10,12 @@ export const cartSlice = createSlice({
       const productInCart = state.find(
         (item) =>
           item.id === product.id &&
-          item.variations.title === product.variations.title,
+          item.variations.title === product.variations.title
       );
 
       if (productInCart) {
         const cartProductIndex = state.findIndex(
-          (item) => item.id === product.id,
+          (item) => item.id === product.id
         );
         state[cartProductIndex].quantity =
           state[cartProductIndex].quantity + product.quantity;
@@ -33,12 +33,12 @@ export const cartSlice = createSlice({
     increment: (state, action) => {
       const product = action.payload;
       const isIncrementProduct = state.find(
-        (item) => item?.cartId === product?.cartId,
+        (item) => item?.cartId === product?.cartId
       );
 
       if (isIncrementProduct) {
         const incrementProductIndex = state.findIndex(
-          (item) => item.cartId === product.cartId,
+          (item) => item.cartId === product.cartId
         );
         state[incrementProductIndex].quantity += 1;
 
@@ -51,12 +51,12 @@ export const cartSlice = createSlice({
     decrement: (state, action) => {
       const product = action.payload;
       const isDecrementProduct = state.find(
-        (item) => item.cartId === product.cartId,
+        (item) => item.cartId === product.cartId
       );
 
       if (isDecrementProduct) {
         const decrementProductIndex = state.findIndex(
-          (item) => item.cartId === product.cartId,
+          (item) => item.cartId === product.cartId
         );
         state[decrementProductIndex].quantity -= 1;
         return state;
@@ -67,8 +67,8 @@ export const cartSlice = createSlice({
 
     clear: () => {
       return [];
-    },
-  },
+    }
+  }
 });
 
 const { reducer, actions } = cartSlice;

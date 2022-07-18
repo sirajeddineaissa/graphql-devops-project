@@ -20,7 +20,7 @@ import {
   CompareProDesc,
   CompareListWrap,
   CompareProTitle,
-  CompareProDelete,
+  CompareProDelete
 } from "@components/compare/compare.style";
 
 const CompareList = ({ products }) => {
@@ -31,7 +31,7 @@ const CompareList = ({ products }) => {
     cogoToast.success(`${rest.title} is added to cart.`, {
       position: "top-right",
       heading: "Successfully Add!",
-      hideAfter: 3,
+      hideAfter: 3
     });
   };
 
@@ -40,7 +40,7 @@ const CompareList = ({ products }) => {
     cogoToast.error(`${product?.title} remove from compare!.`, {
       position: "top-right",
       heading: "Successfully removed!",
-      hideAfter: 3,
+      hideAfter: 3
     });
   };
 
@@ -112,7 +112,7 @@ const CompareList = ({ products }) => {
                 {products?.map((product) => {
                   const variations = {
                     id: product?.variants?.edges[0]?.node?.id,
-                    title: product?.variants?.edges[0]?.node?.title,
+                    title: product?.variants?.edges[0]?.node?.title
                   };
                   const stock = getProductStock(product, variations);
                   return (
@@ -131,7 +131,7 @@ const CompareList = ({ products }) => {
                 {products?.map((product) => {
                   const variations = {
                     id: product?.variants?.edges[0]?.node?.id,
-                    title: product?.variants?.edges[0]?.node?.title,
+                    title: product?.variants?.edges[0]?.node?.title
                   };
                   const isStock = Boolean(getProductStock(product, variations));
                   return (
@@ -144,7 +144,7 @@ const CompareList = ({ products }) => {
                         fontSize={12}
                         style={{
                           opacity: !isStock ? 0.5 : 1,
-                          pointerEvents: !isStock ? "none" : "visible",
+                          pointerEvents: !isStock ? "none" : "visible"
                         }}
                         onClick={() =>
                           onAddToCart({
@@ -152,8 +152,7 @@ const CompareList = ({ products }) => {
                             variations,
                             quantity: 1,
                             price:
-                              product?.variants?.edges[0]?.node?.priceV2
-                                ?.amount,
+                              product?.variants?.edges[0]?.node?.priceV2?.amount
                           })
                         }
                       >
@@ -172,7 +171,7 @@ const CompareList = ({ products }) => {
 };
 
 CompareList.propTypes = {
-  products: PropTypes.array.isRequired,
+  products: PropTypes.array.isRequired
 };
 
 export default CompareList;

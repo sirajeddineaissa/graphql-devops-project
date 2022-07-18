@@ -9,7 +9,7 @@ import {
   OrderDetailsContent,
   OrderSummaryDelivered,
   OrderDetailsContentItem,
-  OrderSummaryDeliveredItem,
+  OrderSummaryDeliveredItem
 } from "./order.style";
 
 const OrderDetails = ({ order, customer }) => {
@@ -21,7 +21,7 @@ const OrderDetails = ({ order, customer }) => {
     totalPriceV2,
     shippingAddress,
     financialStatus,
-    totalShippingPriceV2,
+    totalShippingPriceV2
   } = order;
 
   return (
@@ -41,7 +41,7 @@ const OrderDetails = ({ order, customer }) => {
                   <span
                     style={{
                       background:
-                        financialStatus === "PAID" ? "#059669" : "#B91C1C",
+                        financialStatus === "PAID" ? "#059669" : "#B91C1C"
                     }}
                   >
                     {financialStatus}

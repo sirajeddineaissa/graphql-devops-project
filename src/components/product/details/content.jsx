@@ -12,7 +12,7 @@ import {
   IoLogoLinkedin,
   IoLogoFacebook,
   IoIosHeartEmpty,
-  IoIosGitCompare,
+  IoIosGitCompare
 } from "react-icons/io";
 import {
   ProductSKU,
@@ -23,7 +23,7 @@ import {
   ProductSwatchItem,
   ProductSocialShare,
   ProductActionButton,
-  QuantityIncDecButton,
+  QuantityIncDecButton
 } from "@components/product/details/details.style";
 import { CgMathMinus, CgMathPlus } from "react-icons/cg";
 // import Ratings from "@components/product/details/rating";
@@ -52,7 +52,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
     onWishlistHandler,
     onIncrementQuantity,
     cartProductQuantity,
-    onDecrementQuantity,
+    onDecrementQuantity
   } = useProduct(product);
 
   const onAddToCartHandler = (rest) => {
@@ -60,7 +60,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
     cogoToast.success(`${rest?.title} is added to cart.`, {
       position: "top-right",
       heading: "Successfully Add!",
-      hideAfter: 3,
+      hideAfter: 3
     });
   };
 
@@ -72,8 +72,8 @@ const ProductDetailsContent = ({ product, ...props }) => {
             ...prevValue,
             [option?.name]: {
               value: option?.values[0],
-              label: toCapitalize(option?.values[0]),
-            },
+              label: toCapitalize(option?.values[0])
+            }
           };
         });
       });
@@ -125,14 +125,14 @@ const ProductDetailsContent = ({ product, ...props }) => {
                   options={option?.values.map((value) => {
                     return {
                       value,
-                      label: toCapitalize(value),
+                      label: toCapitalize(value)
                     };
                   })}
                   onChange={(event) => {
                     setSelectedOptions((prevValue) => {
                       return {
                         ...prevValue,
-                        [option?.name]: event,
+                        [option?.name]: event
                       };
                     });
                   }}
@@ -170,14 +170,14 @@ const ProductDetailsContent = ({ product, ...props }) => {
             className="btn-cart"
             style={{
               opacity: isStock ? 0.6 : 1,
-              pointerEvents: isStock ? "none" : "visible",
+              pointerEvents: isStock ? "none" : "visible"
             }}
             onClick={() =>
               onAddToCartHandler({
                 ...product,
                 price,
                 quantity,
-                variations,
+                variations
               })
             }
           >
@@ -222,7 +222,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
 };
 
 ProductDetailsContent.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default ProductDetailsContent;

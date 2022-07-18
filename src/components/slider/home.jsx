@@ -27,10 +27,10 @@ SliderTwo.propTypes = {
     slidesPerView: PropTypes.number,
     spaceBetween: PropTypes.number,
     autoplay: PropTypes.bool,
-    breakpoints: PropTypes.shape({}),
+    breakpoints: PropTypes.shape({})
   }),
   animate: PropTypes.bool,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default SliderTwo;

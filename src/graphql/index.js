@@ -27,5 +27,5 @@ export {
   customerCreate,
   collectionQuery,
   collectionsQuery,
-  customerAccessTokenCreate,
+  customerAccessTokenCreate
 };

@@ -14,13 +14,13 @@ const LatestBlog = ({ posts, className, props }) => {
     breakpoints: {
       550: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 20
       },
       992: {
         slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
+        spaceBetween: 30
+      }
+    }
   };
 
   return (
@@ -57,7 +57,7 @@ const LatestBlog = ({ posts, className, props }) => {
 
 LatestBlog.propTypes = {
   posts: PropTypes.array.isRequired,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default LatestBlog;

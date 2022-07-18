@@ -10,7 +10,7 @@ import styled, {
   typography,
   space,
   css,
-  devices,
+  devices
 } from "@styled";
 
 const Button = ({ tag, children, href, loading, ...props }) => {
@@ -51,7 +51,7 @@ Button.propTypes = {
   className: PropTypes.string,
   hvrColor: PropTypes.string,
   hvrBg: PropTypes.string,
-  hvrBorderColor: PropTypes.string,
+  hvrBorderColor: PropTypes.string
 };
 
 const Loading = styled.span`

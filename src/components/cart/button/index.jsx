@@ -33,7 +33,7 @@ const CartButton = ({ onHandler }) => {
 };
 
 CartButton.propTypes = {
-  onHandler: PropTypes.func.isRequired,
+  onHandler: PropTypes.func.isRequired
 };
 
 export default CartButton;

@@ -8,7 +8,7 @@ import {
   ShopTopBar,
   ShopTopBarLeft,
   ShopTopBarRight,
-  ProductsFeedWrap,
+  ProductsFeedWrap
 } from "@components/shop/shop.style";
 
 export const sortByOptions = [
@@ -16,14 +16,14 @@ export const sortByOptions = [
   { label: "Name (A - Z)", value: "title-ascending" },
   { label: "Name (Z - A)", value: "title-descending" },
   { label: "Price (Low - High)", value: "price-ascending" },
-  { label: "Price (High - Low)", value: "price-descending" },
+  { label: "Price (High - Low)", value: "price-descending" }
 ];
 
 const ShopProductsFeed = ({ products }) => {
   const router = useRouter();
   const { sort } = router.query;
   const [selectedSort, setSelectedSort] = useState(
-    sortByOptions.find((item) => item.value === sort) || sortByOptions[0],
+    sortByOptions.find((item) => item.value === sort) || sortByOptions[0]
   );
 
   const onSortHandler = (event) => {
@@ -68,7 +68,7 @@ const ShopProductsFeed = ({ products }) => {
 };
 
 ShopProductsFeed.propTypes = {
-  products: PropTypes.array.isRequired,
+  products: PropTypes.array.isRequired
 };
 
 export default ShopProductsFeed;

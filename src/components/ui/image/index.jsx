@@ -30,7 +30,7 @@ const Image = ({ src, alt, width, height, ...props }) => {
       height={height}
       placeholder="blur"
       blurDataURL={`data:image/svg+xml;base64,${toBase64(
-        shimmer(width, height),
+        shimmer(width, height)
       )}`}
       {...props}
     />
@@ -39,7 +39,7 @@ const Image = ({ src, alt, width, height, ...props }) => {
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired
 };
 
 export default Image;

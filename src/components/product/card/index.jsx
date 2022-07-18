@@ -17,7 +17,7 @@ import {
   ProductTitle,
   ProductBadges,
   ProductActionsMobile,
-  ProductActions as ActionsWrap,
+  ProductActions as ActionsWrap
 } from "./product.style";
 import { getDiscountPercentage } from "@utils/product";
 
@@ -30,7 +30,7 @@ const ProductCard = ({ product, className }) => {
     isDiscounted,
     compareAtPrice,
     isShowQuickView,
-    onQuickViewHandler,
+    onQuickViewHandler
   } = useProduct(product);
 
   const percentage = getDiscountPercentage(price, compareAtPrice);
@@ -98,7 +98,7 @@ const ProductCard = ({ product, className }) => {
 
 ProductCard.propTypes = {
   product: PropTypes.object.isRequired,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default ProductCard;

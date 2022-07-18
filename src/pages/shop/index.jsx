@@ -29,8 +29,8 @@ export const getServerSideProps = async ({ query }) => {
 
   return {
     props: {
-      products,
-    },
+      products
+    }
   };
 };
 

@@ -11,7 +11,7 @@ import {
   BlogPostFooter,
   BlogPostContent,
   BlogPostFooterItem,
-  PostDetailsContentWrapper,
+  PostDetailsContentWrapper
 } from "@components/blog/details/post.details.style";
 import { FaFacebook, FaTwitter, FaPinterest } from "react-icons/fa";
 import { PostMeta, PostTitle } from "@components/blog/post/post.style";
@@ -100,7 +100,7 @@ const PostDetailsContent = ({ post }) => {
 };
 
 PostDetailsContent.propTypes = {
-  post: PropTypes.object.isRequired,
+  post: PropTypes.object.isRequired
 };
 
 export default PostDetailsContent;

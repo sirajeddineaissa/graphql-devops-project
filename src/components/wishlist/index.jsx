@@ -5,7 +5,7 @@ import {
   CartProductsList,
   CartListTable,
   TableResponsive,
-  TableHeading,
+  TableHeading
 } from "@components/cart/listing/style";
 
 const WishlistProducts = (props) => {

@@ -56,7 +56,7 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
 
 ProductActions.propTypes = {
   product: PropTypes.object.isRequired,
-  onQuickViewHandler: PropTypes.func.isRequired,
+  onQuickViewHandler: PropTypes.func.isRequired
 };
 
 export default ProductActions;
