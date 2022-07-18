@@ -33,7 +33,7 @@ const DesktopNav = ({ bg, className }) => {
                             <li key={index}>
                               <Link href={subItem.link}>{subItem.text}</Link>
                             </li>
-                          )),
+                          ))
                         )}
                       </SubMenu>
                     )}
@@ -49,7 +49,7 @@ const DesktopNav = ({ bg, className }) => {
 };
 
 DesktopNav.propTypes = {
-  bg: PropTypes.string,
+  bg: PropTypes.string
 };
 
 export default DesktopNav;

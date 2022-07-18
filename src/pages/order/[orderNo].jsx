@@ -30,8 +30,8 @@ export const getServerSideProps = async ({ req, params }) => {
     return {
       redirect: {
         destination: "/",
-        permanent: false,
-      },
+        permanent: false
+      }
     };
   } else {
     data = await client(customerQuery(decode(token)));
@@ -39,18 +39,18 @@ export const getServerSideProps = async ({ req, params }) => {
 
   const orders = data?.customer?.orders?.edges;
   const order = orders?.find(
-    ({ node }) => node?.orderNumber === parseInt(orderNo, 10),
+    ({ node }) => node?.orderNumber === parseInt(orderNo, 10)
   );
   const customer = {
     name: data?.customer?.displayName,
-    phone: data?.customer?.phone,
+    phone: data?.customer?.phone
   };
 
   return {
     props: {
       order: order?.node,
-      customer,
-    },
+      customer
+    }
   };
 };
 

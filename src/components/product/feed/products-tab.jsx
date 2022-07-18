@@ -11,26 +11,26 @@ import { ProductNav } from "@components/product/feed/style";
 import {
   getFeaturedProducts,
   getSaleProducts,
-  getTendingProducts,
+  getTendingProducts
 } from "@utils/product";
 
 const productNav = [
   {
     key: "new",
-    title: "New Arrival",
+    title: "New Arrival"
   },
   {
     key: "featured",
-    title: "Featured",
+    title: "Featured"
   },
   {
     key: "sale",
-    title: "On Sale",
+    title: "On Sale"
   },
   {
     key: "trending",
-    title: "Trending",
-  },
+    title: "Trending"
+  }
 ];
 
 const ProductsTab = ({ products, limit = 8, className }) => {
@@ -111,7 +111,7 @@ const ProductsTab = ({ products, limit = 8, className }) => {
 };
 
 ProductsTab.propTypes = {
-  products: PropTypes.array.isRequired,
+  products: PropTypes.array.isRequired
 };
 
 export default ProductsTab;

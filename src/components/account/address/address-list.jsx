@@ -12,7 +12,7 @@ import {
   AddressItem,
   AddressActions,
   AddressListingWrap,
-  AddressActionButton,
+  AddressActionButton
 } from "./address.style";
 
 const AddressList = () => {
@@ -24,23 +24,23 @@ const AddressList = () => {
     const token = decode(Cookies.get("access_token"));
     const variables = {
       id: id,
-      customerAccessToken: token,
+      customerAccessToken: token
     };
     client(addressDelete(), variables).then((res) => {
       if (res?.customerAddressDelete?.customerUserErrors?.length === 0) {
         const updatedAddress = addresses.filter(
-          ({ node: address }) => address?.id !== id,
+          ({ node: address }) => address?.id !== id
         );
         dispatch(
           saveCustomerData({
             ...customerData,
             addresses: {
-              edges: updatedAddress,
-            },
-          }),
+              edges: updatedAddress
+            }
+          })
         );
         cogoToast.error("Address Delete Successfully!", {
-          position: "top-right",
+          position: "top-right"
         });
       }
     });

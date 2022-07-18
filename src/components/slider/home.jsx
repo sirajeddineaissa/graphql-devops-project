@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import Slider, { Slide } from "@components/ui/swiper";
-import { SlideOne as SlideItem } from "./slide/slide-one";
+import { SlideTwo as SlideItem } from "@components/slider/slide/slide-two";
 
-const SliderOne = ({ data, animate, settings, className }) => {
+const SliderComp = ({ data, animate, settings, className }) => {
   return (
     <Slider animate={animate} settings={settings} className={className}>
       {data.map((slide) => (
@@ -19,7 +19,7 @@ const SliderOne = ({ data, animate, settings, className }) => {
   );
 };
 
-SliderOne.propTypes = {
+SliderComp.propTypes = {
   data: PropTypes.array.isRequired,
   settings: PropTypes.shape({
     navigation: PropTypes.bool,
@@ -27,10 +27,10 @@ SliderOne.propTypes = {
     slidesPerView: PropTypes.number,
     spaceBetween: PropTypes.number,
     autoplay: PropTypes.bool,
-    breakpoints: PropTypes.shape({}),
+    breakpoints: PropTypes.shape({})
   }),
   animate: PropTypes.bool,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
-export default SliderOne;
+export default SliderComp;

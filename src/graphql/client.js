@@ -7,8 +7,8 @@ const client = async (query, variables) => {
     headers: {
       "Content-Type": "application/json",
       "X-Shopify-Storefront-Access-Token":
-        process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN,
-    },
+        process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN
+    }
   });
 
   return await graphQLClient.request(query, variables);

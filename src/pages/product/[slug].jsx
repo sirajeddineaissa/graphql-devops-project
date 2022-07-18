@@ -73,8 +73,8 @@ export const getServerSideProps = async ({ params }) => {
   return {
     props: {
       product: product?.productByHandle,
-      products: products?.products?.edges,
-    },
+      products: products?.products?.edges
+    }
   };
 };
 

@@ -1,15 +1,15 @@
 import Head from "next/head";
 import Layout from "@components/layout";
 import settings from "@data/settings.json";
-// import LatestBlog from '@components/blog/posts';
-// import Promotions from '@components/promotions';
+// import LatestBlog from "@components/blog/posts";
+// import Promotions from "@components/promotions";
 import Categories from "@components/categories";
-import sliderData from "@data/slider/home-1.json";
+import sliderData from "@data/slider/home.json";
 import { ProductsTab } from "@components/product/feed";
-import { SliderOne as Slider } from "@components/slider";
+import { Slider } from "@components/slider";
 import { client, blogsQuery, productsQuery, collectionsQuery } from "@graphql";
 
-const Home = ({ blogs, products, collections }) => {
+const HomeTwo = ({ blogs, products, collections }) => {
   return (
     <Layout>
       <Head>
@@ -17,15 +17,19 @@ const Home = ({ blogs, products, collections }) => {
         <meta name="description" content={settings?.description} />
       </Head>
 
-      <Slider animate={true} data={sliderData} />
+      <Slider
+        animate={true}
+        data={sliderData}
+        settings={{ effect: "fade", speed: 1000 }}
+      />
 
       <Categories categories={collections} />
 
       <ProductsTab products={products} limit={8} />
 
-      {/* <Promotions /> */}
+      {/* <Promotions fluid={true} />
 
-      {/* <LatestBlog posts={blogs} pt={[60, 60, 100]} /> */}
+      <LatestBlog posts={blogs} pt={[60, 60, 100]} /> */}
     </Layout>
   );
 };
@@ -42,10 +46,10 @@ export const getStaticProps = async () => {
     props: {
       blogs,
       products,
-      collections,
+      collections
     },
-    revalidate: 60,
+    revalidate: 60
   };
 };
 
-export default Home;
+export default HomeTwo;

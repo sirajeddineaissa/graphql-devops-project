@@ -17,7 +17,7 @@ const InstafeedGallery = ({ limit }) => {
       accessToken: access_token,
       template: template,
       target: instafeedRef.current,
-      limit: limit,
+      limit: limit
     });
     feed.run();
   }, []);
@@ -42,7 +42,7 @@ const InstafeedGallery = ({ limit }) => {
 };
 
 InstafeedGallery.propTypes = {
-  limit: PropTypes.number.isRequired,
+  limit: PropTypes.number.isRequired
 };
 
 export default InstafeedGallery;

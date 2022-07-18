@@ -11,21 +11,21 @@ import { AiOutlineMenu, AiOutlineSetting } from "react-icons/ai";
 import { IoPersonOutline, IoSearchOutline } from "react-icons/io5";
 import {
   DropdownMenu,
-  DropdownToggleButton,
+  DropdownToggleButton
 } from "@components/ui/dropdown/dropdwon.style";
 import {
   ActionItem,
   CartItemCount,
   HeaderAction,
   HeaderActionBtn,
-  HeaderBottomWrap,
+  HeaderBottomWrap
 } from "@components/layout/header/header.style";
 
 const HeaderBottom = ({
   onConfigHandler,
   onMiniCartHandler,
   onSearchBoxHandler,
-  onMobileNavHandler,
+  onMobileNavHandler
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const shoppingCart = useSelector((state) => state.shoppingCart);
@@ -136,7 +136,7 @@ HeaderBottom.propTypes = {
   onConfigHandler: PropTypes.func.isRequired,
   onMiniCartHandler: PropTypes.func.isRequired,
   onSearchBoxHandler: PropTypes.func.isRequired,
-  onMobileNavHandler: PropTypes.func.isRequired,
+  onMobileNavHandler: PropTypes.func.isRequired
 };
 
 export default HeaderBottom;

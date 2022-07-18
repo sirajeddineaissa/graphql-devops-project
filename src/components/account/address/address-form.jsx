@@ -18,7 +18,7 @@ const defaultValue = {
   address2: "",
   address1: "",
   lastName: "",
-  firstName: "",
+  firstName: ""
 };
 
 const AddressForm = ({ onCloseHandler }) => {
@@ -31,7 +31,7 @@ const AddressForm = ({ onCloseHandler }) => {
     const target = event.target;
     setFormValue((prevState) => ({
       ...prevState,
-      [target.name]: target.value,
+      [target.name]: target.value
     }));
   };
 
@@ -39,7 +39,7 @@ const AddressForm = ({ onCloseHandler }) => {
     event.preventDefault();
     const input = {
       customerAccessToken: decode(Cookies.get("access_token")),
-      address: formValue,
+      address: formValue
     };
     setIsLoading(true);
     client(addressCreate(), input).then((res) => {
@@ -51,14 +51,14 @@ const AddressForm = ({ onCloseHandler }) => {
             edges: [
               ...customer.addresses.edges,
               {
-                node: createdAddress,
-              },
-            ],
-          },
+                node: createdAddress
+              }
+            ]
+          }
         };
         dispatch(saveCustomerData(updatedCustomer));
         cogoToast.success("Address added Successfully!", {
-          position: "top-right",
+          position: "top-right"
         });
       }
       setIsLoading(false);

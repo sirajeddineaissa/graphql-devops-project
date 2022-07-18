@@ -3,7 +3,7 @@ import {
   OffCanvasWrap,
   OffCanvasInner,
   OffCanvasOverlay,
-  OffCanvasContent,
+  OffCanvasContent
 } from "./style";
 
 const OffCanvas = ({ children, open, onHandler, position, maxWidth }) => {
@@ -20,7 +20,7 @@ const OffCanvas = ({ children, open, onHandler, position, maxWidth }) => {
 OffCanvas.propTypes = {
   position: PropTypes.string,
   open: PropTypes.bool.isRequired,
-  onHandler: PropTypes.func.isRequired,
+  onHandler: PropTypes.func.isRequired
 };
 
 export default OffCanvas;

@@ -5,7 +5,7 @@ import styled, {
   css,
   keyframes,
   ThemeProvider,
-  ServerStyleSheet,
+  ServerStyleSheet
 } from "styled-components";
 
 export const devices = {
@@ -14,7 +14,7 @@ export const devices = {
   md: `@media screen and (max-width: 991px)`,
   lg: `@media screen and (max-width: 1199px)`,
   xl: `@media screen and (max-width: 1399px)`,
-  xxl: `@media screen and (min-width: 1400px)`,
+  xxl: `@media screen and (min-width: 1400px)`
 };
 
 export {
@@ -24,7 +24,7 @@ export {
   keyframes,
   ThemeProvider,
   ServerStyleSheet,
-  createGlobalStyle,
+  createGlobalStyle
 };
 
 export * from "styled-system";

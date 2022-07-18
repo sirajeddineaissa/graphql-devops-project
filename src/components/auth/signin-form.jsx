@@ -12,7 +12,7 @@ import { InputField } from "@components/checkout/checkout-form.style";
 
 const defaultValue = {
   email: "sirajeddineaissa516@gmail.com",
-  password: "tryingoutthis",
+  password: "tryingoutthis"
 };
 
 const SigninForm = () => {
@@ -25,7 +25,7 @@ const SigninForm = () => {
     const target = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [target.name]: target.value,
+      [target.name]: target.value
     }));
   };
 
@@ -35,8 +35,8 @@ const SigninForm = () => {
     const variables = {
       input: {
         email: formData.email,
-        password: formData.password,
-      },
+        password: formData.password
+      }
     };
     setIsLoading(true);
     client(customerAccessTokenCreate(), variables).then((res) => {
@@ -53,7 +53,7 @@ const SigninForm = () => {
         const expiresAt =
           res?.customerAccessTokenCreate?.customerAccessToken?.expiresAt;
         Cookie.set("access_token", encode(token), {
-          expires: totalDays(expiresAt),
+          expires: totalDays(expiresAt)
         });
         router.push("/account");
       }
@@ -105,7 +105,7 @@ const SigninForm = () => {
                   textTransform="uppercase"
                   disabled={!formData.email || !formData.password}
                 >
-                  Signin
+                  Sign in
                 </Button>
               </InputField>
 

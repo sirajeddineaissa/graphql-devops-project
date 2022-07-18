@@ -14,7 +14,7 @@ const Widget = ({ title, children, className, ...props }) => {
 
 Widget.propTypes = {
   title: PropTypes.string,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default Widget;

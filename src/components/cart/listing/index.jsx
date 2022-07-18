@@ -17,7 +17,7 @@ import {
   CartListTable,
   TableResponsive,
   CartProductsList,
-  CartCouponActions,
+  CartCouponActions
 } from "@components/cart/listing/style";
 
 const CartList = (props) => {
@@ -36,11 +36,11 @@ const CartList = (props) => {
         lineItems: cart?.map((item) => {
           return {
             quantity: item?.quantity,
-            variantId: item?.variations?.id,
+            variantId: item?.variations?.id
           };
         }),
-        email: customer?.email,
-      },
+        email: customer?.email
+      }
     };
     setIsLoading(true);
     if (isLoggedIn) {

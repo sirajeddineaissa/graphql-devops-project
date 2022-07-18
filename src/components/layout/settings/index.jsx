@@ -4,12 +4,12 @@ import settings from "@data/settings";
 import OffCanvas from "@components/ui/offCanvas";
 import {
   OffCanvasCloseBtn,
-  OffCanvasHead,
+  OffCanvasHead
 } from "@components/ui/offCanvas/style";
 import {
   SettingsWrap,
   SettingsItem,
-  SettingsFooter,
+  SettingsFooter
 } from "@components/layout/settings/settings.style";
 import { IoIosHeart } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";

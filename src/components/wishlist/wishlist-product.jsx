@@ -16,7 +16,7 @@ import {
   CartProPrice,
   CartActionBtn,
   CartProAction,
-  SingleCartItem,
+  SingleCartItem
 } from "@components/cart/cart-product/style";
 
 const WishlistItem = ({ product }) => {
@@ -30,7 +30,7 @@ const WishlistItem = ({ product }) => {
     cogoToast.success(`${product.name} is added to cart.`, {
       position: "top-right",
       heading: "Successfully Add!",
-      hideAfter: 3,
+      hideAfter: 3
     });
   };
 
@@ -62,14 +62,14 @@ const WishlistItem = ({ product }) => {
           fontSize={12}
           style={{
             opacity: isStock ? 0.5 : 1,
-            pointerEvents: isStock ? "none" : "visible",
+            pointerEvents: isStock ? "none" : "visible"
           }}
           onClick={() =>
             onAddToCart({
               ...product,
               price,
               quantity,
-              variations,
+              variations
             })
           }
         >
@@ -93,7 +93,7 @@ const WishlistItem = ({ product }) => {
 };
 
 WishlistItem.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default WishlistItem;

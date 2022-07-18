@@ -40,9 +40,9 @@ export const getServerSideProps = async ({ params, query }) => {
     props: {
       collection: {
         title: collectionData?.collectionByHandle?.title,
-        products: collectionData?.collectionByHandle?.products?.edges,
-      },
-    },
+        products: collectionData?.collectionByHandle?.products?.edges
+      }
+    }
   };
 };
 

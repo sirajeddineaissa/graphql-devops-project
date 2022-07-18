@@ -23,7 +23,7 @@ const ProductDetails = ({ product, ...props }) => {
 };
 
 ProductDetails.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default ProductDetails;

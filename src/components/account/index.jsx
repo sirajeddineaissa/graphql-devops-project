@@ -9,14 +9,14 @@ import {
   TabContentTitle,
   TabContentHeader,
   AccountTabContent,
-  AccountContentWrap,
+  AccountContentWrap
 } from "./account.style";
 import {
   AiOutlineIdcard,
   AiOutlineLogout,
   AiOutlineSetting,
   AiOutlineShopping,
-  AiOutlineDashboard,
+  AiOutlineDashboard
 } from "react-icons/ai";
 import SettingsContent from "./settings";
 

@@ -12,7 +12,7 @@ const Slider = ({ children, animate, settings, className }) => {
     slidesPerView: 1,
     pagination: true,
     navigation: true,
-    ...settings,
+    ...settings
   };
 
   return (
@@ -35,9 +35,9 @@ Slider.propTypes = {
     slidesPerView: PropTypes.number,
     spaceBetween: PropTypes.number,
     autoplay: PropTypes.bool,
-    breakpoints: PropTypes.shape({}),
+    breakpoints: PropTypes.shape({})
   }),
-  animate: PropTypes.bool,
+  animate: PropTypes.bool
 };
 
 export { SwiperSlide as Slide };

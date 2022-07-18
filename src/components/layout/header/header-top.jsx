@@ -6,7 +6,7 @@ import { Col, Container, DropdownItem, Row } from "@bootstrap";
 import {
   HeaderTopWrap,
   HeaderTopMessage,
-  HeaderTopSetLanCurr,
+  HeaderTopSetLanCurr
 } from "@components/layout/header/header.style";
 
 const HeaderTop = ({ className }) => {
@@ -47,7 +47,7 @@ const HeaderTop = ({ className }) => {
 
 HeaderTop.propTypes = {
   bg: PropTypes.string,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default HeaderTop;

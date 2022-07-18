@@ -11,7 +11,7 @@ import { getCartProductTotalPrice, getProductStock } from "@utils/product";
 import {
   removeCartAction,
   incrementCartQuantityAction,
-  decrementCartQuantityAction,
+  decrementCartQuantityAction
 } from "@global/actions/cartAction";
 import {
   CartProInfo,
@@ -21,7 +21,7 @@ import {
   CartProPrice,
   CartActionBtn,
   CartProAction,
-  SingleCartItem,
+  SingleCartItem
 } from "@components/cart/cart-product/style";
 
 const CartItem = ({ product }) => {
@@ -92,7 +92,7 @@ const CartItem = ({ product }) => {
 };
 
 CartItem.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default CartItem;

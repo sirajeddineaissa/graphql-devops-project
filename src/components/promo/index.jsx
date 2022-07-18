@@ -35,7 +35,7 @@ Promo.propTypes = {
   className: PropTypes.string,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  thumb: PropTypes.string.isRequired,
+  thumb: PropTypes.string.isRequired
 };
 
 export default Promo;

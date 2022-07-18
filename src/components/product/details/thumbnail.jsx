@@ -4,7 +4,7 @@ import Image from "@components/ui/image";
 import Slider, { Slide } from "@components/ui/swiper";
 import {
   ProductThumbGallery,
-  ProductThumbNav,
+  ProductThumbNav
 } from "@components/product/details/details.style";
 
 const ProductDetailsThumb = ({ thumbnails }) => {
@@ -13,8 +13,8 @@ const ProductDetailsThumb = ({ thumbnails }) => {
   const thumbGalleryConfig = {
     pagination: false,
     thumbs: {
-      swiper: thumbsSwiper,
-    },
+      swiper: thumbsSwiper
+    }
   };
 
   const thumbNavConfig = {
@@ -25,7 +25,7 @@ const ProductDetailsThumb = ({ thumbnails }) => {
     navigation: thumbnails?.length > 4,
     watchSlidesProgress: true,
     onSwiper: setThumbsSwiper,
-    watchSlidesVisibility: true,
+    watchSlidesVisibility: true
   };
 
   return (
@@ -69,7 +69,7 @@ const ProductDetailsThumb = ({ thumbnails }) => {
 };
 
 ProductDetailsThumb.propTypes = {
-  thumbnails: PropTypes.array.isRequired,
+  thumbnails: PropTypes.array.isRequired
 };
 
 export default ProductDetailsThumb;

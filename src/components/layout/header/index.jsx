@@ -1,6 +1,6 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
-import HeaderTop from "@components/layout/header/header-top";
+// import HeaderTop from "@components/layout/header/header-top";
 import { DesktopNavbar as Navbar } from "@components/layout/navbar";
 import { HeaderArea } from "@components/layout/header/header.style";
 import HeaderBottom from "@components/layout/header/header-bottom";
@@ -11,11 +11,11 @@ const Header = ({
   onMiniCartHandler,
   onSearchBoxHandler,
   onMobileNavHandler,
-  onConfigHandler,
+  onConfigHandler
 }) => {
   return (
     <HeaderArea className={cn("header", className)}>
-      <HeaderTop className="d-none d-lg-block" />
+      {/* <HeaderTop className="d-none d-lg-block" /> */}
 
       <HeaderBottom
         onConfigHandler={onConfigHandler}
@@ -34,7 +34,7 @@ Header.propTypes = {
   onMiniCartHandler: PropTypes.func.isRequired,
   onSearchBoxHandler: PropTypes.func.isRequired,
   onMobileNavHandler: PropTypes.func.isRequired,
-  onConfigHandler: PropTypes.func.isRequired,
+  onConfigHandler: PropTypes.func.isRequired
 };
 
 export default Header;

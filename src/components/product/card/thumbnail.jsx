@@ -36,7 +36,7 @@ const ProductThumbnail = ({ product }) => {
 };
 
 ProductThumbnail.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object.isRequired
 };
 
 export default ProductThumbnail;

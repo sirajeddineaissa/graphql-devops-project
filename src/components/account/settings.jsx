@@ -25,7 +25,7 @@ const SettingsContent = () => {
     const target = e.target;
     setFormValue((prevState) => ({
       ...prevState,
-      [target.name]: target.value,
+      [target.name]: target.value
     }));
   };
 
@@ -47,15 +47,15 @@ const SettingsContent = () => {
           client(customerAccessTokenCreate(), {
             input: {
               email: customer?.email,
-              password: formValue?.password,
-            },
+              password: formValue?.password
+            }
           }).then((res) => {
             console.log(res);
 
             if (res?.customerAccessTokenCreate?.customerAccessToken) {
               client(customerUpdate(), {
                 customerAccessToken: currentToken,
-                customer: updatedCustomer,
+                customer: updatedCustomer
               }).then((res) => {
                 setIsLoading(false);
                 setError([]);
@@ -66,10 +66,10 @@ const SettingsContent = () => {
                 const expiresAt =
                   res?.customerUpdate?.customerAccessToken?.expiresAt;
                 Cookies.set("access_token", encode(newToken), {
-                  expires: totalDays(expiresAt),
+                  expires: totalDays(expiresAt)
                 });
                 cogoToast.success("Successfully updated!", {
-                  position: "top-right",
+                  position: "top-right"
                 });
               });
             }
@@ -92,7 +92,7 @@ const SettingsContent = () => {
         setIsLoading(true);
         const variables = {
           customerAccessToken: currentToken,
-          customer: formValue,
+          customer: formValue
         };
         client(customerUpdate(), variables)
           .then((res) => {
@@ -100,7 +100,7 @@ const SettingsContent = () => {
               e.target.reset();
               dispatch(saveCustomerData(res?.customerUpdate?.customer));
               cogoToast.success("Successfully updated!", {
-                position: "top-right",
+                position: "top-right"
               });
               setFormValue({});
             }

@@ -27,11 +27,11 @@ const StarRating = ({ totalStars, getRatingValue }) => {
 };
 
 StarRating.defaultProps = {
-  totalStars: 5,
+  totalStars: 5
 };
 
 StarRating.propTypes = {
-  totalStars: PropTypes.number,
+  totalStars: PropTypes.number
 };
 
 export default StarRating;

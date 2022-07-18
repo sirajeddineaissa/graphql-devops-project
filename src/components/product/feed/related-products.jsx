@@ -50,14 +50,14 @@ const RelatedProducts = ({
 };
 
 RelatedProducts.defaultProps = {
-  limit: 4,
+  limit: 4
 };
 
 RelatedProducts.propTypes = {
   className: PropTypes.string,
   tags: PropTypes.array.isRequired,
   products: PropTypes.array.isRequired,
-  categories: PropTypes.array.isRequired,
+  categories: PropTypes.array.isRequired
 };
 
 export default RelatedProducts;

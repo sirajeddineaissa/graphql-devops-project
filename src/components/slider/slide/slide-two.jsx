@@ -6,7 +6,7 @@ import {
   SlideItem,
   SlideSubTitle,
   SlideTitle,
-  SliderThumb,
+  SliderThumb
 } from "@components/slider/slider.style";
 
 const SlideTwo = ({ subTitle, title, content, thumb }) => {
@@ -48,7 +48,7 @@ SlideTwo.propTypes = {
   subTitle: PropTypes.string,
   title: PropTypes.string,
   content: PropTypes.string,
-  thumb: PropTypes.string,
+  thumb: PropTypes.string
 };
 
 export { SlideTwo };

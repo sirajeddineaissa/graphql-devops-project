@@ -4,7 +4,7 @@ import Select from "@components/ui/select";
 import Input, { TextArea } from "@components/ui/input";
 import {
   FormCheckout,
-  InputField,
+  InputField
 } from "@components/checkout/checkout-form.style";
 
 const CheckoutForm = () => {

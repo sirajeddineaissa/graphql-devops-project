@@ -13,11 +13,11 @@ const EmptyProduct = ({ message, className }) => {
 };
 
 EmptyProduct.defaultProps = {
-  message: "There are no products!",
+  message: "There are no products!"
 };
 
 EmptyProduct.propTypes = {
-  message: PropTypes.string,
+  message: PropTypes.string
 };
 
 export default EmptyProduct;

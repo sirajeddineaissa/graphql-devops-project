@@ -7,8 +7,8 @@ export const customerSlice = createSlice({
     saveData: (state, action) => {
       state = { ...action.payload };
       return state;
-    },
-  },
+    }
+  }
 });
 
 const { reducer, actions } = customerSlice;

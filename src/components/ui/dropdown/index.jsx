@@ -3,7 +3,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import {
   DropdownWrap,
   DropdownToggleButton,
-  DropdownMenu,
+  DropdownMenu
 } from "./dropdwon.style";
 
 const Dropdown = ({ align, heading, children }) => {
