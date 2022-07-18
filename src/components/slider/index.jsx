@@ -1,4 +1,3 @@
-import SliderOne from "@components/slider/home-1";
-import SliderTwo from "@components/slider/home-2";
+import Slider from "@components/slider/home";
 
-export { SliderOne, SliderTwo };
+export { Slider };

@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "subtitle": "New Products",
-    "title": "Flexible Chair",
+    "subtitle": "NEW PRODUCTS ! 🔥🔥🔥",
+    "title": "Leather Jacket",
     "content": "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
     "thumb": "/images/slider-image/slider-2-1.jpg"
   },
   {
     "id": 2,
-    "subtitle": "Best Seller",
-    "title": "Creative Sofa",
+    "subtitle": "BEST SELLER ! 🔥🔥🔥",
+    "title": "Denim Jacket",
     "content": "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
     "thumb": "/images/slider-image/slider-2-2.jpg"
   }
