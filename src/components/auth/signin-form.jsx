@@ -105,7 +105,7 @@ const SigninForm = () => {
                   textTransform="uppercase"
                   disabled={!formData.email || !formData.password}
                 >
-                  Signin
+                  Sign in
                 </Button>
               </InputField>
 

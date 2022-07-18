@@ -30,10 +30,7 @@ const Contact = (props) => {
                 <ContactInfoMethod>Phone:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>
-                    <a href="tel:+012345678102">+012 111 111 111</a>
-                  </p>
-                  <p>
-                    <a href="tel:+012345678203">+012 222 222 222</a>
+                    <a href="tel:+16315593591">+1 631-559-3591</a>
                   </p>
                 </ContactInfoText>
               </ContactInfoItem>
@@ -42,10 +39,7 @@ const Contact = (props) => {
                 <ContactInfoMethod>E-mail:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>
-                    <a href="mailto:test@gmail.com">test@gmail.com</a>
-                  </p>
-                  <p>
-                    <a href="mailto:test@gmail.com">test@gmail.com</a>
+                    <a href="mailto:hyperenting@gmail.com">hyperenting@gmail.com</a>
                   </p>
                 </ContactInfoText>
               </ContactInfoItem>

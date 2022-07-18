@@ -3,7 +3,7 @@ import Widget from "@components/ui/widget";
 import NewsletterForm from "@components/newsletter";
 import { Container, Col, Row, Ul, Li } from "@bootstrap";
 import { WidgetWrapper, SocialIcons } from "./footer.style";
-import { SiFacebook, SiTwitter, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
 
 const FooterWidget = (props) => {
   return (
@@ -26,8 +26,12 @@ const FooterWidget = (props) => {
                   </a>
                 </Li>
                 <Li inline={true}>
-                  <a href="https://twitter.com" target="_blank" rel="noopener">
-                    <SiTwitter />
+                  <a
+                    href="https://www.instagram.com/hype_renting"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <SiInstagram />
                   </a>
                 </Li>
                 <Li inline={true}>

@@ -18,8 +18,7 @@ const AboutPage = () => {
       <section className="about-page-wrapper">
         <Container>
           <h2>
-            Hype Renting is a luxury and high-end clothing rental platform that
-            connects our customers with our renters.{" "}
+            We want you to dress fresh and be cool 😎
           </h2>
         </Container>
 
