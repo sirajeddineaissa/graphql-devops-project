@@ -29,7 +29,7 @@ const SearchForm = ({ isShow, onHandler }) => {
             <Input
               type="search"
               name="search"
-              className="furns-form-control"
+              className="hype-form-control"
               placeholder="Enter your search keyword..."
               onChange={onChangeHandler}
             />

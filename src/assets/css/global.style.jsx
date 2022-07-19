@@ -74,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .form-control {
-    &.furns-form-control {
+    &.hype-form-control {
       min-height: 50px;
       padding: 6px 80px 6px 20px;
       font-family: ${themeGet("fonts.body")};

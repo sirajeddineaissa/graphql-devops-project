@@ -13,10 +13,7 @@ const FooterWidget = (props) => {
           <Col md={6} lg={4}>
             <Widget title="ABOUT US" mb={[30, null, null, 0]}>
               <p className="about-text">
-                Hype Renting is a luxury and high-end clothing rental platform
-                that connects our customers with our renters. We provide a
-                platform for fashion collectors to rent the amazing clothes they
-                have.
+                Hype Renting wants you to dress fresh and be cool 😎
               </p>
 
               <SocialIcons mt={15}>
