@@ -8,7 +8,7 @@ export const placeholder =
 
 export const previewModeNotification = (e) => {
   e.preventDefault();
-  cogoToast.warn("On Demo Mode this functionality is disabled!", {
+  cogoToast.warn("DISABLED ON DEMO MODE!", {
     heading: "Demo Mode",
     hideAfter: 6
   });
