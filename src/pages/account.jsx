@@ -20,7 +20,7 @@ const AccountPage = ({ data }) => {
   return (
     <Layout>
       <Head>
-        <title>{`${data?.displayName} - ` + settings?.title}</title>
+        <title>{`${data?.displayName} | ` + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 

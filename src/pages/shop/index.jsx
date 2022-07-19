@@ -9,7 +9,7 @@ const ShopPage = ({ products }) => {
   return (
     <Layout>
       <Head>
-        <title>{"Products - " + settings?.title}</title>
+        <title>{"Products | " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

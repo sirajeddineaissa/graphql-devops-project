@@ -10,7 +10,7 @@ const OrderDetailsPage = ({ order, customer }) => {
   return (
     <Layout>
       <Head>
-        <title>{`Order Details ${order?.name} :: ` + settings?.title}</title>
+        <title>{`Order Details ${order?.name} | ` + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 
