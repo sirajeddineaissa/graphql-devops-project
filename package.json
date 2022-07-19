@@ -20,7 +20,6 @@
     "@styled-system/theme-get": "^5.1.2",
     "classnames": "^2.3.1",
     "cogo-toast": "^4.2.3",
-    "instafeed.js": "^2.0.0",
     "js-base64": "^3.7.2",
     "js-cookie": "^3.0.1",
     "next": "^12.2.2",
