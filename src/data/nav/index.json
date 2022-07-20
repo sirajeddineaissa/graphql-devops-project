@@ -16,7 +16,21 @@
   },
   {
     "text": "FAQ",
-    "link": "/faq",
-    "mega_menu": false
+    "link": "/faq-borrower",
+    "mega_menu": false,
+    "submenu": [
+      {
+        "list": [
+          {
+            "text": "Borrower",
+            "link": "/faq-borrower"
+          },
+          {
+            "text": "Lender",
+            "link": "/faq-lender"
+          }
+        ]
+      }
+    ]
   }
 ]

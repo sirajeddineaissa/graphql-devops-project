@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "@components/layout";
 import settings from "@data/settings";
 import Breadcrumb from "@components/ui/breadcrumb";
-import AccordionGroup from "@components/faq";
+import AccordionGroup2 from "@components/faq/lender";
 
 const FAQ = () => {
   return (
@@ -14,9 +14,9 @@ const FAQ = () => {
       <Breadcrumb
         py={[40, 80]}
         mb={[60, null, 100]}
-        pageTitle="Frequently Asked Questions❓"
+        pageTitle="Frequently Asked Questions❓- Lender"
       />
-      <AccordionGroup />
+      <AccordionGroup2 />
     </Layout>
   );
 };
