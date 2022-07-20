@@ -11,7 +11,6 @@ import {
   SettingsItem,
   SettingsFooter
 } from "@components/layout/settings/settings.style";
-import { IoIosHeart } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
 
 const SettingsSidebar = ({ isOpen, onHandler }) => {

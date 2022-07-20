@@ -42,10 +42,10 @@ const SearchForm = ({ isShow, onHandler }) => {
             <h4>Popular Searches:</h4>
             <ul>
               <li>
-                <Link href="/search/bed">jacket</Link>
+                <Link href="/search/jacket">jacket</Link>
               </li>
               <li>
-                <Link href="/search/chair">shoes</Link>
+                <Link href="/search/shoes">shoes</Link>
               </li>
             </ul>
           </div>
