@@ -13,5 +13,10 @@
     "text": "Contact",
     "link": "/contact",
     "mega_menu": false
+  },
+  {
+    "text": "FAQ",
+    "link": "/faq",
+    "mega_menu": false
   }
 ]
