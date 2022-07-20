@@ -12,7 +12,7 @@ const Error404Page = () => {
   return (
     <div>
       <Head>
-        <title>{"NOT FOUND 404 - " + settings?.title}</title>
+        <title>{"404 NOT FOUND | " + settings?.title}</title>
         <meta name="description" content={settings?.description} />
       </Head>
 
@@ -22,7 +22,7 @@ const Error404Page = () => {
             src={thumb}
             width={320}
             height={115}
-            alt="Furns 404 Error Page"
+            alt="Hype Renting 404 Error Page"
           />
           <h3>ERROR! Page NOT FOUND!</h3>
           <p>It looks like nothing was found here.</p>

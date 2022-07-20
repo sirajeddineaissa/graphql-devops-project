@@ -3,7 +3,7 @@ import Widget from "@components/ui/widget";
 import NewsletterForm from "@components/newsletter";
 import { Container, Col, Row, Ul, Li } from "@bootstrap";
 import { WidgetWrapper, SocialIcons } from "./footer.style";
-import { SiFacebook, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
 
 const FooterWidget = (props) => {
   return (
@@ -13,18 +13,10 @@ const FooterWidget = (props) => {
           <Col md={6} lg={4}>
             <Widget title="ABOUT US" mb={[30, null, null, 0]}>
               <p className="about-text">
-                Hype Renting is a luxury and high-end clothing rental platform
-                that connects our customers with our renters. We provide a
-                platform for fashion collectors to rent the amazing clothes they
-                have.
+                Hype Renting wants you to dress fresh and be cool 😎
               </p>
 
               <SocialIcons mt={15}>
-                <Li inline={true}>
-                  <a href="https://facebook.com" target="_blank" rel="noopener">
-                    <SiFacebook />
-                  </a>
-                </Li>
                 <Li inline={true}>
                   <a
                     href="https://www.instagram.com/hype_renting"
@@ -32,16 +24,6 @@ const FooterWidget = (props) => {
                     rel="noopener"
                   >
                     <SiInstagram />
-                  </a>
-                </Li>
-                <Li inline={true}>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener">
-                    <SiLinkedin />
-                  </a>
-                </Li>
-                <Li inline={true}>
-                  <a href="https://youtube.com" target="_blank" rel="noopener">
-                    <SiYoutube />
                   </a>
                 </Li>
               </SocialIcons>

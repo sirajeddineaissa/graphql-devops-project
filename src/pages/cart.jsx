@@ -12,7 +12,7 @@ const CartPage = () => {
   return (
     <Layout>
       <Head>
-        <title>{"Shopping Cart - " + settings?.title}</title>
+        <title>{"Shopping Cart | " + settings?.title}</title>
         <meta name="description" content={settings?.title} />
       </Head>
 

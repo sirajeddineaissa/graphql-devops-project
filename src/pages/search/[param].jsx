@@ -11,7 +11,7 @@ const SearchPage = ({ products }) => {
     <Layout>
       <Head>
         <title>
-          {"Search: " + products?.length + " Products found " + settings?.title}
+          {products?.length + " Search Results | " + settings?.title}
         </title>
         <meta name="description" content={settings?.title} />
       </Head>

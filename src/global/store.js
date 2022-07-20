@@ -5,7 +5,7 @@ import { persistReducer, persistStore } from "redux-persist";
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 
 const persistConfig = {
-  key: `${PREFIX}-furns`,
+  key: `${PREFIX}-hype-renting`,
   storage
 };
 

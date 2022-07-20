@@ -11,7 +11,6 @@ import {
   SettingsItem,
   SettingsFooter
 } from "@components/layout/settings/settings.style";
-import { IoIosHeart } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
 
 const SettingsSidebar = ({ isOpen, onHandler }) => {
@@ -35,19 +34,9 @@ const SettingsSidebar = ({ isOpen, onHandler }) => {
       <SettingsFooter>
         <div className="support">
           <BiSupport />
-          <a href="tel:+882836272324">+882836272324</a>
+          <a href="tel:+882836272324">+1 631-559-3591</a>
         </div>
-        <p>
-          © 2021, Furns. Made With <IoIosHeart /> by{" "}
-          <a
-            href="https://hasthemes.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {" "}
-            HasThemes.
-          </a>
-        </p>
+        <p>© 2022 - Hype Renting, All Rights Reserved!</p>
       </SettingsFooter>
     </OffCanvas>
   );

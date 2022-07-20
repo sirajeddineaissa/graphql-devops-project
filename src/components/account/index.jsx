@@ -60,13 +60,12 @@ const AccountPageContent = (props) => {
 
                   <p>
                     Hello, <strong>{customer?.displayName}. </strong>
-                    (If Not <strong>{customer?.firstName}!</strong>
                     <Link href="/logout"> Logout</Link>)
                   </p>
                   <p>
-                    From your account dashboard. you can easily check & view
+                    From your account dashboard. you can easily check and view
                     your recent orders, manage your shipping and billing
-                    addresses and edit your password and account details.
+                    addresses as well as your account details.
                   </p>
                 </AccountTabContent>
               </TabPanel>

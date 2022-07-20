@@ -39,7 +39,9 @@ const Contact = (props) => {
                 <ContactInfoMethod>E-mail:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>
-                    <a href="mailto:hyperenting@gmail.com">hyperenting@gmail.com</a>
+                    <a href="mailto:hyperenting@gmail.com">
+                      hyperenting@gmail.com
+                    </a>
                   </p>
                 </ContactInfoText>
               </ContactInfoItem>
