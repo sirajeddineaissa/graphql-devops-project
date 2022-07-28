@@ -46,9 +46,9 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
         >
           {isInCompareList ? <AiOutlineDelete /> : <IoIosGitCompare />}
         </ActionButton>
-        <Tooltip target={`compare-button-${id}`}>
+        {/* <Tooltip target={`compare-button-${id}`}>
           {!isInCompareList ? "Add to Compare" : "Remove from Compare"}
-        </Tooltip>
+        </Tooltip> */}
       </div>
     </>
   );
