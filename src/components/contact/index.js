@@ -1,6 +1,5 @@
 import { Container, Col, Row, Form } from "@bootstrap";
 import {
-  ContactMap,
   ContactWrapper,
   ContactInfoItem,
   ContactContentWrap,
@@ -17,10 +16,6 @@ const Contact = (props) => {
   return (
     <ContactWrapper {...props}>
       <Container>
-        <ContactMap mb={60}>
-          <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=13th%20Street%2047%20W%2013th%20St,%20New%20York,%20NY%2010011,%20USA+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" />
-        </ContactMap>
-
         <Row>
           <Col lg={4}>
             <ContactContentWrap className="h-100">
@@ -46,13 +41,13 @@ const Contact = (props) => {
                 </ContactInfoText>
               </ContactInfoItem>
 
-              <ContactInfoItem>
+              {/* <ContactInfoItem>
                 <ContactInfoMethod>Address:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>Address goes here,</p>
                   <p>street, Crossroad 123.</p>
                 </ContactInfoText>
-              </ContactInfoItem>
+              </ContactInfoItem> */}
             </ContactContentWrap>
           </Col>
 

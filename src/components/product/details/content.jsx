@@ -88,13 +88,13 @@ const ProductDetailsContent = ({ product, ...props }) => {
 
   return (
     <ContentWrap {...props}>
-      <ProductSKU>
+      {/* <ProductSKU>
         <strong>SKU:</strong> {sku}
       </ProductSKU>
       <ProductSKU>
         <strong>Availability: </strong>
         {isStock ? "Out of Stock" : `${stock - cartProductQuantity} in Stock`}
-      </ProductSKU>
+      </ProductSKU> */}
       <ProductName>{title}</ProductName>
       {/*<ProductRatings>*/}
       {/*    <Ratings ratings={ratings}/>*/}
@@ -144,7 +144,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
 
       <ProductActionButton>
         <div className="quantity-cart-button">
-          <QuantityIncDecButton>
+          {/* <QuantityIncDecButton>
             <button
               className="btn btn-decrement"
               onClick={() => onDecrementQuantity()}
@@ -160,7 +160,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
             >
               <CgMathPlus />
             </button>
-          </QuantityIncDecButton>
+          </QuantityIncDecButton> */}
 
           <Button
             tag="button"
@@ -196,10 +196,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
           <button
             className="btn btn--compare"
             onClick={() => onCompareHandler()}
-          >
-            <IoIosGitCompare />{" "}
-            {!isInCompareList ? "Add to Compare" : "Remove from compare"}
-          </button>
+          ></button>
         </div>
       </ProductActionButton>
 

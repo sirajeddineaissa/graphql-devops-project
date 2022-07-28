@@ -32,7 +32,7 @@ const SlideOne = ({ subTitle, title, content, thumb }) => {
                 hvrColor="primary"
                 className="mt-4 mt-md-5"
               >
-                Shop Now
+                Rent Now!
               </Button>
             </SlideContent>
           </Col>

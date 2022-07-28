@@ -10,6 +10,11 @@
     "mega_menu": false
   },
   {
+    "text": "Clothing",
+    "link": "/shop",
+    "mega_menu": false
+  },
+  {
     "text": "Contact",
     "link": "/contact",
     "mega_menu": false

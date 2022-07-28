@@ -43,11 +43,15 @@ const HeaderBottom = ({
           </Col>
 
           <Col xs={5} lg={3} className="text-center text-lg-left">
-            <Logo className="logo--desktop" src="/images/logo/logo.png" />
+            <Logo
+              className="logo--desktop"
+              src="/images/logo/logo.png"
+              height={60}
+            />
 
             <Logo
-              width={100}
-              height={30}
+              width={120}
+              height={40}
               className="logo--mobile"
               src="/images/logo/logo.png"
             />
@@ -104,9 +108,7 @@ const HeaderBottom = ({
                   <li>
                     <Link href="/wishlist">Wishlist</Link>
                   </li>
-                  <li>
-                    <Link href="/compare">Compare</Link>
-                  </li>
+
                   {isLoggedIn && (
                     <li>
                       <Link href="/logout">Logout</Link>
