@@ -44,11 +44,11 @@ const MiniCartSidebar = ({ isOpen, onHandler }) => {
       <MiniCartFooter>
         <BtnCheckout
           tag="a"
-          bg="primary"
+          bg="secondary"
           color="white"
           hvrColor="white"
           href="/cart"
-          hvrBg="secondary"
+          hvrBg="black"
           fontWeight="subHeading"
         >
           View Cart

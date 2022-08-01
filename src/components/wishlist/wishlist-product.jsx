@@ -58,6 +58,7 @@ const WishlistItem = ({ product }) => {
           p={10}
           tag="button"
           bg="primary"
+          hvrBg="black"
           color="white"
           fontSize={12}
           style={{

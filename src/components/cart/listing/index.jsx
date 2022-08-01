@@ -97,10 +97,11 @@ const CartList = (props) => {
               <CartUpdateAction mt={[20, null, null, 0]}>
                 <Button
                   tag="button"
-                  bg="primary"
+                  bg="secondary"
                   color="white"
                   fontSize={13}
-                  hvrBg="secondary"
+                  hvrColor="white"
+                  hvrBg="black"
                   borderRadius="sm"
                   onClick={() => dispatch(clearCartAction())}
                 >
@@ -113,7 +114,7 @@ const CartList = (props) => {
                   fontSize={13}
                   color="white"
                   hvrBg="primary"
-                  hvrColor="white"
+                  hvrColor="black"
                   borderRadius="sm"
                   loading={isLoading}
                   onClick={() => onCheckoutHandler()}
