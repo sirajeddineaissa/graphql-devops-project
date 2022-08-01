@@ -16,10 +16,10 @@ const NewsletterForm = () => {
             id="newsletterInput"
             placeholder="Type your e-mail address here"
           />
-          <Button tag="button" color="white" bg="primary" hvrBg="heading">
+          {/* <Button tag="button" color="white" bg="primary" hvrBg="heading">
             <IoIosSend />
             Subscribe
-          </Button>
+          </Button> */}
         </FormGroup>
       </Form>
     </FormNewsletter>

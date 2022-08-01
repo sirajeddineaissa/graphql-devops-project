@@ -37,7 +37,7 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
         <Tooltip target={`quickview-button-${id}`}>Quick View</Tooltip>
       </div>
 
-      <div className="btn-action">
+      {/* <div className="btn-action">
         <ActionButton
           className="compare"
           isActive={isInCompareList}
@@ -49,7 +49,7 @@ const ProductActions = ({ product, onQuickViewHandler }) => {
         <Tooltip target={`compare-button-${id}`}>
           {!isInCompareList ? "Add to Compare" : "Remove from Compare"}
         </Tooltip>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -92,7 +92,7 @@ const ReviewForm = ({ getReviewValue }) => {
           <Button
             type="submit"
             tag="button"
-            bg="primary"
+            bg="secondary"
             color="white"
             hvrBg="secondary"
             borderRadius="3px"

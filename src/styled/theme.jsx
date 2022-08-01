@@ -2,7 +2,7 @@ const breakpoints = ["576px", "768px", "992px", "1200px", "1400px"];
 
 export const theme = {
   colors: {
-    primary: "#d85151",
+    primary: "#C1B71F",
     secondary: "#2f333a",
     success: "#10b759",
     info: "#00b8d4",
@@ -59,7 +59,8 @@ export const theme = {
     instagram: "#B23A94",
     css3: "#0277BD",
     html5: "#E44D26",
-    javascript: "#F9DC3D"
+    javascript: "#F9DC3D",
+    test: "#1A1A19"
   },
   fonts: {
     body: "Open Sans",

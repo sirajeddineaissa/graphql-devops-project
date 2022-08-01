@@ -34,10 +34,7 @@ const FooterWidget = (props) => {
             <Widget title="INFORMATION" mb={[30, null, null, 0]}>
               <Ul className="widget-list">
                 <Li>
-                  <Link href="/">About Us</Link>
-                </Li>
-                <Li>
-                  <Link href="/">Tracking Order</Link>
+                  <Link href="/about">About Us</Link>
                 </Li>
                 <Li>
                   <Link href="/">Privacy & Policy</Link>
@@ -53,17 +50,12 @@ const FooterWidget = (props) => {
             <Widget title="MY ACCOUNT" mb={[30, null, null, 0]}>
               <Ul className="widget-list">
                 <Li>
-                  <Link href="/signin">Login</Link>
-                </Li>
-                <Li>
                   <Link href="/cart">My Cart</Link>
                 </Li>
                 <Li>
                   <Link href="/wishlist">Wishlist</Link>
                 </Li>
-                <Li>
-                  <Link href="/compare">Compare</Link>
-                </Li>
+
                 <Li>
                   <Link href="/signin">My Account</Link>
                 </Li>

@@ -18,10 +18,10 @@ const Coupon = (props) => {
           <FormGroup className="mb-0">
             <Button
               tag="button"
-              bg="primary"
+              bg="secondary"
               color="white"
               hvrColor="white"
-              hvrBg="secondary"
+              hvrBg="black"
               fontSize="standard"
               borderTopRightRadius={3}
               borderBottomRightRadius={3}

@@ -9,11 +9,11 @@ import EmptyProduct from "@components/ui/empty";
 const Categories = ({ categories, className, ...props }) => {
   const settings = {
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 4,
     spaceBetween: 5,
-    autoplay: false,
+    autoplay: true,
     pagination: false,
-    navigation: false,
+    navigation: true,
     breakpoints: {
       420: {
         spaceBetween: 10

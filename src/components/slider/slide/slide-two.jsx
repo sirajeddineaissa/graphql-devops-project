@@ -29,12 +29,12 @@ const SlideTwo = ({ subTitle, title, content, thumb }) => {
                 tag="a"
                 href="/shop"
                 color="white"
-                bg="primary"
-                hvrBg="black"
+                bg="secondary"
+                hvrBg="test"
                 hvrColor="primary"
                 className="mt-4 mt-md-5"
               >
-                Shop Now
+                Rent Now!
               </Button>
             </SlideContent>
           </Col>

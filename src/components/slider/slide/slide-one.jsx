@@ -24,7 +24,7 @@ const SlideOne = ({ subTitle, title, content, thumb }) => {
               {title && <SlideTitle>{title}</SlideTitle>}
               {content && <p>{content}</p>}
               <Button
-                tag="a"
+                tag="a" 
                 href="/shop"
                 color="white"
                 bg="primary"
@@ -32,7 +32,7 @@ const SlideOne = ({ subTitle, title, content, thumb }) => {
                 hvrColor="primary"
                 className="mt-4 mt-md-5"
               >
-                Shop Now
+                Rent Now!
               </Button>
             </SlideContent>
           </Col>

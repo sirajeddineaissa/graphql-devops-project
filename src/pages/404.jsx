@@ -29,7 +29,7 @@ const Error404Page = () => {
           <Button
             mt="35px"
             tag="button"
-            bg="primary"
+            bg="secondary"
             color="white"
             borderRadius="sm"
             hvrBg="secondary"

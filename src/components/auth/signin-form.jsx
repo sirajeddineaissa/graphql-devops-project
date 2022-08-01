@@ -75,7 +75,6 @@ const SigninForm = () => {
                   type="email"
                   label="Email *"
                   required={true}
-                  value={defaultValue?.email}
                   onChange={onInputChange}
                 />
               </InputField>
@@ -87,7 +86,6 @@ const SigninForm = () => {
                   type="password"
                   required={true}
                   label="Password *"
-                  value={defaultValue?.password}
                   onChange={onInputChange}
                 />
               </InputField>
