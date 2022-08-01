@@ -2,7 +2,7 @@ const breakpoints = ["576px", "768px", "992px", "1200px", "1400px"];
 
 export const theme = {
   colors: {
-    primary: "#d85151",
+    primary: "#ffff00",
     secondary: "#2f333a",
     success: "#10b759",
     info: "#00b8d4",

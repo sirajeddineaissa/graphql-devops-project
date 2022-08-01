@@ -8,7 +8,6 @@ export const Input = styled.input`
   color: ${themeGet("colors.white")};
   font-size: ${themeGet("fontSizes.standard")};
   width: 100%;
-  text-transform: capitalize;
   border: none;
   background: transparent;
   border: 1px solid ${themeGet("colors.borderDark")};
@@ -20,7 +19,7 @@ export const Input = styled.input`
   transition: ${themeGet("transition")};
 
   &::placeholder {
-    color: ${themeGet("colors.white")};
+    color: ${themeGet("colors.gray550")};
   }
   &:focus {
     border-color: ${themeGet("colors.primary")};

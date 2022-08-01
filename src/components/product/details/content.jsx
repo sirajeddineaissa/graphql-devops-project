@@ -104,10 +104,16 @@ const ProductDetailsContent = ({ product, ...props }) => {
         {isDiscounted ? (
           <>
             <del className="price old">{CURRENCY + compareAtPrice} </del>
-            <span className="price new">{CURRENCY + price}</span>
+            <span className="price new">{CURRENCY + price + " / 7 days"}</span>
+            <br />
+            <span className="price new">{CURRENCY + "35.99 / 15 days"}</span>
           </>
         ) : (
-          <span className="price new">{CURRENCY + price}</span>
+          <>
+            <span className="price new">{CURRENCY + price + " / 7 days"}</span>
+            <br />
+            <span className="price new">{CURRENCY + "35.99 / 15 days"}</span>
+          </>
         )}
       </ProductPrices>
 

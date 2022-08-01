@@ -9,6 +9,89 @@
     "link": "/about",
     "mega_menu": false
   },
+   {
+    "text": "Designers",
+    "link": "/designers",
+    "mega_menu": false,
+    "submenu": [
+      {
+        "list": [
+          {
+            "text": "Acne Studios",
+            "link": "/designers"
+          },
+          {
+            "text": "Alexander Mcqueen",
+            "link": "/designers"
+          },
+          {
+            "text": "Amiri",
+            "link": "/designers"
+          },
+          {
+            "text": "Balenciaga",
+            "link": "/designers"
+          },
+          {
+            "text": "Burberry",
+            "link": "/designers"
+          },
+          {
+            "text": "Dior",
+            "link": "/designers"
+          },
+          {
+            "text": "Fear of God",
+            "link": "/designers"
+          },
+          {
+            "text": "Givenchy",
+            "link": "/designers"
+          },
+          {
+            "text": "Burberry",
+            "link": "/designers"
+          },
+          {
+            "text": "Louis Vuitton",
+            "link": "/designers"
+          },
+          {
+            "text": "Off-white",
+            "link": "/designers"
+          },
+          {
+            "text": "Prada",
+            "link": "/designers"
+          },
+          {
+            "text": "Raf Simons",
+            "link": "/designers"
+          },
+          {
+            "text": "Rick Owens",
+            "link": "/designers"
+          },
+          {
+            "text": "Stone Island",
+            "link": "/designers"
+          },
+          {
+            "text": "Supreme",
+            "link": "/designers"
+          },
+          {
+            "text": "We11done",
+            "link": "/designers"
+          },
+          {
+            "text": "Yohji Yamamoto",
+            "link": "/designers"
+          }
+        ]
+      }
+    ]
+  },
   {
     "text": "Clothing",
     "link": "/shop",

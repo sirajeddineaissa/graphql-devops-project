@@ -29,7 +29,7 @@ const SlideTwo = ({ subTitle, title, content, thumb }) => {
                 tag="a"
                 href="/shop"
                 color="white"
-                bg="primary"
+                bg="secondary"
                 hvrBg="black"
                 hvrColor="primary"
                 className="mt-4 mt-md-5"

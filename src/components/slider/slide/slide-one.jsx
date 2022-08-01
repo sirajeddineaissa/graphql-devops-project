@@ -24,7 +24,7 @@ const SlideOne = ({ subTitle, title, content, thumb }) => {
               {title && <SlideTitle>{title}</SlideTitle>}
               {content && <p>{content}</p>}
               <Button
-                tag="a"
+                tag="a" 
                 href="/shop"
                 color="white"
                 bg="primary"

@@ -10,6 +10,7 @@ const LogoWrap = styled.div`
     ${devices.md} {
       display: none;
     }
+    margin-left: 550px;
   }
 
   &.logo--mobile {
@@ -24,6 +25,8 @@ const LogoWrap = styled.div`
     display: inline-flex;
     overflow: hidden;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
     ${({ width }) =>
       width &&
