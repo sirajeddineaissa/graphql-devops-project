@@ -170,7 +170,7 @@ const ProductDetailsContent = ({ product, ...props }) => {
 
           <Button
             tag="button"
-            bg="primary"
+            bg="secondary"
             color="white"
             hvrBg="secondary"
             className="btn-cart"
