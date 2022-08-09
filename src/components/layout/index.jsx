@@ -61,7 +61,7 @@ const Layout = ({ children, bg, ...props }) => {
 
       <SearchForm isShow={isShowSearchBox} onHandler={onSearchBoxHandler} />
 
-      <SettingsSidebar isOpen={isShowConfig} onHandler={onConfigHandler} />
+      {/* <SettingsSidebar isOpen={isShowConfig} onHandler={onConfigHandler} /> */}
 
       <Main {...props}>
         {children}

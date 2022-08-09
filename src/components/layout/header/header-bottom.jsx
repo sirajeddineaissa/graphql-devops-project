@@ -65,11 +65,11 @@ const HeaderBottom = ({
                 </HeaderActionBtn>
               </ActionItem>
 
-              <ActionItem>
+              {/* <ActionItem>
                 <HeaderActionBtn onClick={() => onConfigHandler()}>
                   <AiOutlineSetting />
                 </HeaderActionBtn>
-              </ActionItem>
+              </ActionItem> */}
             </HeaderAction>
           </Col>
 
