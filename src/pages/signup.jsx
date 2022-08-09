@@ -15,7 +15,7 @@ const RegisterPage = () => {
       <Breadcrumb
         py={[40, 80]}
         mb={[60, null, 100]}
-        pageTitle="Create account"
+        pageTitle="Create an account"
       />
 
       <SignupForm />

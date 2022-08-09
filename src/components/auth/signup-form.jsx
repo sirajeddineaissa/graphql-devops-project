@@ -155,7 +155,6 @@ const SignupForm = () => {
                   label="Phone *"
                   required={true}
                   onChange={onInputChange}
-                  placeholder="E.164 standard. ex: +16135551111."
                 />
               </InputField>
 
@@ -185,7 +184,7 @@ const SignupForm = () => {
                 <Checkbox
                   id="policy"
                   name="policy"
-                  label="I've read and accept the Privacy Policy"
+                  label="I have read and accepted the Privacy Policy and Terms of Service"
                   onChange={onInputChange}
                 />
 
@@ -209,7 +208,7 @@ const SignupForm = () => {
                   textTransform="uppercase"
                   disabled={!formData.policy}
                 >
-                  Signup
+                  Sign up
                 </Button>
               </InputField>
 
@@ -225,7 +224,7 @@ const SignupForm = () => {
                 fontSize="standard"
                 textTransform="uppercase"
               >
-                Already have a account?
+                Already have an account?
               </Button>
             </Form>
           </FormWrap>

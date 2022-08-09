@@ -98,9 +98,14 @@ const HeaderBottom = ({
                       <Link href="/account">My Account</Link>
                     </li>
                   ) : (
-                    <li>
-                      <Link href="/signin">Sign in</Link>
-                    </li>
+                    <>
+                      <li>
+                        <Link href="/signin">Sign in</Link>
+                      </li>
+                      <li>
+                        <Link href="/signup">Sign up</Link>
+                      </li>
+                    </>
                   )}
                   <li>
                     <Link href="/cart">Cart</Link>

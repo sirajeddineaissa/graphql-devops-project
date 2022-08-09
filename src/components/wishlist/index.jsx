@@ -20,7 +20,7 @@ const WishlistProducts = (props) => {
               <Tr>
                 <TableHeading>Image</TableHeading>
                 <TableHeading>Product Name</TableHeading>
-                <TableHeading>Until Price</TableHeading>
+                <TableHeading>Unit Price</TableHeading>
                 <TableHeading>Add to Cart</TableHeading>
                 <TableHeading>Action</TableHeading>
               </Tr>

@@ -65,8 +65,7 @@ const CartList = (props) => {
               <Tr>
                 <TableHeading>Image</TableHeading>
                 <TableHeading>Product Name</TableHeading>
-                <TableHeading>Until Price</TableHeading>
-                <TableHeading>Qty</TableHeading>
+                <TableHeading>Unit Price</TableHeading>
                 <TableHeading>Subtotal</TableHeading>
                 <TableHeading>Action</TableHeading>
               </Tr>
