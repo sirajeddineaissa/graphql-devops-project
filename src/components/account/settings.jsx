@@ -50,7 +50,6 @@ const SettingsContent = () => {
               password: formValue?.password
             }
           }).then((res) => {
-            console.log(res);
 
             if (res?.customerAccessTokenCreate?.customerAccessToken) {
               client(customerUpdate(), {
@@ -116,7 +115,6 @@ const SettingsContent = () => {
     }
   };
 
-  console.log(formValue);
 
   return (
     <SettingsForm>

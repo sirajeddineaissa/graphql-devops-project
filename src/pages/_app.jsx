@@ -31,12 +31,12 @@ const themeBootstrap = {
   }
 };
 
-const HypeRenting = ({ Component, pageProps }) => {
+const LoremIpsum = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Head>
-        <title>Hype Renting</title>
-        <meta name="description" content="Hype Renting" />
+        <title>Lorem ipsum</title>
+        <meta name="description" content="Lorem ipsum" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -54,4 +54,4 @@ const HypeRenting = ({ Component, pageProps }) => {
   );
 };
 
-export default HypeRenting;
+export default LoremIpsum;

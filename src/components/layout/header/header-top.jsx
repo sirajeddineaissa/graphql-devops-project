@@ -15,7 +15,9 @@ const HeaderTop = ({ className }) => {
       <Container>
         <Row>
           <Col md={5} lg={3} className="text-center text-md-left">
-            <HeaderTopMessage>Hype Renting Welcomes You!</HeaderTopMessage>
+            <HeaderTopMessage>
+              Lorem ipsum Welcomes You!
+            </HeaderTopMessage>
           </Col>
 
           <Col md={7} lg={9}>

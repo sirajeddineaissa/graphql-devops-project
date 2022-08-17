@@ -42,7 +42,7 @@ const MobileNavbar = ({ isOpen, onHandler }) => {
   return (
     <OffCanvas open={isOpen} onHandler={onHandler}>
       <OffCanvasHead>
-        <Logo width={100} src="/images/logo/logo.png" />
+        <Logo width={100} src="/images/logo/logo.svg" />
         <OffCanvasCloseBtn onClick={() => onHandler()}>x</OffCanvasCloseBtn>
       </OffCanvasHead>
 

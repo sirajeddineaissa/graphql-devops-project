@@ -3,7 +3,7 @@ import Widget from "@components/ui/widget";
 import NewsletterForm from "@components/newsletter";
 import { Container, Col, Row, Ul, Li } from "@bootstrap";
 import { WidgetWrapper, SocialIcons } from "./footer.style";
-import { SiInstagram } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const FooterWidget = (props) => {
   return (
@@ -13,17 +13,46 @@ const FooterWidget = (props) => {
           <Col md={6} lg={4}>
             <Widget title="ABOUT US" mb={[30, null, null, 0]}>
               <p className="about-text">
-                Hype Renting wants you to dress fresh and be cool 😎
+                Lorem ipsum is placeholder text commonly used in the graphic,
+                print, and publishing industries for previewing layouts and
+                visual mockups.
               </p>
 
               <SocialIcons mt={15}>
                 <Li inline={true}>
                   <a
-                    href="https://www.instagram.com/hype_renting"
+                    href=""
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <SiFacebook />
+                  </a>
+                </Li>
+                <Li inline={true}>
+                  <a
+                    href=""
                     target="_blank"
                     rel="noopener"
                   >
                     <SiInstagram />
+                  </a>
+                </Li>
+                <Li inline={true}>
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <SiLinkedin />
+                  </a>
+                </Li>
+                <Li inline={true}>
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <SiWhatsapp />
                   </a>
                 </Li>
               </SocialIcons>

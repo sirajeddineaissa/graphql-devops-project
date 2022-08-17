@@ -57,16 +57,16 @@ const ProductsTab = ({ products, limit = 8, className }) => {
   return (
     <div className={cn(className)}>
       <Container>
-        {/* <Row>
+         <Row>
           <Col xs={12}>
             <SectionTitle
               mb={42}
               align="center"
-              title="Items For Renting    "
+              title="Items To Rent"
               content="Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore"
             />
           </Col>
-        </Row> */}
+        </Row> 
 
         {!data && <Loader />}
 

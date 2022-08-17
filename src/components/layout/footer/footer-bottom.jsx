@@ -25,7 +25,7 @@ const FooterBottom = ({ bg }) => {
 
           <Col md={6} className="text-center text-md-left">
             <CopyrightText>
-              © 2022 - Hype Renting, All Rights Reserved!
+              © 2022 - All Rights Reserved!
             </CopyrightText>
           </Col>
         </Row>

@@ -85,7 +85,6 @@ const ProductDetailsContent = ({ product, ...props }) => {
       onVariantHandler(selectedOptions);
     }
   }, [selectedOptions]);
-
   return (
     <ContentWrap {...props}>
       {/* <ProductSKU>
@@ -104,15 +103,13 @@ const ProductDetailsContent = ({ product, ...props }) => {
         {isDiscounted ? (
           <>
             <del className="price old">{CURRENCY + compareAtPrice} </del>
-            <span className="price new">{CURRENCY + price + " / 7 days"}</span>
-            <br />
-            <span className="price new">{CURRENCY + "89.99 / 15 days"}</span>
+            <span className="price new">{CURRENCY + price }</span>
+            
           </>
         ) : (
           <>
-            <span className="price new">{CURRENCY + price + " / 7 days"}</span>
-            <br />
-            <span className="price new">{CURRENCY + "89.99 / 15 days"}</span>
+            <span className="price new">{CURRENCY + price }</span>
+            
           </>
         )}
       </ProductPrices>

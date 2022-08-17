@@ -37,7 +37,7 @@ const ProductDetailsThumb = ({ thumbnails }) => {
               <figure>
                 <Image
                   layout="fill"
-                  alt="Hype Renting Product"
+                  alt="Product"
                   src={image?.node?.originalSrc}
                 />
               </figure>

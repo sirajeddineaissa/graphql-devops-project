@@ -25,7 +25,7 @@ const Contact = (props) => {
                 <ContactInfoMethod>Phone:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>
-                    <a href="tel:+16315593591">+1 631-559-3591</a>
+                    <a href="tel:"></a>
                   </p>
                 </ContactInfoText>
               </ContactInfoItem>
@@ -34,8 +34,7 @@ const Contact = (props) => {
                 <ContactInfoMethod>E-mail:</ContactInfoMethod>
                 <ContactInfoText>
                   <p>
-                    <a href="mailto:hyperenting@gmail.com">
-                      hyperenting@gmail.com
+                    <a href="mailto:">
                     </a>
                   </p>
                 </ContactInfoText>

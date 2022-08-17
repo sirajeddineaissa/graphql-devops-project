@@ -10,7 +10,6 @@ const LogoWrap = styled.div`
     ${devices.md} {
       display: none;
     }
-    margin-left: 550px;
   }
 
   &.logo--mobile {

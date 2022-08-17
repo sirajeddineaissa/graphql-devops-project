@@ -54,7 +54,6 @@ const useProduct = (product) => {
       ({ node }) =>
         node?.title.split(" / ").sort().toString() === selectedVariantTitle
     )?.node;
-
     const { id, title, sku, priceV2, quantityAvailable, compareAtPriceV2 } =
       selectedVariant;
     setSku(sku);
@@ -64,7 +63,6 @@ const useProduct = (product) => {
     setIsDiscounted(!!compareAtPriceV2);
     setCompareAtPrice(compareAtPriceV2 ? compareAtPriceV2?.amount : 0);
   };
-
   const onWishlistHandler = () => {
     !isInWishlist
       ? dispatch(addToWishlistAction(product))

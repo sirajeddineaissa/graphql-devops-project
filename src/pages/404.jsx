@@ -22,7 +22,7 @@ const Error404Page = () => {
             src={thumb}
             width={320}
             height={115}
-            alt="Hype Renting 404 Error Page"
+            alt="Lorem ipsum 404 Error Page"
           />
           <h3>ERROR! Page NOT FOUND!</h3>
           <p>It looks like nothing was found here.</p>

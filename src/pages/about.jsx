@@ -52,16 +52,16 @@ const AboutPage = () => {
           <Row>
             <Col lg={6} className="mb-5 mb-lg-0">
               <div className="about-store">
-                <h4>WHAT IS HYPE RENTING?</h4>
+                <h4>WHAT IS Lorem ipsum?</h4>
                 <p>
-                  Hype Renting is a luxury and high-end clothing rental platform
-                  that connects our customers with our renters. We are designed
-                  to bring sustainability and variety to our clients’ closets.
-                  We help fashion lovers save their budget on buying clothing
-                  and provide a platform for fashion collectors to rent the
-                  amazing clothes resting in their wardrobes to people who need
-                  them for certain occasions. We aim to add mobility to clothing
-                  and freshness to your daily life.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
                 </p>
               </div>
             </Col>
@@ -70,12 +70,14 @@ const AboutPage = () => {
               <div className="about-store">
                 <h4>OUR MISSION</h4>
                 <p>
-                  We are designed to bring sustainability and variety to our
-                  clients' closets. We help fashion lovers save their budget on
-                  buying clothing and provide a platform for fashion collectors
-                  to rent the amazing clothes resting in their wardrobes to
-                  people who need them for certain occasions. We aim to add
-                  mobility to clcothing and freshness to your daily life.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
                 </p>
               </div>
             </Col>

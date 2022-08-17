@@ -8,10 +8,10 @@ import EmptyProduct from "@components/ui/empty";
 
 const Categories = ({ categories, className, ...props }) => {
   const settings = {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 5,
-    autoplay: true,
+    loop: false,
+    slidesPerView: 3,
+    spaceBetween: 0,
+    autoplay: false,
     pagination: false,
     navigation: true,
     breakpoints: {
@@ -19,13 +19,13 @@ const Categories = ({ categories, className, ...props }) => {
         spaceBetween: 10
       },
       500: {
-        slidesPerView: 3
+        slidesPerView: 2
       },
       992: {
-        slidesPerView: 4
+        slidesPerView: 2
       },
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 30
       }
     }

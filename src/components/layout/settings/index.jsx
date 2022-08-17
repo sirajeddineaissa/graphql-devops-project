@@ -17,7 +17,7 @@ const SettingsSidebar = ({ isOpen, onHandler }) => {
   return (
     <OffCanvas onHandler={onHandler} open={isOpen}>
       <OffCanvasHead>
-        <Logo width={100} src="/images/logo/logo.png" />
+        <Logo width={100} src="/images/logo/logo.svg" />
         <OffCanvasCloseBtn onClick={() => onHandler()}>x</OffCanvasCloseBtn>
       </OffCanvasHead>
 
@@ -34,9 +34,9 @@ const SettingsSidebar = ({ isOpen, onHandler }) => {
       <SettingsFooter>
         <div className="support">
           <BiSupport />
-          <a href="tel:+882836272324">+1 631-559-3591</a>
+          <a href="tel:"></a>
         </div>
-        <p>© 2022 - Hype Renting, All Rights Reserved!</p>
+        <p>© 2022 - Lorem ipsum, All Rights Reserved!</p>
       </SettingsFooter>
     </OffCanvas>
   );

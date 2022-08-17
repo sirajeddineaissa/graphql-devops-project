@@ -45,7 +45,7 @@ const HeaderBottom = ({
           <Col xs={5} lg={3} className="text-center text-lg-left">
             <Logo
               className="logo--desktop"
-              src="/images/logo/logo.png"
+              src="/images/logo/logo.svg"
               height={60}
             />
 
@@ -53,7 +53,7 @@ const HeaderBottom = ({
               width={120}
               height={40}
               className="logo--mobile"
-              src="/images/logo/logo.png"
+              src="/images/logo/logo.svg"
             />
           </Col>
 

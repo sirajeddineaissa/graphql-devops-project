@@ -1,59 +1,48 @@
 {
   "borrower": [
     {
-      "title": "Are items legit?",
-      "description": "The items rented on our website are verified by our experts and are 100% real."
+      "title": "Q1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "What is the return policy for rented items?",
-      "description": "We offer a return option in the first 2 days upon arrival with no charge."
+      "title": "Q2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
 
     {
-      "title": "How do I track my order?",
-      "description": "We will provide you with a prepaid shipping label when your item is sent to you. You can use the label to return the item back to us."
+      "title": "Q3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "How do I track my order?",
-      "description": "We will provide you with a prepaid shipping label when your item is sent to you. You can use the label to return the item back to us."
+      "title": "Q4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "What is Hype Renting’s authentication process?",
-      "description": "We have professional brand experts examining products everyday"
-    },
-    {
-      "title": "What if I lost the item?",
-      "description": "Since ownership of the item belongs to the lenders on our site, compensation of the value of the item will be charged."
-    },
-    {
-      "title": "Do you ship worldwide?",
-      "description": "Currently we only operate in the United States."
+      "title": "Q5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     }
   ],
-  "lender":[
+  "lender": [
     {
-      "title": "How do you price?",
-      "description": "Since ownership of the item belongs to the lenders on our site, compensation of the value of the item will be charged."
+      "title": "Q1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "What if I lost the item?",
-      "description": "Our pricing strategy is dynamic and based on the condition of your items and current market prices. Our goal is to rent your items at an appropriate price that brings you considerable return in the long term."
+      "title": "Q2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+    },
+
+    {
+      "title": "Q3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "How much could I earn?",
-      "description": "You can earn % of the rental price."
+      "title": "Q4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
-      "title": "How and when do I get paid?",
-      "description": "You can receive payment by direct deposit after the rental period."
-    },
-    {
-      "title": "What happens if my items are damaged?",
-      "description": "You will be compensated by the value of your item."
-    },
-    {
-      "title": "Can I get my item back?",
-      "description": "Yes. You are the owner and you can ask us to send your item back whenever you want except during the rental period. You can process this in My Items."
+      "title": "Q5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     }
   ]
 }
