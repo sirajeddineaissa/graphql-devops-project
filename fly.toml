@@ -1,0 +1,26 @@
+app = "graphql-project"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[env.build]
+  # Set the build command to build the Docker image
+  command = "docker build -t graphql-project ."
+
+[env.production]
+  # Set the image to the one built in the previous step
+  image = "graphql-project"
+
+  # Set the command to start the app
+  command = "yarn start"
+
+  # Expose port 3000
+  ports = ["tcp/3000"]
+
+  # Set environment variables
+  [env.production.env]
+  NEXT_PUBLIC_SHOPIFY_STOREFRONT_NAME = "${{ secrets.SHOPIFY_STOREFRONT_NAME }}"
+  NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN = "${{ secrets.SHOPIFY_STOREFRONT_ACCESS_TOKEN }}"
+  NEXT_PUBLIC_DEMO_MODE = "false"
